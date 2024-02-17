@@ -2,3 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @layer {
+    .navBar {
+        @apply 
+        bg-red-500 
+        p-5 
+        font-bold 
+        text-2xl
+    }
+    .pepe {
+        @apply
+        bg-blue-700
+        p-5 
+        font-bold 
+        text-2xl
+    }
+} */
