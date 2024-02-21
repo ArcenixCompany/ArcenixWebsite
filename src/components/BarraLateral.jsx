@@ -1,10 +1,11 @@
 import { NavLink } from "react-router-dom";
-import Logo from "../views/img/Logitotest.jpeg";
+import Logo from "../views/img/logo-light.png";
+import { ToggleSwitch } from "./ToggleSwitch";
 
 const BarraLateral = () => {
-  const activeLink = "text-rosita font-bold hover:text-text2 w-fit";
+  const activeLink = "text-d1 font-bold hover:text-text2 w-fit";
   return (
-    <div className="flex flex-col w-full justify-between bg-background1 h-screen p-2">
+    <div className="flex flex-col w-full justify-between bg-txt2 dark:bg-bg1 h-screen p-2">
       <div className="flex items-center justify-center p-2">
         <NavLink to="/">
           <img src={Logo} alt="Logo" className="rounded-[50%] w-[40px]" />
@@ -19,7 +20,7 @@ const BarraLateral = () => {
             className={({ isActive }) =>
               isActive
                 ? activeLink
-                : "text-text1 hover:text-rosita w-fit"
+                : "text-bg2 dark:text-txt2 hover:text-bg2 w-fit"
             }
           >
             <div className="nbb">
@@ -35,7 +36,7 @@ const BarraLateral = () => {
             className={({ isActive }) =>
               isActive
                 ? activeLink
-                : "text-text1 hover:text-rosita w-fit"
+                : "text-bg2 dark:text-txt2 hover:text-bg2 w-fit"
             }
           >
             <div className="nbb">
@@ -49,7 +50,7 @@ const BarraLateral = () => {
             className={({ isActive }) =>
               isActive
                 ? activeLink
-                : " text-text1 hover:text-rosita w-fit"
+                : " text-bg2 dark:text-txt2 hover:text-bg2 w-fit"
             }
           >
             <div className="nbb">
@@ -63,7 +64,7 @@ const BarraLateral = () => {
             className={({ isActive }) =>
               isActive
                 ? activeLink
-                : "text-text1 hover:text-rosita w-fit "
+                : "text-bg2 dark:text-txt2 hover:text-bg2 w-fit "
             }
           >
             <div className="nbb">
@@ -71,6 +72,7 @@ const BarraLateral = () => {
               <p>Contacto</p>
             </div>
           </NavLink>
+          <ToggleSwitch/>
         </nav>
       </div>
 

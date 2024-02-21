@@ -2,7 +2,7 @@ import { Contact } from "../components/Contact";
 
 const Contacto = () => {
   return (
-    <div className="bg-background2 flex flex-col justify-start items-start ml-10 my-10">
+    <div className="bg-txt1 dark:bg-bg2 flex flex-col justify-start items-start ml-10 my-10">
       <Contact />
     </div>
   );

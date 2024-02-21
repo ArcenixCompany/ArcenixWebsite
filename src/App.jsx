@@ -15,7 +15,7 @@ function App() {
     <div className="flex-none bg-gray-300 fixed top-0 left-0 h-full"> {/* Barra lateral izquierda */}
       <BarraLateral />
     </div>
-    <div className="flex-auto ml-24 bg-background2 overflow-y-auto"> {/* Contenido principal con margen izquierdo */}
+    <div className="flex-auto ml-24 bg-txt1 dark:bg-bg2 overflow-y-auto"> {/* Contenido principal con margen izquierdo */}
       <Routes>
         <Route path="/" element={<Inicio />} />
         <Route path="/about" element={<About />} />

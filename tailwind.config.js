@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class',
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -10,15 +11,12 @@ export default {
     },
     extend: {
       colors: {
-        'rosa': '#eb01ae',
-        'violeta': '#4d016e',
-        'naranja': '#ff4800',
-        'azulado': '#4d0163',
-        'rosita': '#8900f2',
-        'background1': '#1d1d1d',
-        'background2': '#232427',
-        'text1': '#676b76',
-        'text2': '#e0e0df',
+        'txt1':'#14acd4',
+        'txt2': '#0c5484',
+        'bg1':'#052537',
+        'bg2':'#042e44',
+        'd1':'#9c7cd4',
+        'd2':'#3e3360',
       },
     },
   },

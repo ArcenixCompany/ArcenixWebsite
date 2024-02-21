@@ -9,7 +9,9 @@
         gap-2 
         text-center 
         text-xs 
-        hover:bg-background2 
+        hover:bg-bg1
+        dark:hover:bg-bg2
+        hover:text-txt1
         transition-all 
         rounded-md 
         w-[80px]
@@ -18,8 +20,10 @@
     /* nbb = estilos del "navbar button" */
     .nbm {
         @apply 
-        text-text1 
-        hover:text-rosita
+        text-bg2
+        dark:text-txt2
+        hover:text-d1
+        dark:hover:text-d1
         text-xl 
         transition-all
         hover:shadow-2xl
