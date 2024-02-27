@@ -8,10 +8,11 @@
         @apply 
         gap-2 
         text-center 
-        text-xs 
-        hover:bg-bg1
-        dark:hover:bg-bg2
-        hover:text-txt1
+        text-xs
+        dark:text-txt1
+        hover:font-bold
+        hover:text-bg1
+        dark:hover:text-txt1
         transition-all 
         rounded-md 
         w-[80px]
@@ -20,7 +21,7 @@
     /* nbb = estilos del "navbar button" */
     .nbm {
         @apply 
-        text-bg2
+        text-bg1
         dark:text-txt2
         hover:text-d1
         dark:hover:text-d1
@@ -39,6 +40,19 @@
         w-fit
         h-1/2
         object-cover
+    }
+    .card-inicio-dep {
+        @apply
+        p-3 
+        h-[300px] 
+        w-[300px] 
+        hover:bg-bg1
+        transition-all
+        duration-500
+        flex 
+        flex-col 
+        justify-center 
+        items-center
     }
     
 }

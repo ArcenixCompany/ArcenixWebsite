@@ -11,12 +11,12 @@ export default {
     },
     extend: {
       colors: {
-        'txt1':'#14acd4',
-        'txt2': '#0c5484',
-        'bg1':'#052537',
-        'bg2':'#042e44',
-        'd1':'#9c7cd4',
-        'd2':'#3e3360',
+        'txt1':'#f5f5dc',
+        'txt2': '#CCCCCC',
+        'bg1':'#1f1f1f',
+        'bg2':'#8d8d8d',
+        'd1':'#bf85ff',
+        // 'd2':'#381c47',
       },
     },
   },
