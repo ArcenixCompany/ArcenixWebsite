@@ -1,21 +1,21 @@
 const Contact = () => {
   return (
     <>
-      <div className="w-[600px]">
+      <div className="w-full sm:max-w-[600px] flex flex-col">
         <div className="flex-col flex bg-txt1 dark:bg-bg1 p-10">
           <h2 className="text-bg1 dark:text-txt1 w-full text-center p-2 font-bold">
             CONTACTANOS
           </h2>
-          <p className="text-bg1 dark:text-txt2 w-full text-justify p-1">
+          <p className="text-bg1 dark:text-txt2 w-fit text-justify p-1">
             - Si te gustaría tener contacto con el área comercial de Arcenix
             Company en representación de marcas, organizaciones o intereses
             particulares
           </p>
-          <p className="text-bg1 dark:text-txt2 w-full text-justify p-1">
+          <p className="text-bg1 dark:text-txt2 w-fit text-justify p-1">
             - Si te gustaría cubrir el mundo de Arcenix Company en medios
             audiovisuales periodísticos con exclusivas oficiales
           </p>
-          <p className="text-bg1 dark:text-txt2 w-full text-justify p-1">
+          <p className="text-bg1 dark:text-txt2 w-fit text-justify p-1">
             - Si te interesa ser parte del equipo de trabajo de Arcenix Company
           </p>
         </div>
@@ -52,7 +52,7 @@ const Contact = () => {
           </form>
         </div>
         <div className="bg-txt1 dark:bg-bg1 p-10 w-full flex flex-col justify-center items-center">
-          <p className="text-bg1 dark:text-txt1 p-2 text-xl w-[400px] text-center">
+          <p className="text-bg1 dark:text-txt1 p-2 text-xl w-full text-center">
             Podes contactarnos tambien por email
           </p>
           <a href="#">
@@ -60,10 +60,10 @@ const Contact = () => {
           </a>
         </div>
         <div className="bg-txt1 dark:bg-bg1 p-10 flex flex-col justify-center items-center">
-          <p className="text-bg1 dark:text-txt1 text-xl w-[400px] text-center">
+          <p className="text-bg1 dark:text-txt1 text-xl w-full text-center">
             Tambien podes encontrarnos en nuestras redes
           </p>
-          <ul className="flex w-full justify-around p-10">
+          <ul className="flex flex-wrap gap-5 w-full justify-around p-10">
             <li>
               <a href="#">
                 <i className="bi bi-twitch nbm"></i>

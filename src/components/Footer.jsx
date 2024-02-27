@@ -5,7 +5,7 @@ const Footer = () => {
   const activeLink = "text-d1 font-bold hover:text-text2 w-fit";
   return (
     <>
-      <div className="flex w-full justify-around items-start p-10 bg-txt1 dark:bg-bg1">
+      <div className="flex flex-col sm:flex-row w-full justify-around items-start p-10 bg-txt1 dark:bg-bg1">
         <div className="flex justify-center items-center p-5 ">
           <div className="bg-black rounded-full w-16 h-16 flex items-center justify-center ">
             <a href="#">
@@ -85,7 +85,7 @@ const Footer = () => {
               </NavLink>
 
               <NavLink
-                to="/equipos"
+                to="/founders"
                 className={({ isActive }) =>
                   isActive
                     ? activeLink
@@ -93,12 +93,12 @@ const Footer = () => {
                 }
               >
                 <div className="p-2">
-                  <p>Equipos</p>
+                  <p>Fundadores</p>
                 </div>
               </NavLink>
 
               <NavLink
-                to="/contacto"
+                to="/contact"
                 className={({ isActive }) =>
                   isActive
                     ? activeLink

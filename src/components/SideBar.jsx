@@ -12,10 +12,10 @@ const SideBar = () => {
     {
       title: "Fundadores",
       src: "person-workspace",
-      path: "/equipos",
+      path: "/founders",
     },
-    { title: "Contacto", src: "chat", path: "/contacto" },
-    { title: "Departamentos", src: "boxes", path: "/deps/arcStudio" },
+    { title: "Contacto", src: "chat", path: "/contact" },
+    { title: "Departamentos", src: "boxes", path: "/deps/arcDes" },
   ];
   const SMedia = [
     {

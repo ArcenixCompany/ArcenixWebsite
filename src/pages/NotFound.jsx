@@ -1,4 +1,9 @@
+import { useEffect } from "react";
+
 const NotFound = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="bg-gray-700 h-screen flex flex-col justify-center items-center gap-5">
       <h1 className="bg-red-900 p-5 rounded-lg">404 ERROR</h1>
