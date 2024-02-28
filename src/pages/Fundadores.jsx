@@ -6,7 +6,7 @@ const Fundadores = () => {
   }, []);
   return (
     <>
-      <div className="w-full min-h-screen flex flex-col justify-center items-center bg-txt2 dark:bg-bg2">
+      <div className="w-full min-h-screen flex flex-col justify-center items-center bg-txt2 dark:bg-gradient-to-br from-morado2 to-darkAzul">
         <section className="w-full p-2 bg-d2 flex flex-wrap gap-10 justify-center">
           {/* cards */}
           <div className="w-72 h-fit group flex flex-col justify-center items-center bg-bg1 rounded-xl z-10 mt-4">

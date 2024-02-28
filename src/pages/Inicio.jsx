@@ -8,7 +8,7 @@ const Inicio = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="bg-txt2 dark:bg-bg2 flex flex-col p-5">
+    <div className="bg-txt2 dark:bg-gradient-to-br from-morado2 to-darkAzul flex flex-col p-5">
       <div className="min-h-screen w-full flex justify-center items-center">
         <div className="w-full h-full bg-cover bg-center flex flex-col sm:flex-row justify-center items-center space-x-6">
           <img

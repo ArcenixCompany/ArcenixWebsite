@@ -18,15 +18,15 @@ function App() {
     <>
       <Router>
         <div className="flex">
-          <div className="flex-none bg-gray-300 fixed top-0 left-0 h-full hidden sm:block">
+          <div className="flex-none bg-gradient-to-br from-morado2 to-darkAzul fixed top-0 left-0 h-full hidden sm:block">
             <SideBar />
           </div>
-          <div className="flex-auto sm:ml-20 bg-txt2 dark:bg-bg2 overflow-y-auto">
+          <div className="flex-auto sm:ml-20 bg-gradient-to-br from-morado2 to-darkAzul overflow-y-auto">
             {/* Contenido principal con margen izquierdo */}
             <div className="sm:hidden">
               <ResponsiveBar />
             </div>
-            <div className="mt-24 sm:mt-0">
+            <div className="mt-24 sm:mt-0 bg-gradient-to-br from-morado2 to-darkAzul">
               <Routes>
                 <Route path="/" element={<Inicio />} />
                 <Route path="/about" element={<About />} />

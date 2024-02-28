@@ -3,10 +3,9 @@
 @tailwind utilities;
 
 @layer {
-    /* nbb = estilos del "navbar button media" */
-    .nbb {
-        @apply 
-        gap-2 
+  /* nbb = estilos del "navbar button media" */
+  .nbb {
+    @apply gap-2 
         text-center 
         text-xs
         dark:text-txt1
@@ -16,34 +15,30 @@
         transition-all 
         rounded-md 
         w-[80px]
-        my-3
-    }
-    /* nbb = estilos del "navbar button" */
-    .nbm {
-        @apply 
-        text-bg1
+        my-3;
+  }
+  /* nbb = estilos del "navbar button" */
+  .nbm {
+    @apply text-bg1
         dark:text-txt2
         hover:text-d1
         dark:hover:text-d1
         text-xl 
         transition-all
-        hover:shadow-2xl
-    } 
-    .contenedorTeam {
-        @apply
-        w-[230px]
+        hover:shadow-2xl;
+  }
+  .contenedorTeam {
+    @apply w-[230px]
         h-[326px]
-        overflow-hidden
-    }
-    .imagenes {
-        @apply
-        w-fit
+        overflow-hidden;
+  }
+  .imagenes {
+    @apply w-fit
         h-1/2
-        object-cover
-    }
-    .card-inicio-dep {
-        @apply
-        p-3 
+        object-cover;
+  }
+  .card-inicio-dep {
+    @apply p-3 
         h-[300px] 
         w-[300px] 
         hover:bg-bg1
@@ -52,7 +47,6 @@
         flex 
         flex-col 
         justify-center 
-        items-center
-    }
-    
+        items-center;
+  }
 }
