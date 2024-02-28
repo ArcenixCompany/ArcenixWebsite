@@ -15,7 +15,7 @@ const SideBar = () => {
       path: "/founders",
     },
     { title: "Contacto", src: "chat", path: "/contact" },
-    { title: "Departamentos", src: "boxes", path: "/deps/arcDes" },
+    { title: "Departamentos", src: "boxes", path: "/deps/" },
   ];
   const SMedia = [
     {

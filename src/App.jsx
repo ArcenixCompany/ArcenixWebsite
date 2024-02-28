@@ -10,7 +10,8 @@ import { ArcenixDesarrollo } from "./pages/ArcenixDesarrollo.jsx";
 import { ArcenixGames } from "./pages/ArcenixGames.jsx";
 import { ArcenixStudio } from "./pages/ArcenixStudio.jsx";
 import { SideBar } from "./components/SideBar.jsx";
-import {ResponsiveBar} from "./components/ResponsiveBar.jsx";
+import { ResponsiveBar } from "./components/ResponsiveBar.jsx";
+import { DepHome } from "./components/DepHome.jsx";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
                 <Route path="/founders" element={<Fundadores />} />
                 <Route path="/contact" element={<Contacto />} />
                 <Route path="/deps" element={<Departamentos />}>
+                  <Route path="/deps/" element={<DepHome />} />
                   <Route path="arcDes" element={<ArcenixDesarrollo />} />
                   <Route path="arcGames" element={<ArcenixGames />} />
                   <Route path="arcStudio" element={<ArcenixStudio />} />
