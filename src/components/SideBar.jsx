@@ -78,7 +78,7 @@ const SideBar = () => {
         </div>
 
         <ul className="pt-6">
-          {Menus.map((menu, index) => (
+          {/* {Menus.map((menu, index) => (
             <li
               key={index}
               className={`text-bg1 dark:text-txt1 text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-d1 rounded-md 
@@ -98,6 +98,25 @@ const SideBar = () => {
                 </span>
               </NavLink>
             </li>
+          ))} */}
+
+          {Menus.map((menu, index) => (
+            <NavLink
+              to={menu.path}
+              key={index}
+              className={`text-bg1 dark:text-txt1 text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-d1 rounded-md 
+              ${menu.gap ? "mt-9" : "mt-2"} 
+              ${isActive(menu.path) ? "hover:bg-d1" : ""} ${
+                isActive(menu.path) && "bg-d1"
+              }
+              ${!open && "justify-center"}`}
+              onClick={open ? toggleSidebar : undefined}
+            >
+              <i className={`bi bi-${menu.src} `}></i>
+              <span className={`${!open && "hidden"} origin-left duration-200`}>
+                {menu.title}
+              </span>
+            </NavLink>
           ))}
 
           <div className="w-fit mt-3">
