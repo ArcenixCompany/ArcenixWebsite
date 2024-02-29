@@ -5,7 +5,7 @@ const About = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="bg-txt2 dark:bg-gradient-to-br from-morado2 to-darkAzul dark:text-txt1 w-full flex flex-col min-h-screen">
+    <div className="bg-gradient-to-r from-gris to-blanco dark:bg-gradient-to-r dark:from-morado2 dark:to-darkAzul dark:text-txt1 w-full flex flex-col min-h-screen">
       <div className="w-full flex justify-center items-center">
         <h1 className="text-bg1 dark:text-txt1 text-2xl underline-offset-8 underline font-bold shadow-xl shadow-d1">Arcenix Company</h1>
       </div>

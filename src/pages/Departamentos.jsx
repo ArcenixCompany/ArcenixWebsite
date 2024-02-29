@@ -6,7 +6,7 @@ function Departamentos() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gradient-to-r from-gris to-blanco dark:bg-gradient-to-r dark:from-morado2 dark:to-darkAzul">
       <Outlet />
     </div>
   );

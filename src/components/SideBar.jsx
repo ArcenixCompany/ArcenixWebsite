@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Arrow from "../views/svg/arrow-right-circle-fill.svg";
-import Logo from "../views/img/logoViolet.png";
+import Logo from "../views/svg/LogoWhite.svg";
 import { NavLink, useLocation } from "react-router-dom";
 import { ToggleSwitch } from "./ToggleSwitch";
 const SideBar = () => {
@@ -64,7 +64,7 @@ const SideBar = () => {
         <div className="flex gap-x-4 items-center">
           <img
             src={Logo}
-            className={`cursor-pointer duration-500 w-10 h-10 rounded-full ${
+            className={`cursor-pointer duration-500 w-10 h-10 ${
               open && "rotate-[360deg]"
             }`}
           />

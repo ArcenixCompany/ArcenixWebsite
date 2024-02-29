@@ -1,0 +1,10 @@
+/* custom.css */
+
+.bg-radial-gradient-dark {
+    background-image: radial-gradient(#151A1E,#460C68);
+  }
+
+  .bg-radial-gradient-white {
+    background-image: radial-gradient(#F0F0F0,#3D3B40);
+  }
+  

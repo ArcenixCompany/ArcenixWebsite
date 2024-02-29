@@ -1,5 +1,4 @@
-/** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   darkMode: 'class',
   content: [
     "./index.html",
@@ -27,6 +26,12 @@ export default {
         'blanco': '#F0F0F0',
         'gris2': '#242424',
       },
+    },
+  },
+  variants: {
+    extend: {
+      backgroundColor: ['hover', 'focus', 'active'], // Agregar variantes de color para fondos
+      textColor: ['hover', 'focus', 'active'], // Agregar variantes de color para texto
     },
   },
   plugins: [],
