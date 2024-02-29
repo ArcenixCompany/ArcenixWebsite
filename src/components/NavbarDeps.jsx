@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const NavbarDeps = () => {
-  const activeLink = "font-bold hover:text-text2 bg-d1 w-fit";
+  const activeLink = "font-bold hover:text-text2 w-fit";
   return (
     <div>
       <nav className="flex justify-evenly bg-txt1 dark:bg-bg1">
@@ -10,7 +10,7 @@ const NavbarDeps = () => {
           to="/deps/arcDes"
           className={({ isActive }) =>
             isActive
-              ? activeLink
+              ? activeLink + " bg-emerald-600"
               : "text-bg1 dark:text-txt2 hover:text-bg2 w-fit"
           }
         >
@@ -24,7 +24,7 @@ const NavbarDeps = () => {
           to="/deps/arcStudio"
           className={({ isActive }) =>
             isActive
-              ? activeLink
+              ? activeLink + " bg-indigo-500"
               : "text-bg1 dark:text-txt2 hover:text-bg2 w-fit"
           }
         >
@@ -38,7 +38,7 @@ const NavbarDeps = () => {
           to="/deps/arcGames"
           className={({ isActive }) =>
             isActive
-              ? activeLink
+              ? activeLink + " bg-pink-600"
               : "text-bg1 dark:text-txt2 hover:text-bg2 w-fit"
           }
         >
