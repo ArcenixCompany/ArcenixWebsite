@@ -21,8 +21,8 @@
   .nbm {
     @apply text-bg1
         dark:text-txt2
-        hover:text-d1
-        dark:hover:text-d1
+        hover:text-rosa
+        dark:hover:text-rosa
         text-xl 
         transition-all
         hover:shadow-2xl;

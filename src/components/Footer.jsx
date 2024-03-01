@@ -2,7 +2,7 @@ import logo from "../views/svg/LogoWhite.svg";
 import { NavLink } from "react-router-dom";
 
 const Footer = () => {
-  const activeLink = "text-d1 hover:text-text2 w-fit";
+  const activeLink = "text-rosa hover:text-text2 w-fit";
   return (
     <>
       <div className="flex flex-col sm:flex-row w-full justify-around items-start p-10 bg-txt1 dark:bg-gris2">
@@ -34,10 +34,10 @@ const Footer = () => {
         <div>
           <h2 className="text-bg1 dark:text-txt1 font-bold p-2">Acerca de</h2>
           <ul>
-            <li className="text-bg1 dark:text-txt2 dark:hover:text-d1 p-2 hover:text-d1 transition-all">
+            <li className="text-bg1 dark:text-txt2 dark:hover:text-rosa p-2 hover:text-rosa transition-all">
               <a href="#">Terminos y condiciones</a>
             </li>
-            <li className="text-bg1 dark:text-txt2 dark:hover:text-d1 p-2 hover:text-d1 transition-all">
+            <li className="text-bg1 dark:text-txt2 dark:hover:text-rosa p-2 hover:text-rosa transition-all">
               <a href="#">Politicas y privacidad</a>
             </li>
           </ul>
@@ -54,7 +54,7 @@ const Footer = () => {
                 className={({ isActive }) =>
                   isActive
                     ? activeLink
-                    : "text-bg1 dark:text-txt2 hover:text-d1 dark:hover:text-d1 "
+                    : "text-bg1 dark:text-txt2 hover:text-rosa dark:hover:text-rosa "
                 }
               >
                 <div className="p-2">
@@ -67,7 +67,7 @@ const Footer = () => {
                 className={({ isActive }) =>
                   isActive
                     ? activeLink
-                    : "text-bg1 dark:text-txt2 hover:text-d1 dark:hover:text-d1 "
+                    : "text-bg1 dark:text-txt2 hover:text-rosa dark:hover:text-rosa "
                 }
               >
                 <div className="p-2">
@@ -80,11 +80,11 @@ const Footer = () => {
                 className={({ isActive }) =>
                   isActive
                     ? activeLink
-                    : " text-bg1 dark:text-txt2 hover:text-d1 dark:hover:text-d1 "
+                    : " text-bg1 dark:text-txt2 hover:text-rosa dark:hover:text-rosa "
                 }
               >
                 <div className="p-2">
-                  <p>Fundadores</p>
+                  <p>Fundador</p>
                 </div>
               </NavLink>
 
@@ -93,7 +93,7 @@ const Footer = () => {
                 className={({ isActive }) =>
                   isActive
                     ? activeLink
-                    : "text-bg1 dark:text-txt2 hover:text-d1 dark:hover:text-d1"
+                    : "text-bg1 dark:text-txt2 hover:text-rosa dark:hover:text-rosa"
                 }
               >
                 <div className="p-2">

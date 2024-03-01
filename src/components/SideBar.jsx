@@ -10,7 +10,7 @@ const SideBar = () => {
     { title: "Inicio", src: "house", path: "/", gap: true },
     { title: "Nosotros", src: "people", path: "/about" },
     {
-      title: "Fundadores",
+      title: "Fundador",
       src: "person-workspace",
       path: "/founders",
     },
