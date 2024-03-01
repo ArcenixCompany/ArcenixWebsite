@@ -56,7 +56,7 @@ const SideBar = () => {
       >
         <img
           src={Arrow}
-          className={`bg-d1 absolute cursor-pointer rounded-full -right-3 top-9 w-7 border-2 border-txt2 ${
+          className={`bg-bg1 absolute cursor-pointer rounded-full -right-3 top-9 w-7 border-2 border-txt2 ${
             open && "rotate-180"
           }`}
           onClick={() => setOpen(!open)}
