@@ -76,7 +76,7 @@ const Footer = () => {
               </NavLink>
 
               <NavLink
-                to="/founders"
+                to="/deps"
                 className={({ isActive }) =>
                   isActive
                     ? activeLink
@@ -84,7 +84,7 @@ const Footer = () => {
                 }
               >
                 <div className="p-2">
-                  <p>Fundador</p>
+                  <p>Departamentos</p>
                 </div>
               </NavLink>
 

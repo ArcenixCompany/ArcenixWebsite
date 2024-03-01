@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Inicio } from "./pages/Inicio";
 import { NotFound } from "./pages/NotFound.jsx";
-import { Fundadores } from "./pages/Fundadores.jsx";
 import { Contacto } from "./pages/Contacto.jsx";
 import { About } from "./pages/About.jsx";
 import { Footer } from "./components/Footer.jsx";
@@ -30,7 +29,6 @@ function App() {
               <Routes>
                 <Route path="/" element={<Inicio />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/founders" element={<Fundadores />} />
                 <Route path="/contact" element={<Contacto />} />
                 <Route path="/deps" element={<Departamentos />}>
                   <Route path="/deps/" element={<DepHome />} />

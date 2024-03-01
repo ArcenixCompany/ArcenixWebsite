@@ -16,7 +16,8 @@ const NavbarDeps = () => {
         >
           <div className="nbb">
             <i className="bi bi-code-slash text-xl"></i>
-            <p>Arcenix Desarrollo</p>
+            <p>Arcenix</p>
+            <p>Desarrollo</p>
           </div>
         </NavLink>
 
@@ -30,7 +31,8 @@ const NavbarDeps = () => {
         >
           <div className="nbb">
             <i className="bi bi-clipboard text-xl"></i>
-            <p>Arcenix Studio</p>
+            <p>Arcenix</p>
+            <p>Studio</p>
           </div>
         </NavLink>
 
@@ -44,7 +46,8 @@ const NavbarDeps = () => {
         >
           <div className="nbb">
             <i className="bi bi-controller text-xl"></i>
-            <p>Arcenix Gaming</p>
+            <p>Arcenix </p>
+            <p>Gaming</p>
           </div>
         </NavLink>
       </nav>

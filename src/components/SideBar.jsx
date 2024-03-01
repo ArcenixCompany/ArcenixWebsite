@@ -8,12 +8,7 @@ const SideBar = () => {
   const [open, setOpen] = useState(true);
   const Menus = [
     { title: "Inicio", src: "house", path: "/", gap: true },
-    { title: "Nosotros", src: "people", path: "/about" },
-    {
-      title: "Fundador",
-      src: "person-workspace",
-      path: "/founders",
-    },
+    { title: "Sobre Nosotros", src: "people", path: "/about" },
     { title: "Contacto", src: "chat", path: "/contact" },
     { title: "Departamentos", src: "boxes", path: "/deps/" },
   ];

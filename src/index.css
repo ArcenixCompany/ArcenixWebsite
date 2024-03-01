@@ -5,17 +5,18 @@
 @layer {
   /* nbb = estilos del "navbar button media" */
   .nbb {
-    @apply gap-2 
-        text-center 
-        text-xs
-        dark:text-txt1
-        hover:font-bold
-        hover:text-bg1
-        dark:hover:text-txt1
-        transition-all 
-        rounded-md 
-        w-[80px]
-        my-3;
+    @apply 
+      gap-2 
+      text-center 
+      text-xs
+      dark:text-blanco
+      hover:font-bold
+      hover:text-rosa
+      dark:hover:text-rosa
+      transition-all 
+      rounded-md 
+      w-[80px]
+      my-3;
   }
   /* nbb = estilos del "navbar button" */
   .nbm {

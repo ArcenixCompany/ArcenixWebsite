@@ -1,103 +1,108 @@
+import React from "react";
+import logo from "../views/svg/alas_fenix.svg";
+
 const Contact = () => {
   return (
-    <>
-      <div className="w-full sm:max-w-[600px] flex flex-col">
-        <div className="flex-col flex bg-txt1 dark:bg-bg1 p-10">
-          <h2 className="text-bg1 dark:text-txt1 w-full text-center p-2 font-bold">
-            CONTACTANOS
-          </h2>
-          <p className="text-bg1 dark:text-txt2 w-fit text-justify p-1">
-            - Si te gustaría tener contacto con el área comercial de Arcenix
-            Company en representación de marcas, organizaciones o intereses
-            particulares
-          </p>
-          <p className="text-bg1 dark:text-txt2 w-fit text-justify p-1">
-            - Si te gustaría cubrir el mundo de Arcenix Company en medios
-            audiovisuales periodísticos con exclusivas oficiales
-          </p>
-          <p className="text-bg1 dark:text-txt2 w-fit text-justify p-1">
-            - Si te interesa ser parte del equipo de trabajo de Arcenix Company
-          </p>
-        </div>
-        <div className="flex flex-col bg-txt1 dark:bg-bg1 p-10">
-          <form action="#" className="flex flex-col">
-            <input
-              type="text"
-              placeholder="Nombre"
-              className="p-3 bg-txt1 dark:bg-bg2 border-b-2 border-bg2 my-2 text-bg1 dark:text-txt1 rounded-sm"
-            />
-            <input
-              type="date"
-              name=""
-              id=""
-              className="p-3 bg-txt1 dark:bg-bg2 border-b-2 border-bg2 my-2 text-bg1 dark:text-txt1 rounded-sm"
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              className="p-3 bg-txt1 dark:bg-bg2 border-b-2 border-bg2 my-2 text-bg1 dark:text-txt1 rounded-sm"
-            />
-            <input
-              type="text"
-              placeholder="Mensaje"
-              className="p-3 bg-txt1 dark:bg-bg2 border-b-2 border-bg2 my-2 text-bg1 dark:text-txt1 rounded-sm"
-            />
-            <div className="space-x-2 flex w-full">
-              <input type="checkbox" />
-              <p className="text-bg1 dark:text-txt2">Acepto los</p>
-              <a href="#" className="text-d1">
-                terminos de tratamientos de datos.
-              </a>
+    <div className="flex justify-center items-center w-[90%] p-20 max-w-[1300px] min-h-screen">
+      <div className="border-2 border-blanco shadow-md shadow-blanco flex min-h-[700px]">
+        <div className="flex w-1/2 justify-center items-center">
+          <div className=" h-[70%] flex flex-col">
+            <div className="h-[25%] flex flex-col justify-center items-center">
+              <div className="w-full flex flex-col items-center">
+                <h1 className="text-blanco font-bold text-center p-2 w-full text-xl">
+                  ¡CONTACTATE CON NOSOTROS!
+                </h1>
+                <p className="text-blanco text-center p-5 text-xs w-[60%]">
+                  Estamos aquí para ayudarte. Escribenos o llámanos para
+                  resolver cualquier duda o inquietud que tengas sobre nuestros
+                  servicios
+                </p>
+              </div>
             </div>
-          </form>
+            <div className="w-full h-full flex justify-center items-center">
+              <form
+                action="#"
+                className="flex flex-col gap-5 justify-center items-center w-[70%]"
+              >
+                <input
+                  type="text"
+                  placeholder="Nombre"
+                  className="font-thin text-blanco p-1 px-4 w-full bg-morado2 border border-blanco rounded-lg"
+                />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  className="font-thin text-blanco p-1 px-4 w-full bg-morado2 border border-blanco rounded-lg"
+                />
+                <input
+                  type="text"
+                  placeholder="Mensaje"
+                  className="font-thin text-blanco p-1 px-4 w-full pb-32 bg-morado2 border border-blanco rounded-lg"
+                />
+                <div className="w-full">
+                  <button className="bg-blanco text-morado px-16 py-2 font-bold text-xl rounded-lg">
+                    Enviar
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
-        <div className="bg-txt1 dark:bg-bg1 p-10 w-full flex flex-col justify-center items-center">
-          <p className="text-bg1 dark:text-txt1 p-2 text-xl w-full text-center">
-            Podes contactarnos tambien por email
-          </p>
-          <a href="#">
-            <i className="bi bi-envelope-fill text-bg1 dark:text-txt2 text-xl p-2 dark:hover:text-d1 hover:text-d1 transition-all"></i>
-          </a>
-        </div>
-        <div className="bg-txt1 dark:bg-bg1 p-10 flex flex-col justify-center items-center">
-          <p className="text-bg1 dark:text-txt1 text-xl w-full text-center">
-            Tambien podes encontrarnos en nuestras redes
-          </p>
-          <ul className="flex flex-wrap gap-5 w-full justify-around p-10">
-            <li>
-              <a href="#">
-                <i className="bi bi-twitch nbm"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="bi bi-discord nbm"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="bi bi-youtube nbm"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="bi bi-tiktok nbm"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="bi bi-twitter-x nbm"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="bi bi-instagram nbm"></i>
-              </a>
-            </li>
-          </ul>
+        <div className="w-1/2 bg-blanco rounded-tl-[200px] flex flex-col justify-center items-center">
+          <div className="flex flex-col justify-center items-start">
+            <h2 className="text-morado2 font-bold text-2xl w-[70%] text-start">
+              HABLEMOS
+            </h2>
+            <div className="w-full flex space-x-3 justify-center items-center p-4">
+              <i className="bi bi-envelope-fill text-xl text-morado2"></i>
+              <p className="text-morado2 text-xl text-start w-full">
+                arcenixcompany@gmail.com
+              </p>
+            </div>
+            <div className="w-full flex space-x-3 justify-center items-center p-4">
+              <i className="bi bi-telephone-fill text-xl text-morado2"></i>
+              <p className="text-morado2 text-xl text-start w-full">
+                1154366545
+              </p>
+            </div>
+            <div className="w-full flex space-x-3 justify-center items-center p-4">
+              <i className="bi bi-clock-fill text-xl text-morado2"></i>
+
+              <p className="text-morado2 text-xl text-start w-full">
+                Lunes a Viernes: 9 a 20hs
+              </p>
+            </div>
+            <div className="w-full p-4">
+              <div className="flex w-full justify-between items-start space-x-4">
+                <a
+                  href="#"
+                  className="bg-morado2 p-1 rounded-full w-8 h-8 flex justify-center items-center"
+                >
+                  <i className="bi bi-instagram text-xl text-blanco"></i>
+                </a>
+
+                <a
+                  href="#"
+                  className="bg-morado2 p-1 rounded-full w-8 h-8 flex justify-center items-center"
+                >
+                  <i className="bi bi-linkedin text-xm text-blanco"></i>
+                </a>
+
+                <a
+                  href="#"
+                  className="bg-morado2 p-1 rounded-full w-8 h-8 flex justify-center items-center"
+                >
+                  <i className="bi bi-tiktok text-xl text-blanco"></i>
+                </a>
+                <div className="flex justify-end items-end">
+                  <img src={logo} alt="" className="w-40 h-40 text-morado2 " />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
