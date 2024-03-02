@@ -1,25 +1,31 @@
 import React, { useEffect } from "react";
 import { NavbarDeps } from "../components/NavbarDeps";
+import { Carousel } from "../components/Carousel";
 
 const ArcenixGames = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  let slides = ["https://media.wired.com/photos/627da1085d49787abdf713b4/master/pass/Pakistani-Gamers-Want-a-Seat-at-the-Table-Culture-shutterstock_1949862841.jpg",
+                "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2022/09/mesa-gaming-2823889.jpg?tf=3840x",
+                "https://wallpapercave.com/wp/wp6001987.jpg",];
   return (
     <div>
       <div>
         <NavbarDeps />
       </div>
       <div className='min-h-screen d-block justify-center items-center'>
-        <h1 className='text-4xl text-center mt-10'>Arcenix <span className='text-pink-600'>Gaming</span></h1>
+        <div className="relative w-100">
+          <Carousel slides={slides} />
+        </div>
 
+        <h1 className='text-4xl dark:text-txt2 text-center mt-10'>Arcenix <span className='text-pink-600'>Gaming</span></h1>
         <p className="text-bg2 dark:text-txt2 text-justify px-12 py-5">
           Bienvenido al núcleo innovador de la diversión digital, donde la excelencia técnica se
           encuentra con la pasión por los juegos. Nuestro equipo de desarrollo de servidores de
           videojuegos está dedicado a crear infraestructuras robustas que transforman cada una
           experiencia inolvidable.
         </p>
-
         <div className="bg-txt1 dark:bg-bg1 dark:bg-opacity-75 my-5 px-12 h-[200px] flex flex-col justify-center">
           <h2 className="text-2xl text-center text-bg1 dark:text-pink-600">¿Quienes somos?</h2>
           <p className="text-bg2 dark:text-txt2 text-justify py-2">
@@ -29,7 +35,6 @@ const ArcenixGames = () => {
             universo virtual y volverlo realidad.
           </p>
         </div>
-
         <div className="bg-txt1 dark:bg-bg1 dark:bg-opacity-75 my-5 px-12 h-[200px] flex flex-col justify-center">
           <h2 className="text-2xl text-center text-bg1 dark:text-pink-600">¿Qué nos distingue?</h2>
           <p className="text-bg2 dark:text-txt2 text-justify py-2">
@@ -38,7 +43,6 @@ const ArcenixGames = () => {
             ávidos, sino que también mejoran la conectividad y la interacción en tiempo real.
           </p>
         </div>
-
         <div className="bg-txt1 dark:bg-bg1 dark:bg-opacity-75 my-5 px-12 h-[200px] flex flex-col justify-center">
           <h2 className="text-2xl text-center text-bg1 dark:text-pink-600">Nuestra Filosofía</h2>
           <p className="text-bg2 dark:text-txt2 text-justify py-2">
@@ -47,7 +51,6 @@ const ArcenixGames = () => {
             maximizar el rendimiento y la diversión.
           </p>
         </div>
-
         <div className="bg-txt1 dark:bg-bg1 dark:bg-opacity-75 my-5 p-12 flex flex-col justify-center">
           <h2 className="text-2xl mb-5c text-center text-bg1 dark:text-pink-600">Servicios Destacados</h2>
           <p className="text-bg2 dark:text-txt2 text-justify py-2">
@@ -60,7 +63,6 @@ const ArcenixGames = () => {
             </ul>
           </p>
         </div>
-
         <div className="bg-txt1 dark:bg-bg1 dark:bg-opacity-75 my-5 p-12 flex flex-col justify-center">
           <h2 className="text-2xl mb-5 text-center text-bg1 dark:text-pink-600">¿Por qué elegirnos?</h2>
           <p className="text-bg2 dark:text-txt2 text-justify py-2">

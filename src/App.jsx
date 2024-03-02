@@ -17,7 +17,7 @@ function App() {
     <>
       <Router>
         <div className="flex">
-          <div className="flex-none bg-gradient-to-br from-morado2 to-darkAzul fixed top-0 left-0 h-full hidden sm:block">
+          <div className="z-50 flex-none bg-gradient-to-br from-morado2 to-darkAzul fixed top-0 left-0 h-full hidden sm:block">
             <SideBar />
           </div>
           <div className="flex-auto sm:ml-20 bg-gradient-to-br from-morado2 to-darkAzul overflow-y-auto">

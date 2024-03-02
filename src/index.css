@@ -11,8 +11,8 @@
       text-xs
       dark:text-blanco
       hover:font-bold
-      hover:text-rosa
-      dark:hover:text-rosa
+      /* hover:text-rosa
+      dark:hover:text-rosa */
       transition-all 
       rounded-md 
       w-[80px]

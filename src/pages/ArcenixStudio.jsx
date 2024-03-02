@@ -1,17 +1,25 @@
 import React, { useEffect } from "react";
 import { NavbarDeps } from "../components/NavbarDeps";
+import { Carousel } from "../components/Carousel";
 
 const ArcenixStudio = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  let slides = ["https://eikonos.com/wp-content/uploads/2015/03/edicion-de-video.png",
+                "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2022/01/adobre-premiere-pro-cc-2601969.jpg?tf=3840x",
+                "https://shorthand.com/the-craft/video-editing-tools/assets/aDZ7Sx6TXn/shorthand-the-craft-video-editing-tools-subhead-1-2560x1440.webp",];
   return (
     <div>
       <div>
         <NavbarDeps />
       </div>
       <div className='min-h-screen d-block justify-center items-center'>
-        <h1 className='text-4xl text-center mt-10'>Arcenix <span className='text-indigo-500'>Studio</span></h1>
+        <div className="relative w-100">
+          <Carousel slides={slides} />
+        </div>
+
+        <h1 className='text-4xl dark:text-txt2 text-center mt-10'>Arcenix <span className='text-indigo-500'>Studio</span></h1>
 
         <p className="text-bg2 dark:text-txt2 text-justify px-12 py-5">
           Bienvenido al corazón creativo de nuestra empresa, donde cada pixel 

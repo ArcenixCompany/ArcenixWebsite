@@ -1,17 +1,25 @@
 import React, { useEffect } from "react";
 import { NavbarDeps } from "../components/NavbarDeps";
+import { Carousel } from "../components/Carousel";
 
 const ArcenixDesarrollo = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  let slides = ["https://www.itl.cat/pngfile/big/327-3274977_software-development.jpg",
+                "https://www.eweek.com/wp-content/uploads/2021/04/circuit-board.jpg",
+                "https://www.247digitize.com/wp-content/uploads/2023/03/blog-image-on-data-management.jpg",];
   return (
     <div>
       <div>
         <NavbarDeps />
       </div>
       <div className='min-h-screen d-block justify-center items-center'>
-        <h1 className='text-4xl text-center mt-10'>Arcenix <span className='text-emerald-600'>Develop</span></h1>
+        <div className="relative w-100">
+          <Carousel slides={slides} />
+        </div>
+
+        <h1 className='text-4xl dark:text-txt2 text-center mt-10'>Arcenix <span className='text-emerald-600'>Develop</span></h1>
 
         <p className="text-bg2 dark:text-txt2 text-justify px-12 py-5">
           El corazón de innovación tecnológica de Arcenix Company. Conformado por un equipo
