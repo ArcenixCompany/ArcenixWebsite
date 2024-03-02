@@ -17,7 +17,7 @@ const NavbarDeps = () => {
           <div className="nbb hover:text-emerald-400 dark:hover:text-emerald-400">
             <i className="bi bi-code-slash text-xl"></i>
             <p>Arcenix</p>
-            <p>Desarrollo</p>
+            <p>Develop</p>
           </div>
         </NavLink>
 

@@ -19,7 +19,9 @@ const ArcenixGames = () => {
           <Carousel slides={slides} />
         </div>
 
-        <h1 className='text-4xl dark:text-txt2 text-center mt-10'>Arcenix <span className='text-pink-600'>Gaming</span></h1>
+        <h1 className='text-5xl dark:text-txt2 text-center mt-10 mb-6 tracking-wider font-bold uppercase'
+          style={{ fontFamily: "'Helvetica Neue', sans-serif" }}
+        >Arcenix <span className='text-pink-600'>Gaming</span></h1>
         <p className="text-bg2 dark:text-txt2 text-justify px-12 py-5">
           Bienvenido al núcleo innovador de la diversión digital, donde la excelencia técnica se
           encuentra con la pasión por los juegos. Nuestro equipo de desarrollo de servidores de

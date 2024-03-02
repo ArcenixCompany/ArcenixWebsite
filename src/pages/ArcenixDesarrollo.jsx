@@ -19,7 +19,9 @@ const ArcenixDesarrollo = () => {
           <Carousel slides={slides} />
         </div>
 
-        <h1 className='text-4xl dark:text-txt2 text-center mt-10'>Arcenix <span className='text-emerald-600'>Develop</span></h1>
+        <h1 className='text-5xl dark:text-txt2 text-center mt-10 mb-6 tracking-wider uppercase font-bold'
+          style={{ fontFamily: "'Helvetica Neue', sans-serif" }}
+        >Arcenix <span className='text-emerald-600'>Develop</span></h1>
 
         <p className="text-bg2 dark:text-txt2 text-justify px-12 py-5">
           El corazón de innovación tecnológica de Arcenix Company. Conformado por un equipo

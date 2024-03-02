@@ -19,7 +19,9 @@ const ArcenixStudio = () => {
           <Carousel slides={slides} />
         </div>
 
-        <h1 className='text-4xl dark:text-txt2 text-center mt-10'>Arcenix <span className='text-indigo-500'>Studio</span></h1>
+        <h1 className='text-5xl dark:text-txt2 text-center mt-10 mb-6 tracking-wider font-bold uppercase'
+          style={{ fontFamily: "'Helvetica Neue', sans-serif" }}
+        >Arcenix <span className='text-indigo-500'>Studio</span></h1>
 
         <p className="text-bg2 dark:text-txt2 text-justify px-12 py-5">
           Bienvenido al corazón creativo de nuestra empresa, donde cada pixel 
