@@ -37,6 +37,129 @@ const ArcenixGames = () => {
             universo virtual y volverlo realidad.
           </p>
         </div>
+
+        <section className="w-full p-2 bg-d2 flex flex-wrap gap-10 justify-center">
+          <div className="bg-purple-950 h-fit group flex flex-col justify-center items-center text-center rounded-xl z-10 mt-4">
+            <div className="relative overflow-hidden rounded-t-xl py-6">
+              <div className="rounded-full border-white border-2 p-1 mx-10">
+                <div className="rounded-full w-[125px] h-[125px] overflow-hidden">
+                  <img className="w-full" src={"https://hips.hearstapps.com/ellees.h-cdn.co/assets/15/37/1024x1332/1024x1332-por-ti-rostros-activos-personas-luchadoras-12718597-1-esl-es-rostros-activos-personas-luchadoras-jpg.jpg?resize=980:*"} alt="foto" />
+                </div>
+              </div>
+              <h2 className="text-xl text-blanco font-bold p-2 mt-4 uppercase"
+                style={{ transform: "scaleY(1.2)", display: "inline-block" }}
+              >Luciana</h2>
+              <p className="text-lg text-blanco font-thin tracking-tight uppercase opacity-40">
+                STAFF</p>
+            </div>
+            <div className="bg-white w-full flex justify-center space-x-5 py-4 rounded-b-lg">
+              <div className="bg-purple-950 rounded-full w-9 h-9 flex items-center justify-center">
+                <a
+                  href=""
+                  target="_blank"
+                >
+                  <i className="bi bi-instagram text-white"></i>
+                </a>
+              </div>
+
+              <div className="bg-purple-950 rounded-full w-9 h-9 flex items-center justify-center">
+                <a
+                  href=""
+                  target="_blank"
+                >
+                  <i className="bi bi-linkedin text-white"></i>
+                </a>
+              </div>
+
+              <div className="bg-purple-950 rounded-full w-9 h-9 flex items-center justify-center">
+                <a href="">
+                  <i className="bi bi-twitter-x text-white"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-purple-950 h-fit group flex flex-col justify-center items-center text-center rounded-xl z-10 mt-4">
+            <div className="relative overflow-hidden rounded-t-xl py-6">
+              <div className="rounded-full border-white border-2 p-1 mx-10">
+                <div className="rounded-full w-[125px] h-[125px] overflow-hidden">
+                  <img className="w-full" src={"https://hips.hearstapps.com/ellees.h-cdn.co/assets/15/37/1024x1332/1024x1332-por-ti-rostros-activos-personas-luchadoras-12718597-1-esl-es-rostros-activos-personas-luchadoras-jpg.jpg?resize=980:*"} alt="foto" />
+                </div>
+              </div>
+              <h2 className="text-xl text-blanco font-bold p-2 mt-4 uppercase"
+                style={{ transform: "scaleY(1.2)", display: "inline-block" }}
+              >Veronica</h2>
+              <p className="text-lg text-blanco font-thin tracking-tight uppercase opacity-40"
+              >MODERADOR</p>
+            </div>
+            <div className="bg-white w-full flex justify-center space-x-5 py-4 rounded-b-lg">
+              <div className="bg-purple-950 rounded-full w-9 h-9 flex items-center justify-center">
+                <a
+                  href=""
+                  target="_blank"
+                >
+                  <i className="bi bi-instagram text-white"></i>
+                </a>
+              </div>
+
+              <div className="bg-purple-950 rounded-full w-9 h-9 flex items-center justify-center">
+                <a
+                  href=""
+                  target="_blank"
+                >
+                  <i className="bi bi-linkedin text-white"></i>
+                </a>
+              </div>
+
+              <div className="bg-purple-950 rounded-full w-9 h-9 flex items-center justify-center">
+                <a href="">
+                  <i className="bi bi-twitter-x text-white"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-purple-950 h-fit group flex flex-col justify-center items-center text-center rounded-xl z-10 my-4">
+            <div className="relative overflow-hidden rounded-t-xl py-6">
+              <div className="rounded-full border-white border-2 p-1 mx-10">
+                <div className="rounded-full w-[125px] h-[125px] overflow-hidden">
+                  <img className="w-full" src={"https://hips.hearstapps.com/ellees.h-cdn.co/assets/15/37/1024x1332/1024x1332-por-ti-rostros-activos-personas-luchadoras-12718597-1-esl-es-rostros-activos-personas-luchadoras-jpg.jpg?resize=980:*"} alt="foto" />
+                </div>
+              </div>
+              <h2 className="text-xl text-blanco font-bold p-2 mt-4 uppercase"
+                style={{ transform: "scaleY(1.2)", display: "inline-block" }}
+              >Martina</h2>
+              <p className="text-lg text-blanco font-thin tracking-tight uppercase opacity-40 px-4 text-wrap"
+              >MODERADOR</p>
+            </div>
+            <div className="bg-white w-full flex justify-center space-x-5 py-4 rounded-b-lg">
+              <div className="bg-purple-950 rounded-full w-9 h-9 flex items-center justify-center">
+                <a
+                  href=""
+                  target="_blank"
+                >
+                  <i className="bi bi-instagram text-white"></i>
+                </a>
+              </div>
+
+              <div className="bg-purple-950 rounded-full w-9 h-9 flex items-center justify-center">
+                <a
+                  href=""
+                  target="_blank"
+                >
+                  <i className="bi bi-linkedin text-white"></i>
+                </a>
+              </div>
+
+              <div className="bg-purple-950 rounded-full w-9 h-9 flex items-center justify-center">
+                <a href="">
+                  <i className="bi bi-twitter-x text-white"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <div className="bg-txt1 dark:bg-bg1 dark:bg-opacity-75 my-5 px-12 h-[200px] flex flex-col justify-center">
           <h2 className="text-2xl text-center text-bg1 dark:text-pink-600">¿Qué nos distingue?</h2>
           <p className="text-bg2 dark:text-txt2 text-justify py-2">

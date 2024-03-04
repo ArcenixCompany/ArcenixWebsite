@@ -4,8 +4,12 @@ import LogoWhite from "../views/svg/LogoWhite.svg";
 import LogoViolet from '../views/svg/LogoViolet.svg'
 import { NavLink } from "react-router-dom";
 import '../styles/custom.css';
+import { useState } from "react";
 
 const Inicio = () => {
+  const [isDevHovered, setDevIsHovered] = useState(false);
+  const [isStuHovered, setStuIsHovered] = useState(false);
+  const [isGamHovered, setGamIsHovered] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -24,51 +28,69 @@ const Inicio = () => {
           </div>
         </div>
       </div>
+      
+      <div className="flex flex-col lg:flex-row w-full items-center justify-around pb-16">
+        <NavLink
+          to="/deps/arcDes"
+          className="card-inicio-dep shadow-sm shadow-bg1 mt-4 rounded-xl"
+          onMouseEnter={() => setDevIsHovered(true)}
+          onMouseLeave={() => setDevIsHovered(false)}
+        >
+          <p className="text-xl text-emerald-500" 
+            style={{ textShadow: isDevHovered ? '0 0 13px rgba(16, 185, 129, 0.6)' : 'none' }}
+          >Arcenix Develop</p>
+          <p className="p-4 text-bg1 dark:text-txt2 text-center">
+            En Arcenix Develop vas a poder contratar servicios de desarrollo
+            web.
+          </p>
+          <div className="bg-opacity-0 rounded-full w-[55px] h-[55px] flex items-center justify-center">
+            <img src={LogoWhite} alt="LogoWhite"  />
+          </div>
+        </NavLink>
+
+        <NavLink
+          to="/deps/arcStudio"
+          className="card-inicio-dep shadow-sm shadow-bg1 mt-4 rounded-xl"
+          onMouseEnter={() => setStuIsHovered(true)}
+          onMouseLeave={() => setStuIsHovered(false)}
+        >
+          <p className="text-xl text-indigo-600" 
+            style={{ textShadow: isStuHovered ? '0 0 13px rgba(99, 102, 241, 0.6)' : 'none' }}
+          >Arcenix Studio</p>
+          <p className="p-4 text-bg1 dark:text-txt2 text-center">
+            En Arcenix Studio vas a poder contratar servicios de diseño gráfico.
+          </p>
+          <div className="bg-opacity-0 rounded-full w-[55px] h-[55px] flex items-center justify-center">
+            <img src={LogoWhite} alt="LogoWhite"  />
+          </div>
+        </NavLink>
+
+        <NavLink
+          to="/deps/arcGames"
+          className="card-inicio-dep shadow-sm shadow-bg1 mt-4 rounded-xl"
+          onMouseEnter={() => setGamIsHovered(true)}
+          onMouseLeave={() => setGamIsHovered(false)}
+        >
+          <p className="text-xl text-pink-600" 
+            style={{ textShadow: isGamHovered ? '0 0 13px rgba(236, 72, 153, 0.6)' : 'none' }}
+            >Arcenix Gaming</p>
+          <p className="p-4 text-bg1 dark:text-txt2 text-center">
+            En Arcenix Gaming vas a poder acceder a nuestros servidores de
+            videojuegos
+          </p>
+          <div className="bg-opacity-0 rounded-full w-[55px] h-[55px] flex items-center justify-center">
+            <img src={LogoWhite} alt="LogoWhite"  />
+          </div>
+        </NavLink>
+      </div>
 
       <div>
-        <div className="flex flex-col lg:flex-row w-full items-center justify-around">
-          <NavLink
-            to="/deps/arcDes"
-            className="card-inicio-dep shadow-sm shadow-bg1 mt-4"
-          >
-            <p className="text-rosa">Arcenix Desarrollo</p>
-            <p className="p-4 text-bg1 dark:text-txt2  text-justify">
-              En Arcenix desarrollo vas a poder contratar servicios de
-              desarrollo web.
-            </p>
-            <div className=" w-[55px] h-[55px] flex items-center justify-center">
-              <img src={LogoWhite} alt="LogoWhite" />
-            </div>
-          </NavLink>
-
-          <NavLink
-            to="/deps/arcStudio"
-            className="card-inicio-dep shadow-sm shadow-bg1 mt-4"
-          >
-            <p className="text-rosa">Arcenixs Studio</p>
-            <p className="p-4 text-bg1 dark:text-txt2  text-justify">
-              En Arcenix Studio vas a poder contratar servicios de diseño
-              gráfico.
-            </p>
-            <div className=" w-[55px] h-[55px] flex items-center justify-center">
-              <img src={LogoWhite} alt="LogoWhite"  />
-            </div>
-          </NavLink>
-
-          <NavLink
-            to="/deps/arcGames"
-            className="card-inicio-dep shadow-sm shadow-bg1 mt-4"
-          >
-            <p className="text-rosa">Arcenixs Games</p>
-            <p className="p-4 text-bg1 dark:text-txt2  text-justify">
-              En Arcenix Games vas a poder acceder a nuestros servidores de
-              videojuegos
-            </p>
-            <div className=" w-[55px] h-[55px] flex items-center justify-center">
-              <img src={LogoWhite} alt="LogoWhite"  />
-            </div>
-          </NavLink>
-        </div>
+        <p className="text-bg1 dark:text-blanco text-[35px] font-bold text-center">Patrocinador</p>
+      </div>
+      <div className="flex flex-col lg:flex-row w-full items-center justify-around pb-10">
+        <img src={"https://upload.wikimedia.org/wikipedia/commons/6/6f/9zteam_logo.png"} alt="Logo 9z"  
+          style={{ filter: 'drop-shadow(0 0 10px rgba(0, 0, 0, 0.7))' }}
+        />
       </div>
     </div>
   );
