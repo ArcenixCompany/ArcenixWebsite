@@ -19,16 +19,24 @@ const ArcenixStudio = () => {
           <Carousel slides={slides} />
         </div>
 
-        <h1 className='text-5xl dark:text-txt2 text-center mt-10 mb-6 tracking-wider font-bold uppercase'
+        <h1 className='text-5xl dark:text-txt2 text-center mt-10 mb-6 tracking-tight font-bold uppercase'
           style={{ fontFamily: "'Helvetica Neue', sans-serif" }}
         >Arcenix <span className='text-indigo-500'>Studio</span></h1>
 
-        <p className="text-bg2 dark:text-txt2 text-justify px-12 py-5">
-          Bienvenido al corazón creativo de nuestra empresa, donde cada pixel 
-          cuenta una historia y cada sonido evoca emociones. Nuestro equipo
-          de diseño gráfico y audiovisual está formado por mentes innovadoras y apasionadas que
-          transforman ideas en experiencias visuales cautivadoras.
-        </p>
+        <div className="flex px-40 py-12">
+          <p className="text-xl text-bg2 dark:text-txt2 tracking-tight text-justify pr-16">
+            Bienvenido al corazón creativo de nuestra empresa, donde cada pixel 
+            cuenta una historia y cada sonido evoca emociones. Nuestro equipo
+            de diseño gráfico y audiovisual está formado por mentes innovadoras y apasionadas que
+            transforman ideas en experiencias visuales cautivadoras.
+          </p>
+          <div className="block min-w-[170px] h-fit bg-morado2 rounded-xl border-2 border-white text-center py-8 px-4">
+            <i className="bi bi-vector-pen text-white text-6xl"></i>
+            <p className="text-m text-blanco font-bold mt-2"
+              >Diseño grafico</p>
+          </div>
+        </div>
+        
 
         <div className="bg-txt1 dark:bg-bg1 dark:bg-opacity-75 my-5 px-12 h-[200px] flex flex-col justify-center">
           <h2 className="text-2xl text-center text-bg1 dark:text-indigo-500">¿Quienes somos?</h2>
@@ -40,7 +48,7 @@ const ArcenixStudio = () => {
         </div>
 
         <section className="w-full p-2 bg-d2 flex flex-wrap gap-10 justify-center">
-          <div className="bg-purple-950 h-fit group flex flex-col justify-center items-center text-center rounded-xl z-10 mt-4">
+          <div className="bg-morado2 h-fit group flex flex-col justify-center items-center text-center rounded-xl shadow-xl z-10 mt-4">
             <div className="relative overflow-hidden rounded-t-xl py-6">
               <div className="rounded-full border-white border-2 p-1 mx-10">
                 <div className="rounded-full w-[125px] h-[125px] overflow-hidden">
@@ -48,13 +56,12 @@ const ArcenixStudio = () => {
                 </div>
               </div>
               <h2 className="text-xl text-blanco font-bold p-2 mt-4 uppercase"
-                style={{ transform: "scaleY(1.2)", display: "inline-block" }}
               >Luciana</h2>
-              <p className="text-lg text-blanco font-thin tracking-tight uppercase opacity-40">
+              <p className="text-lg text-blanco font-thin tracking-tight leading-none uppercase opacity-40">
                 DISEÑADOR<br></br>GRAFICO</p>
             </div>
             <div className="bg-white w-full flex justify-center space-x-5 py-4 rounded-b-lg">
-              <div className="bg-purple-950 rounded-full w-9 h-9 flex items-center justify-center">
+              <div className="bg-morado2 rounded-full w-9 h-9 flex items-center justify-center">
                 <a
                   href=""
                   target="_blank"
@@ -63,7 +70,7 @@ const ArcenixStudio = () => {
                 </a>
               </div>
 
-              <div className="bg-purple-950 rounded-full w-9 h-9 flex items-center justify-center">
+              <div className="bg-morado2 rounded-full w-9 h-9 flex items-center justify-center">
                 <a
                   href=""
                   target="_blank"
@@ -72,15 +79,15 @@ const ArcenixStudio = () => {
                 </a>
               </div>
 
-              <div className="bg-purple-950 rounded-full w-9 h-9 flex items-center justify-center">
+              <div className="bg-morado2 rounded-full w-9 h-9 flex items-center justify-center">
                 <a href="">
-                  <i className="bi bi-twitter-x text-white"></i>
+                  <i className="bi bi-envelope-fill text-white"></i>
                 </a>
               </div>
             </div>
           </div>
 
-          <div className="bg-purple-950 h-fit group flex flex-col justify-center items-center text-center rounded-xl z-10 mt-4">
+          <div className="bg-morado2 h-fit group flex flex-col justify-center items-center text-center rounded-xl shadow-xl z-10 mt-4">
             <div className="relative overflow-hidden rounded-t-xl py-6">
               <div className="rounded-full border-white border-2 p-1 mx-10">
                 <div className="rounded-full w-[125px] h-[125px] overflow-hidden">
@@ -88,13 +95,12 @@ const ArcenixStudio = () => {
                 </div>
               </div>
               <h2 className="text-xl text-blanco font-bold p-2 mt-4 uppercase"
-                style={{ transform: "scaleY(1.2)", display: "inline-block" }}
               >Veronica</h2>
-              <p className="text-lg text-blanco font-thin tracking-tight uppercase opacity-40"
+              <p className="text-lg text-blanco font-thin tracking-tight leading-none uppercase opacity-40"
                 >DISEÑADOR<br></br>GRAFICO</p>
             </div>
             <div className="bg-white w-full flex justify-center space-x-5 py-4 rounded-b-lg">
-              <div className="bg-purple-950 rounded-full w-9 h-9 flex items-center justify-center">
+              <div className="bg-morado2 rounded-full w-9 h-9 flex items-center justify-center">
                 <a
                   href=""
                   target="_blank"
@@ -103,7 +109,7 @@ const ArcenixStudio = () => {
                 </a>
               </div>
 
-              <div className="bg-purple-950 rounded-full w-9 h-9 flex items-center justify-center">
+              <div className="bg-morado2 rounded-full w-9 h-9 flex items-center justify-center">
                 <a
                   href=""
                   target="_blank"
@@ -112,15 +118,15 @@ const ArcenixStudio = () => {
                 </a>
               </div>
 
-              <div className="bg-purple-950 rounded-full w-9 h-9 flex items-center justify-center">
+              <div className="bg-morado2 rounded-full w-9 h-9 flex items-center justify-center">
                 <a href="">
-                  <i className="bi bi-twitter-x text-white"></i>
+                  <i className="bi bi-envelope-fill text-white"></i>
                 </a>
               </div>
             </div>
           </div>
 
-          <div className="bg-purple-950 h-fit group flex flex-col justify-center items-center text-center rounded-xl z-10 my-4">
+          <div className="bg-morado2 h-fit group flex flex-col justify-center items-center text-center rounded-xl shadow-xl z-10 my-4">
             <div className="relative overflow-hidden rounded-t-xl py-6">
               <div className="rounded-full border-white border-2 p-1 mx-10">
                 <div className="rounded-full w-[125px] h-[125px] overflow-hidden">
@@ -128,13 +134,12 @@ const ArcenixStudio = () => {
                 </div>
               </div>
               <h2 className="text-xl text-blanco font-bold p-2 mt-4 uppercase"
-                style={{ transform: "scaleY(1.2)", display: "inline-block" }}
               >Martina</h2>
-              <p className="text-lg text-blanco font-thin tracking-tight uppercase opacity-40 px-4 text-wrap"
+              <p className="text-lg text-blanco font-thin tracking-tight leading-none uppercase opacity-40 px-4 text-wrap"
                 >EDITOR<br></br>MULTIMEDIA</p>
             </div>
             <div className="bg-white w-full flex justify-center space-x-5 py-4 rounded-b-lg">
-              <div className="bg-purple-950 rounded-full w-9 h-9 flex items-center justify-center">
+              <div className="bg-morado2 rounded-full w-9 h-9 flex items-center justify-center">
                 <a
                   href=""
                   target="_blank"
@@ -143,7 +148,7 @@ const ArcenixStudio = () => {
                 </a>
               </div>
 
-              <div className="bg-purple-950 rounded-full w-9 h-9 flex items-center justify-center">
+              <div className="bg-morado2 rounded-full w-9 h-9 flex items-center justify-center">
                 <a
                   href=""
                   target="_blank"
@@ -152,9 +157,9 @@ const ArcenixStudio = () => {
                 </a>
               </div>
 
-              <div className="bg-purple-950 rounded-full w-9 h-9 flex items-center justify-center">
+              <div className="bg-morado2 rounded-full w-9 h-9 flex items-center justify-center">
                 <a href="">
-                  <i className="bi bi-twitter-x text-white"></i>
+                  <i className="bi bi-envelope-fill text-white"></i>
                 </a>
               </div>
             </div>
