@@ -102,10 +102,11 @@ const Inicio = () => {
           </h2>
           <div className="flex justify-center">
             <p className=" text-blanco text-xl text-center p-5 w-[70%]">
-              Somos una empresa en continuo desarrollo y crecimiento, compuesta
-              por un equipo selecto de profesionales dedicados al diseño y
-              desarrollo de servidores de videojuegos; así como a la creación de
-              productos en el ámbito del diseño digital y el desarrollo web.
+              Somos una empresa de desarrollo de software en argentina con
+              relevancia en la escena mundial, constituida por profesionales y
+              amantes de los videojuegos. Ofrecemos una amplia gama de servicios
+              personalizados y soluciones tecnológicas para satisfacer la
+              demanda del mundo digital.
             </p>
           </div>
         </div>
