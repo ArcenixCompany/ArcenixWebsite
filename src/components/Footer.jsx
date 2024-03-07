@@ -143,7 +143,7 @@ const Footer = () => {
       </div>
 
       {/* Texto de derechos de autor */}
-      <div className="flex justify-center items-center  bg-txt1 dark:bg-bg1">
+      <div className="flex justify-center items-center p-3 bg-txt1 dark:bg-gris2">
         <p className="text-gray-500 text-sm">
           © 2024 Arcenix Company. Todos los derechos reservados.
         </p>

@@ -5,53 +5,43 @@
 @layer {
   /* nbb = estilos del "navbar button media" */
   .nbb {
-    @apply 
-      gap-2 
-      text-center 
-      text-xs
-      dark:text-blanco
-      hover:font-bold
-      /* hover:text-rosa
-      dark:hover:text-rosa */
-      transition-all 
-      rounded-md 
-      w-[80px]
-      my-3;
+    @apply gap-2 text-center text-xs dark:text-blanco hover:font-bold hover:text-rosa dark:hover:text-rosa transition-all rounded-md w-[80px] my-3;
   }
+
   /* nbb = estilos del "navbar button" */
   .nbm {
-    @apply 
-        text-bg1
-        dark:text-txt2
-        hover:text-rosa
-        dark:hover:text-rosa
-        text-xl 
-        transition-all
-        hover:shadow-2xl;
+    @apply text-bg1 dark:text-txt2 dark:hover:text-rosa text-xl transition-all hover:shadow-2xl;
   }
+
   .contenedorTeam {
-    @apply 
-        w-[230px]
-        h-[326px]
-        overflow-hidden;
+    @apply w-[230px] h-[326px] overflow-hidden;
   }
+
   .imagenes {
-    @apply 
-        w-fit
-        h-1/2
-        object-cover;
+    @apply w-fit h-1/2 object-cover;
   }
+
   .card-inicio-dep {
     @apply 
-        p-3 
-        h-[300px] 
-        w-[300px] 
-        hover:bg-bg1
-        transition-all
-        duration-500
-        flex 
-        flex-col 
-        justify-center 
-        items-center;
+    bg-gris2
+    p-5
+    transition-all 
+    duration-500
+    h-[410px]
+    w-[350px]
+    rounded-md
+    flex
+    flex-col
+    justify-evenly
   }
+}
+.boton {
+  @apply 
+  text-blanco
+  p-3
+  bg-morado
+  rounded-full
+  text-sm
+  hover:bg-morado2
+  transition-all
 }

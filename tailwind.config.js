@@ -9,6 +9,9 @@ module.exports = {
       'sans': ['Helvetica']
     },
     extend: {
+      boxShadow: {
+        custom: '0 0 30px rgba(00, 1, 1, 1)',
+      },
       colors: {
         'txt1':'#f5f5dc',
         'txt2': '#CCCCCC',

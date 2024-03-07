@@ -1,95 +1,244 @@
 // import back1 from "../views/img/backText.jpg";
 import { useEffect } from "react";
-import LogoWhite from "../views/svg/LogoWhite.svg";
-import LogoViolet from '../views/svg/LogoViolet.svg'
+import pluma from "../views/svg/pluma.svg";
+import monitor from "../views/svg/monitor.svg";
+import controller from "../views/svg/controller.svg";
 import { NavLink } from "react-router-dom";
-import '../styles/custom.css';
+import "../styles/custom.css";
 import { useState } from "react";
+import bgHome from "../views/img/bg-home.png";
+import bgmen from "../views/img/bg-men-work.png";
 
 const Inicio = () => {
   const [isDevHovered, setDevIsHovered] = useState(false);
   const [isStuHovered, setStuIsHovered] = useState(false);
   const [isGamHovered, setGamIsHovered] = useState(false);
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+
+  const SMedia = [
+    {
+      src: "instagram",
+      path: "https://www.instagram.com/arcenixgame/",
+    },
+    {
+      src: "linkedin",
+      path: "https://www.linkedin.com/in/arcenix-company-5808b12b4/",
+    },
+    {
+      src: "tiktok",
+      path: "https://www.tiktok.com/@arcenixcompany",
+    },
+  ];
+
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
   return (
-    <div className="bg-gradient-to-r from-gris to-blanco dark:bg-gradient-to-r dark:from-morado2 dark:to-darkAzul flex flex-col p-5">
-      <div className="min-h-screen w-full flex justify-center items-center">
-        <div className="w-full h-full bg-cover bg-center flex flex-col sm:flex-row justify-center items-center space-x-6">
-          <img
-            src={LogoViolet}
-            alt="LogoWhite"
-            className="w-[200px] h-[200px]"
-          />
-          <div>
-            <p className="text-bg1 dark:text-blanco text-[50px] font-bold">Arcenix</p>
-            <p className="text-bg1 dark:text-rosaClaro text-[50px] font-bold">Company</p>
+    <div>
+      <div
+        className="bg-cover bg-center flex w-full py-32"
+        style={{ backgroundImage: `url(${bgHome})` }}
+      >
+        <div className="w-full flex justify-center items-center">
+          <div className="w-[50%]  flex flex-col justify-between items-end">
+            <div className="w-[70%] flex flex-col justify-end items-">
+              <h1
+                className="text-5xl dark:text-txt2 text-start px-8 py-4 tracking-tight font-bold uppercase"
+                style={{ fontFamily: "'Helvetica Neue', sans-serif" }}
+              >
+                Arcenix <span className="text-blanco">Company</span>
+              </h1>
+              <p className="text-blanco px-8 py-2 m-1">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
+                doloremque ipsam id at, explicabo, reiciendis, atque inventore
+                iusto culpa quisquam asperiores repudiandae distinctio porro
+                aliquam dolorem earum suscipit adipisci animi.
+              </p>
+              <h3 className="text-blanco font-bold px-8 py-2 m-1">
+                Servicios de diseño | desarrollo web | Gaming
+              </h3>
+              <div className=" px-8 py-2 m-1 space-x-3">
+                <button className="boton">Quiero saber más</button>
+                <button className="boton">Contactanos</button>
+              </div>
+            </div>
+          </div>
+
+          <div className="w-[50%] h-full  flex flex-col justify-center items-center">
+            <div className="w-full h-full flex flex-col justify-end items-center">
+              <div className="flex flex-col">
+                <h3 className="text-blanco font-bold text-xl">
+                  Siguenos en nuestras redes
+                </h3>
+                <div className="flex justify-around">
+                  {SMedia.map((a, b) => (
+                    <li
+                      key={b}
+                      className={`text-bg1 dark:text-txt1 text-sm flex items-center gap-x-4 cursor-pointer p-2 rounded-md ${
+                        a.gap ? "mt-9" : "mt-2"
+                      } ${!open && "justify-center"}`}
+                    >
+                      <a
+                        href={a.path}
+                        className="space-x-3 bg-blanco w-10 h-10 flex justify-center items-center rounded-full hover:bg-morado transition-all"
+                        target="_blank"
+                      >
+                        <i
+                          className={`bi bi-${a.src} text-morado2 text-xl`}
+                        ></i>
+                      </a>
+                    </li>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      
-      <div className="flex flex-col lg:flex-row w-full items-center justify-around pb-16">
-        <NavLink
-          to="/deps/arcDes"
-          className="card-inicio-dep shadow-sm shadow-bg1 mt-4 rounded-xl"
-          onMouseEnter={() => setDevIsHovered(true)}
-          onMouseLeave={() => setDevIsHovered(false)}
-        >
-          <p className="text-xl text-emerald-500" 
-            style={{ textShadow: isDevHovered ? '0 0 13px rgba(16, 185, 129, 0.6)' : 'none' }}
-          >Arcenix Develop</p>
-          <p className="p-4 text-bg1 dark:text-txt2 text-center">
-            En Arcenix Develop vas a poder contratar servicios de desarrollo
-            web.
-          </p>
-          <div className="bg-opacity-0 rounded-full w-[55px] h-[55px] flex items-center justify-center">
-            <img src={LogoWhite} alt="LogoWhite"  />
-          </div>
-        </NavLink>
 
-        <NavLink
-          to="/deps/arcStudio"
-          className="card-inicio-dep shadow-sm shadow-bg1 mt-4 rounded-xl"
-          onMouseEnter={() => setStuIsHovered(true)}
-          onMouseLeave={() => setStuIsHovered(false)}
-        >
-          <p className="text-xl text-indigo-600" 
-            style={{ textShadow: isStuHovered ? '0 0 13px rgba(99, 102, 241, 0.6)' : 'none' }}
-          >Arcenix Studio</p>
-          <p className="p-4 text-bg1 dark:text-txt2 text-center">
-            En Arcenix Studio vas a poder contratar servicios de diseño gráfico.
-          </p>
-          <div className="bg-opacity-0 rounded-full w-[55px] h-[55px] flex items-center justify-center">
-            <img src={LogoWhite} alt="LogoWhite"  />
+      <div className="bg-darkAzul min-h-screen py-10">
+        <div>
+          <h2 className="text-blanco font-bold text-3xl w-full text-center p-5">
+            ¿QUIENES SOMOS?
+          </h2>
+          <div className="flex justify-center">
+            <p className=" text-blanco text-xl text-center p-5 w-[70%]">
+              Somos una empresa en continuo desarrollo y crecimiento, compuesta
+              por un equipo selecto de profesionales dedicados al diseño y
+              desarrollo de servidores de videojuegos; así como a la creación de
+              productos en el ámbito del diseño digital y el desarrollo web.
+            </p>
           </div>
-        </NavLink>
+        </div>
+        <div className="flex flex-col flex-wrap gap-10 lg:flex-row w-full items-center justify-around p-10 ">
+          <div className="card-inicio-dep">
+            <div className="p-3">
+              <img src={pluma} />
+            </div>
+            <p
+              className="text-3xl font-bold px-3 text-blanco"
+              style={{
+                textShadow: isStuHovered
+                  ? "0 0 13px rgba(99, 102, 241, 0.6)"
+                  : "none",
+              }}
+            >
+              Arcenix Studio
+            </p>
+            <p className="text-gray-400 text-sm px-3 pb-10 pt-2">
+              Bienvenido al corazón creativo de nuestra empresa, donde cada
+              pixel cuenta una historia y cada sonido evoca emociones. Nuestro
+              equipo de diseño gráfico y audiovisual está formado por mentes
+              innovadoras y apasionadas que transforman ideas en experiencias
+              visuales cautivadoras.
+            </p>
+            <NavLink
+              to="/deps/arcStudio"
+              className="flex space-x-2 p-2 px-10 bg-morado w-fit text-blanco font-bold text-xl"
+              onMouseEnter={() => setStuIsHovered(true)}
+              onMouseLeave={() => setStuIsHovered(false)}
+            >
+              <p>Saber más</p>
+              <i class="bi bi-arrow-right"></i>
+            </NavLink>
+          </div>
 
-        <NavLink
-          to="/deps/arcGames"
-          className="card-inicio-dep shadow-sm shadow-bg1 mt-4 rounded-xl"
-          onMouseEnter={() => setGamIsHovered(true)}
-          onMouseLeave={() => setGamIsHovered(false)}
-        >
-          <p className="text-xl text-pink-600" 
-            style={{ textShadow: isGamHovered ? '0 0 13px rgba(236, 72, 153, 0.6)' : 'none' }}
-            >Arcenix Gaming</p>
-          <p className="p-4 text-bg1 dark:text-txt2 text-center">
-            En Arcenix Gaming vas a poder acceder a nuestros servidores de
-            videojuegos
-          </p>
-          <div className="bg-opacity-0 rounded-full w-[55px] h-[55px] flex items-center justify-center">
-            <img src={LogoWhite} alt="LogoWhite"  />
+          <div className="card-inicio-dep">
+            <div className="p-3">
+              <img src={monitor} />
+            </div>
+            <p
+              className="text-3xl font-bold px-3 text-blanco"
+              style={{
+                textShadow: isStuHovered
+                  ? "0 0 13px rgba(99, 102, 241, 0.6)"
+                  : "none",
+              }}
+            >
+              Arcenix Desarrollo
+            </p>
+            <p className="text-gray-400 text-sm px-3 pb-10 pt-2">
+              El corazón de innovación tecnológica de Arcenix Company.
+              Conformado por un equipo apasionado de desarrolladores dedicados a
+              construir el futuro digital, donde cada línea de código es una
+              oportunidad para transformar ideas en realidad. Nuestro equipo de
+              desarrolladores trabaja incansablemente para construir soluciones
+              digitales sólidas y vanguardistas.
+            </p>
+            <NavLink
+              to="/deps/arcDes"
+              className="flex space-x-2 p-2 px-10 bg-morado w-fit text-blanco font-bold text-xl"
+              onMouseEnter={() => setStuIsHovered(true)}
+              onMouseLeave={() => setStuIsHovered(false)}
+            >
+              <p>Saber más</p>
+              <i class="bi bi-arrow-right"></i>
+            </NavLink>
           </div>
-        </NavLink>
+
+          <div className="card-inicio-dep">
+            <div className="p-3">
+              <img src={controller} />
+            </div>
+            <p
+              className="text-3xl font-bold px-3 text-blanco"
+              style={{
+                textShadow: isStuHovered
+                  ? "0 0 13px rgba(99, 102, 241, 0.6)"
+                  : "none",
+              }}
+            >
+              Arcenix Games
+            </p>
+            <p className="text-gray-400 text-sm px-3 pb-10 pt-2">
+              Equipo de ingenieros y desarrolladores apasionados por los juegos,
+              comprometidos con proporcionar la base tecnológica que hace
+              posible la magia del juego en línea. Desde servidores escalables
+              hasta arquitecturas de red eficientes, estamos aquí para impulsar
+              tu universo virtual y volverlo realidad.
+            </p>
+            <NavLink
+              to="/deps/arcGames"
+              className="flex space-x-2 p-2 px-10 bg-morado w-fit text-blanco font-bold text-xl"
+              onMouseEnter={() => setStuIsHovered(true)}
+              onMouseLeave={() => setStuIsHovered(false)}
+            >
+              <p>Saber más</p>
+              <i class="bi bi-arrow-right"></i>
+            </NavLink>
+          </div>
+        </div>
+      </div>
+
+      <div
+        className="bg-cover bg-center flex flex-col justify-center items-start w-full py-52 px-28"
+        style={{ backgroundImage: `url(${bgmen})` }}
+      >
+        <h2 className="text-blanco text-3xl p-4 font-bold">
+          Hay que comenzar a trabajar juntos
+        </h2>
+        <div className="p-4">
+          <NavLink
+            to="/contact"
+            className="text-blanco bg-morado2 p-5 font-bold hover:bg-morado transition-all"
+          >
+            Contactarnos
+          </NavLink>
+        </div>
       </div>
 
       <div>
-        <p className="text-bg1 dark:text-blanco text-[35px] font-bold text-center">Patrocinador</p>
+        <p className="text-bg1 dark:text-blanco text-[35px] font-bold text-center">
+          Patrocinador
+        </p>
       </div>
+
       <div className="flex flex-col lg:flex-row w-full items-center justify-around pb-10">
-        <img src={"https://upload.wikimedia.org/wikipedia/commons/6/6f/9zteam_logo.png"} alt="Logo 9z"  
-          style={{ filter: 'drop-shadow(0 0 10px rgba(0, 0, 0, 0.7))' }}
+        <img
+          src={
+            "https://upload.wikimedia.org/wikipedia/commons/6/6f/9zteam_logo.png"
+          }
+          alt="Logo 9z"
+          style={{ filter: "drop-shadow(0 0 10px rgba(0, 0, 0, 0.7))" }}
         />
       </div>
     </div>

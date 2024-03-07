@@ -7,21 +7,6 @@ const NavbarDeps = () => {
     <div>
       <nav className="flex justify-evenly bg-txt1 dark:bg-bg1">
         <NavLink
-          to="/deps/arcDes"
-          className={({ isActive }) =>
-            isActive
-              ? activeLink + " bg-emerald-600"
-              : "text-bg1 dark:text-txt2 hover:text-bg2 w-fit"
-          }
-        >
-          <div className="nbb hover:text-emerald-400 dark:hover:text-emerald-400">
-            <i className="bi bi-code-slash text-xl"></i>
-            <p>Arcenix</p>
-            <p>Develop</p>
-          </div>
-        </NavLink>
-
-        <NavLink
           to="/deps/arcStudio"
           className={({ isActive }) =>
             isActive
@@ -37,6 +22,21 @@ const NavbarDeps = () => {
         </NavLink>
 
         <NavLink
+          to="/deps/arcDes"
+          className={({ isActive }) =>
+            isActive
+              ? activeLink + " bg-emerald-600"
+              : "text-bg1 dark:text-txt2 hover:text-bg2 w-fit"
+          }
+        >
+          <div className="nbb hover:text-emerald-400 dark:hover:text-emerald-400">
+            <i className="bi bi-code-slash text-xl"></i>
+            <p>Arcenix</p>
+            <p>Desarrollo</p>
+          </div>
+        </NavLink>
+
+        <NavLink
           to="/deps/arcGames"
           className={({ isActive }) =>
             isActive
@@ -47,7 +47,7 @@ const NavbarDeps = () => {
           <div className="nbb hover:text-pink-400 dark:hover:text-pink-400">
             <i className="bi bi-controller text-xl"></i>
             <p>Arcenix </p>
-            <p>Gaming</p>
+            <p>Games</p>
           </div>
         </NavLink>
       </nav>

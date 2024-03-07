@@ -25,11 +25,6 @@ const SideBar = () => {
       path: "https://www.linkedin.com/in/arcenix-company-5808b12b4/",
     },
     {
-      title: "Twitter",
-      src: "twitter-x",
-      path: "https://twitter.com/ArcenixC",
-    },
-    {
       title: "TikTok",
       src: "tiktok",
       path: "https://www.tiktok.com/@arcenixcompany",
@@ -43,30 +38,26 @@ const SideBar = () => {
   };
 
   return (
-    <div className="flex">
+    <div className="flex shadow-custom border-r-2 border-gris">
       <div
-        className={`h-screen p-5 pt-8 bg-txt1 dark:bg-bg1 relative duration-300 ${
-          open ? "w-72" : "w-20"
-        }`}
+        className={`h-screen p-5 pt-8 bg-txt1 dark:bg-darkAzul relative duration-300 ${open ? "w-60" : "w-20"
+          }`}
       >
         <img
           src={Arrow}
-          className={`bg-bg1 absolute cursor-pointer rounded-full -right-3 top-9 w-7 border-2 border-txt2 ${
-            open && "rotate-180"
-          }`}
+          className={`bg-blanco absolute cursor-pointer rounded-full -right-3 top-9 w-7 border-2 border-txt2 ${open && "rotate-180"
+            } w-[35px]`}
           onClick={() => setOpen(!open)}
         />
         <div className="flex gap-x-4 items-center">
           <img
             src={Logo}
-            className={`cursor-pointer duration-500 w-10 h-10 ${
-              open && "rotate-[360deg]"
-            }`}
+            className={`cursor-pointer duration-500 w-10 h-10 ${open && "rotate-[360deg]"
+              }`}
           />
           <h1
-            className={`text-bg1 dark:text-txt1 origin-left font-medium text-xl duration-300 ${
-              !open && "scale-0"
-            }`}
+            className={`text-bg1 dark:text-txt1 origin-left font-medium text-xl duration-300 ${!open && "scale-0"
+              }`}
           >
             Arcenix
           </h1>
@@ -79,9 +70,8 @@ const SideBar = () => {
               key={index}
               className={`text-bg1 dark:text-txt1 text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-d1 rounded-md 
               ${menu.gap ? "mt-9" : "mt-2"} 
-              ${isActive(menu.path) ? "hover:bg-d1" : ""} ${
-                isActive(menu.path) && "bg-d1"
-              }
+              ${isActive(menu.path) ? "hover:bg-d1" : ""} ${isActive(menu.path) && "bg-d1"
+                }
               ${!open && "justify-center"}`}
               onClick={open ? toggleSidebar : undefined}
             >
@@ -99,14 +89,13 @@ const SideBar = () => {
           {SMedia.map((a, b) => (
             <li
               key={b}
-              className={`text-bg1 dark:text-txt1 text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-d1 rounded-md ${
-                a.gap ? "mt-9" : "mt-2"
-              } ${!open && "justify-center"}`}
+              className={`text-bg1 dark:text-txt1 text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:text-rosa hover:bg-morado2 rounded-md ${a.gap ? "mt-9" : "mt-2"
+                } ${!open && "justify-center"}`}
             >
               <a href={a.path} className="space-x-3" target="_blank">
-                <i className={`bi bi-${a.src}`}></i>
+                <i className={`bi bi-${a.src} hover:text-rosa`}></i>
                 <span
-                  className={`${!open && "hidden"} origin-left duration-200 `}
+                  className={`${!open && "hidden"} origin-left duration-200`}
                 >
                   {a.title}
                 </span>

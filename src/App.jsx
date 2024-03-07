@@ -34,12 +34,14 @@ function App() {
                 <Route path="/" element={<Inicio />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contacto />} />
+                {/* Rutas de departamentos */}
                 <Route path="/deps" element={<Departamentos />}>
                   <Route path="/deps/" element={<DepHome />} />
                   <Route path="arcDes" element={<ArcenixDesarrollo />} />
                   <Route path="arcGames" element={<ArcenixGames />} />
                   <Route path="arcStudio" element={<ArcenixStudio />} />
                 </Route>
+
                 <Route path="*" element={<NotFound />} />
               </Routes>
               <Footer />

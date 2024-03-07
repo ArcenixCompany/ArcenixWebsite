@@ -1,50 +1,156 @@
 import React, { useEffect } from "react";
 import { NavbarDeps } from "../components/NavbarDeps";
-import { Carousel } from "../components/Carousel";
+import bgHome from "../views/img/bg-home.png";
+import pc from "../views/svg/desktop-pc.svg";
+import { GiPencilRuler } from "react-icons/gi";
+import { ImFilm } from "react-icons/im";
+import { GiSoundWaves } from "react-icons/gi";
+import { BsPatchCheck } from "react-icons/bs";
+import { NavLink } from "react-router-dom";
 
 const ArcenixStudio = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  let slides = ["https://eikonos.com/wp-content/uploads/2015/03/edicion-de-video.png",
-                "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2022/01/adobre-premiere-pro-cc-2601969.jpg?tf=3840x",
-                "https://shorthand.com/the-craft/video-editing-tools/assets/aDZ7Sx6TXn/shorthand-the-craft-video-editing-tools-subhead-1-2560x1440.webp",];
   return (
     <div>
       <div>
         <NavbarDeps />
       </div>
-      <div className='min-h-screen d-block justify-center items-center'>
-        <div className="relative w-100">
-          <Carousel slides={slides} />
-        </div>
-
-        <h1 className='text-5xl dark:text-txt2 text-center mt-10 mb-6 tracking-tight font-bold uppercase'
-          style={{ fontFamily: "'Helvetica Neue', sans-serif" }}
-        >Arcenix <span className='text-indigo-500'>Studio</span></h1>
-
-        <div className="flex px-40 py-12">
-          <p className="text-xl text-bg2 dark:text-txt2 tracking-tight text-justify pr-16">
-            Bienvenido al corazón creativo de nuestra empresa, donde cada pixel 
-            cuenta una historia y cada sonido evoca emociones. Nuestro equipo
-            de diseño gráfico y audiovisual está formado por mentes innovadoras y apasionadas que
-            transforman ideas en experiencias visuales cautivadoras.
-          </p>
-          <div className="block min-w-[170px] h-fit bg-morado2 rounded-xl border-2 border-white text-center py-8 px-4">
-            <i className="bi bi-vector-pen text-white text-6xl"></i>
-            <p className="text-m text-blanco font-bold mt-2"
-              >Diseño grafico</p>
+      <div className="min-h-screen flex flex-col justify-center items-center">
+        <div
+          className="bg-cover bg-center flex w-full py-32"
+          style={{ backgroundImage: `url(${bgHome})` }}
+        >
+          <div className="w-[70%] flex flex-col px-40 py-12">
+            <h1
+              className="text-5xl dark:text-txt2 text-start mt-10 mb-6 tracking-tight font-bold uppercase"
+              style={{ fontFamily: "'Helvetica Neue', sans-serif" }}
+            >
+              Arcenix <span className="text-indigo-500">Studio</span>
+            </h1>
+            <p className="text-xl text-bg2 dark:text-txt2 tracking-tight text-justify pr-16">
+              Somos un equipo diverso de diseñadores gráficos, creadores de
+              contenido audiovisual, y expertos en sonido, unidos por el deseo
+              de dar vida a tus ideas de manera visualmente impactante y
+              acústicamente cautivadora
+            </p>
+          </div>
+          <div className="w-[30%] p-10">
+            <img src={pc} className="w-full" />
           </div>
         </div>
-        
 
-        <div className="bg-txt1 dark:bg-bg1 dark:bg-opacity-75 my-5 px-12 h-[200px] flex flex-col justify-center">
-          <h2 className="text-2xl text-center text-bg1 dark:text-indigo-500">¿Quienes somos?</h2>
-          <p className="text-bg2 dark:text-txt2 text-justify py-2">
-            Somos un equipo diverso de diseñadores gráficos, creadores de contenido
-            audiovisual, y expertos en sonido, unidos por el deseo de dar vida a tus ideas de manera
-            visualmente impactante y acústicamente cautivadora.
-          </p>
+        <div className="bg-darkAzul p-10 flex flex-col justify-center items-center">
+          <div className="w-[70%] min-h-[200px] p-5 my-5">
+            <div className="flex">
+              <div className="w-[99%] p-5">
+                <h2 className="text-blanco font-bold text-end px-2 pt-4">
+                  ¿Que nos distingue?
+                </h2>
+                <p className="text-gray-400 text-2xl text-end px-2">
+                  “La creatividad es nuestra moneda y la innovación nuestro
+                  idioma. Desde diseños gráficos estéticamente atractivos hasta
+                  producciones audiovisuales de alta calidad, nos destacamos al
+                  fusionar arte y tecnología con un toque distintivo”
+                </p>
+              </div>
+
+              <div className="w-[1%] min-h-[200px] bg-gradient-to-b from-orange-600 to-violet-950"></div>
+            </div>
+          </div>
+
+          <div className="w-[70%] min-h-[200px] p-5 my-5">
+            <div className="flex">
+              <div className="w-[1%] min-h-[200px] bg-gradient-to-b from-orange-600 to-violet-950"></div>
+              <div className="w-[99%] p-5">
+                <h2 className="text-blanco font-bold px-2 pt-4">
+                  Nuestra Filosofía
+                </h2>
+                <p className="text-gray-400 text-2xl px-2">
+                  “Creemos en la poderosa conexión entre lo visual y lo
+                  auditivo. Cada diseño, cada fotograma, y cada nota musical son
+                  cuidadosamente seleccionados para contar una historia única y
+                  dejar una impresión duradera”
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-blanco w-full bg-gradient-to-b from-morado2 to-black p-5 min-h-screen flex flex-col justify-center items-center">
+          <h2 className="text-blanco text-4xl text-center p-5">Servicios</h2>
+          <div className="flex justify-center">
+            <div className="p-10 border-r-2 border-blanco">
+              <GiPencilRuler className="text-[70px] text-blanco" />
+
+              <h3 className="text-blanco text-2xl py-3">
+                Diseño Gráfico Impactante
+              </h3>
+              <p className="text-blanco opacity-50 text-xl">
+                Logotipos, banners, y elementos visuales que destacan.
+              </p>
+            </div>
+            <div className="p-10 border-r-2 border-blanco">
+              <ImFilm className="text-[70px] text-blanco" />
+
+              <h3 className="text-blanco text-2xl py-3">
+                Produccion Audiovisual
+              </h3>
+              <p className="text-blanco opacity-50 text-xl">
+                Videos promocionales, animaciones, y contenido multimedia.
+              </p>
+            </div>
+            <div className="p-10">
+              <GiSoundWaves className="text-[70px] text-blanco" />
+
+              <h3 className="text-blanco text-2xl py-3">
+                Composicion y diseño sonoro
+              </h3>
+              <p className="text-blanco opacity-50 text-xl">
+                Creación de ambientes auditivos envolventes
+              </p>
+            </div>
+          </div>
+          <div className="w-[75%] m-auto p-5">
+            <h2 className="text-blanco text-3xl text-center p-3">
+              ¿Por qué Elegirnos?
+            </h2>
+            <div className="flex space-x-3 p-5">
+              <BsPatchCheck className="text-4xl text-blanco" />
+              <p className="text-blanco p-2 text-xl opacity-65">
+                Colaboración Creativa: Trabajamos mano a mano contigo para
+                capturar tu visión y plasmarla de manera auténtica.
+              </p>
+            </div>
+            <div className="flex space-x-3 p-5">
+              <BsPatchCheck className="text-4xl text-blanco" />
+              <p className="text-blanco p-2 text-xl opacity-65">
+                Estándares de Calidad: Cada píxel y cada nota son afinados para
+                alcanzar la excelencia.
+              </p>
+            </div>
+            <div className="flex space-x-3 p-5">
+              <BsPatchCheck className="text-4xl text-blanco" />
+              <p className="text-blanco p-2 text-xl opacity-65">
+                Adaptabilidad: Desde proyectos pequeños hasta campañas a gran
+                escala, estamos preparados para cualquier desafío creativo.
+              </p>
+            </div>
+          </div>
+          <div className="w-[75%] flex flex-col justify-center items-center p-5">
+            <h2 className="text-blanco text-4xl font-bold text-center p-5">
+              Estamos listos para comenzar
+            </h2>
+            <div className="py-10">
+              <NavLink
+                to="/contact"
+                className="bg-morado2 p-6 text-blanco text-2xl hover:bg-morado transition-all"
+              >
+                Empecemos
+              </NavLink>
+            </div>
+          </div>
         </div>
 
         <section className="w-full p-2 bg-d2 flex flex-wrap gap-10 justify-center">
@@ -52,29 +158,31 @@ const ArcenixStudio = () => {
             <div className="relative overflow-hidden rounded-t-xl py-6">
               <div className="rounded-full border-white border-2 p-1 mx-10">
                 <div className="rounded-full w-[125px] h-[125px] overflow-hidden">
-                  <img className="w-full" src={"https://hips.hearstapps.com/ellees.h-cdn.co/assets/15/37/1024x1332/1024x1332-por-ti-rostros-activos-personas-luchadoras-12718597-1-esl-es-rostros-activos-personas-luchadoras-jpg.jpg?resize=980:*"} alt="foto" />
+                  <img
+                    className="w-full"
+                    src={
+                      "https://hips.hearstapps.com/ellees.h-cdn.co/assets/15/37/1024x1332/1024x1332-por-ti-rostros-activos-personas-luchadoras-12718597-1-esl-es-rostros-activos-personas-luchadoras-jpg.jpg?resize=980:*"
+                    }
+                    alt="foto"
+                  />
                 </div>
               </div>
-              <h2 className="text-xl text-blanco font-bold p-2 mt-4 uppercase"
-              >Luciana</h2>
+              <h2 className="text-xl text-blanco font-bold p-2 mt-4 uppercase">
+                Luciana
+              </h2>
               <p className="text-lg text-blanco font-thin tracking-tight leading-none uppercase opacity-40">
-                DISEÑADOR<br></br>GRAFICO</p>
+                DISEÑADOR<br></br>GRAFICO
+              </p>
             </div>
             <div className="bg-white w-full flex justify-center space-x-5 py-4 rounded-b-lg">
               <div className="bg-morado2 rounded-full w-9 h-9 flex items-center justify-center">
-                <a
-                  href=""
-                  target="_blank"
-                >
+                <a href="" target="_blank">
                   <i className="bi bi-instagram text-white"></i>
                 </a>
               </div>
 
               <div className="bg-morado2 rounded-full w-9 h-9 flex items-center justify-center">
-                <a
-                  href=""
-                  target="_blank"
-                >
+                <a href="" target="_blank">
                   <i className="bi bi-linkedin text-white"></i>
                 </a>
               </div>
@@ -91,29 +199,31 @@ const ArcenixStudio = () => {
             <div className="relative overflow-hidden rounded-t-xl py-6">
               <div className="rounded-full border-white border-2 p-1 mx-10">
                 <div className="rounded-full w-[125px] h-[125px] overflow-hidden">
-                  <img className="w-full" src={"https://hips.hearstapps.com/ellees.h-cdn.co/assets/15/37/1024x1332/1024x1332-por-ti-rostros-activos-personas-luchadoras-12718597-1-esl-es-rostros-activos-personas-luchadoras-jpg.jpg?resize=980:*"} alt="foto" />
+                  <img
+                    className="w-full"
+                    src={
+                      "https://hips.hearstapps.com/ellees.h-cdn.co/assets/15/37/1024x1332/1024x1332-por-ti-rostros-activos-personas-luchadoras-12718597-1-esl-es-rostros-activos-personas-luchadoras-jpg.jpg?resize=980:*"
+                    }
+                    alt="foto"
+                  />
                 </div>
               </div>
-              <h2 className="text-xl text-blanco font-bold p-2 mt-4 uppercase"
-              >Veronica</h2>
-              <p className="text-lg text-blanco font-thin tracking-tight leading-none uppercase opacity-40"
-                >DISEÑADOR<br></br>GRAFICO</p>
+              <h2 className="text-xl text-blanco font-bold p-2 mt-4 uppercase">
+                Veronica
+              </h2>
+              <p className="text-lg text-blanco font-thin tracking-tight leading-none uppercase opacity-40">
+                DISEÑADOR<br></br>GRAFICO
+              </p>
             </div>
             <div className="bg-white w-full flex justify-center space-x-5 py-4 rounded-b-lg">
               <div className="bg-morado2 rounded-full w-9 h-9 flex items-center justify-center">
-                <a
-                  href=""
-                  target="_blank"
-                >
+                <a href="" target="_blank">
                   <i className="bi bi-instagram text-white"></i>
                 </a>
               </div>
 
               <div className="bg-morado2 rounded-full w-9 h-9 flex items-center justify-center">
-                <a
-                  href=""
-                  target="_blank"
-                >
+                <a href="" target="_blank">
                   <i className="bi bi-linkedin text-white"></i>
                 </a>
               </div>
@@ -130,29 +240,31 @@ const ArcenixStudio = () => {
             <div className="relative overflow-hidden rounded-t-xl py-6">
               <div className="rounded-full border-white border-2 p-1 mx-10">
                 <div className="rounded-full w-[125px] h-[125px] overflow-hidden">
-                  <img className="w-full" src={"https://hips.hearstapps.com/ellees.h-cdn.co/assets/15/37/1024x1332/1024x1332-por-ti-rostros-activos-personas-luchadoras-12718597-1-esl-es-rostros-activos-personas-luchadoras-jpg.jpg?resize=980:*"} alt="foto" />
+                  <img
+                    className="w-full"
+                    src={
+                      "https://hips.hearstapps.com/ellees.h-cdn.co/assets/15/37/1024x1332/1024x1332-por-ti-rostros-activos-personas-luchadoras-12718597-1-esl-es-rostros-activos-personas-luchadoras-jpg.jpg?resize=980:*"
+                    }
+                    alt="foto"
+                  />
                 </div>
               </div>
-              <h2 className="text-xl text-blanco font-bold p-2 mt-4 uppercase"
-              >Martina</h2>
-              <p className="text-lg text-blanco font-thin tracking-tight leading-none uppercase opacity-40 px-4 text-wrap"
-                >EDITOR<br></br>MULTIMEDIA</p>
+              <h2 className="text-xl text-blanco font-bold p-2 mt-4 uppercase">
+                Martina
+              </h2>
+              <p className="text-lg text-blanco font-thin tracking-tight leading-none uppercase opacity-40 px-4 text-wrap">
+                EDITOR<br></br>MULTIMEDIA
+              </p>
             </div>
             <div className="bg-white w-full flex justify-center space-x-5 py-4 rounded-b-lg">
               <div className="bg-morado2 rounded-full w-9 h-9 flex items-center justify-center">
-                <a
-                  href=""
-                  target="_blank"
-                >
+                <a href="" target="_blank">
                   <i className="bi bi-instagram text-white"></i>
                 </a>
               </div>
 
               <div className="bg-morado2 rounded-full w-9 h-9 flex items-center justify-center">
-                <a
-                  href=""
-                  target="_blank"
-                >
+                <a href="" target="_blank">
                   <i className="bi bi-linkedin text-white"></i>
                 </a>
               </div>
@@ -165,49 +277,6 @@ const ArcenixStudio = () => {
             </div>
           </div>
         </section>
-
-        <div className="bg-txt1 dark:bg-bg1 dark:bg-opacity-75 my-5 px-12 h-[200px] flex flex-col justify-center">
-          <h2 className="text-2xl text-center text-bg1 dark:text-indigo-500">¿Qué nos distingue?</h2>
-          <p className="text-bg2 dark:text-txt2 text-justify py-2">
-            La creatividad es nuestra moneda y la innovación nuestro idioma. Desde diseños
-            gráficos estéticamente atractivos hasta producciones audiovisuales de alta calidad, nos
-            destacamos al fusionar arte y tecnología con un toque distintivo.
-          </p>
-        </div>
-
-        <div className="bg-txt1 dark:bg-bg1 dark:bg-opacity-75 my-5 px-12 h-[200px] flex flex-col justify-center">
-          <h2 className="text-2xl text-center text-bg1 dark:text-indigo-500">Nuestra Filosofía</h2>
-          <p className="text-bg2 dark:text-txt2 text-justify py-2">
-            Creemos en la poderosa conexión entre lo visual y lo auditivo. Cada diseño, cada
-            fotograma, y cada nota musical son cuidadosamente seleccionados para contar una
-            historia única y dejar una impresión duradera.
-          </p>
-        </div>
-
-        <div className="bg-txt1 dark:bg-bg1 dark:bg-opacity-75 my-5 p-12 flex flex-col justify-center">
-          <h2 className="text-2xl mb-5 text-center text-bg1 dark:text-indigo-500">Servicios Destacados</h2>
-          <p className="text-bg2 dark:text-txt2 text-justify py-2">
-            <ul className="ml-8" style={{ listStyleType: 'circle' }}>
-              <li><b>Diseño Gráfico Impactante:</b> Logotipos, banners, y elementos visuales que destacan.</li>
-              <li><b>Producción Audiovisual:</b> Videos promocionales, animaciones, y contenido multimedia.</li>
-              <li><b>Composición y Diseño Sonoro:</b> Creación de ambientes auditivos envolventes.</li>
-            </ul>
-          </p>
-        </div>
-
-        <div className="bg-txt1 dark:bg-bg1 dark:bg-opacity-75 my-5 p-12 flex flex-col justify-center">
-          <h2 className="text-2xl mb-5 text-center text-bg1 dark:text-indigo-500">¿Por qué elegirnos?</h2>
-          <p className="text-bg2 dark:text-txt2 text-justify py-2">
-            <ul className="ml-8" style={{ listStyleType: 'circle' }}>
-              <li><b>Colaboración Creativa:</b> Trabajamos mano a mano contigo para capturar tu visión y
-                plasmarla de manera auténtica.</li>
-              <li><b>Estándares de Calidad:</b> Cada píxel y cada nota son afinados para alcanzar la 
-                excelencia.</li>
-              <li><b>Adaptabilidad:</b> Desde proyectos pequeños hasta campañas a gran escala, estamos
-                preparados para cualquier desafío creativo.</li>
-            </ul>
-          </p>  
-        </div>
       </div>
     </div>
   );
