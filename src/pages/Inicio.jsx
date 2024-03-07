@@ -118,7 +118,7 @@ const Inicio = () => {
               className="text-3xl font-bold px-3 text-blanco"
               style={{
                 textShadow: isStuHovered
-                  ? "0 0 13px rgba(99, 102, 241, 0.6)"
+                  ? "0 0 13px rgba(99, 102, 241, 0.9)"
                   : "none",
               }}
             >
@@ -138,7 +138,7 @@ const Inicio = () => {
               onMouseLeave={() => setStuIsHovered(false)}
             >
               <p>Saber más</p>
-              <i class="bi bi-arrow-right"></i>
+              <i className="bi bi-arrow-right"></i>
             </NavLink>
           </div>
 
@@ -149,8 +149,8 @@ const Inicio = () => {
             <p
               className="text-3xl font-bold px-3 text-blanco"
               style={{
-                textShadow: isStuHovered
-                  ? "0 0 13px rgba(99, 102, 241, 0.6)"
+                textShadow: isDevHovered
+                  ? "0 0 13px rgba(16, 185, 129, 0.9)"
                   : "none",
               }}
             >
@@ -167,11 +167,11 @@ const Inicio = () => {
             <NavLink
               to="/deps/arcDes"
               className="flex space-x-2 p-2 px-10 bg-morado w-fit text-blanco font-bold text-xl"
-              onMouseEnter={() => setStuIsHovered(true)}
-              onMouseLeave={() => setStuIsHovered(false)}
+              onMouseEnter={() => setDevIsHovered(true)}
+              onMouseLeave={() => setDevIsHovered(false)}
             >
               <p>Saber más</p>
-              <i class="bi bi-arrow-right"></i>
+              <i className="bi bi-arrow-right"></i>
             </NavLink>
           </div>
 
@@ -182,8 +182,8 @@ const Inicio = () => {
             <p
               className="text-3xl font-bold px-3 text-blanco"
               style={{
-                textShadow: isStuHovered
-                  ? "0 0 13px rgba(99, 102, 241, 0.6)"
+                textShadow: isGamHovered
+                  ? "0 0 13px rgba(219, 39, 119, 0.9)"
                   : "none",
               }}
             >
@@ -199,11 +199,11 @@ const Inicio = () => {
             <NavLink
               to="/deps/arcGames"
               className="flex space-x-2 p-2 px-10 bg-morado w-fit text-blanco font-bold text-xl"
-              onMouseEnter={() => setStuIsHovered(true)}
-              onMouseLeave={() => setStuIsHovered(false)}
+              onMouseEnter={() => setGamIsHovered(true)}
+              onMouseLeave={() => setGamIsHovered(false)}
             >
               <p>Saber más</p>
-              <i class="bi bi-arrow-right"></i>
+              <i className="bi bi-arrow-right"></i>
             </NavLink>
           </div>
         </div>
@@ -226,8 +226,8 @@ const Inicio = () => {
         </div>
       </div>
 
-      <div>
-        <p className="text-bg1 dark:text-blanco text-[35px] font-bold text-center">
+      <div className="mt-14">
+        <p className="text-bg1 dark:text-blanco text-[35px] font-bold text-center uppercase">
           Patrocinador
         </p>
       </div>
