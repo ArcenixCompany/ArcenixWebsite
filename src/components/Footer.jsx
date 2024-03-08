@@ -1,11 +1,14 @@
 import logo from "../views/svg/LogoWhite.svg";
 import { NavLink } from "react-router-dom";
+import { IoIosArrowUp } from "react-icons/io";
+import { ScrollToTopButton } from "./ScrollToTopButton";
 
 const Footer = () => {
   const activeLink = "text-rosa hover:text-text2 w-fit";
   return (
     <>
       <div className="flex flex-col sm:flex-row w-full justify-around items-start p-10 bg-txt1 dark:bg-gris2">
+        <ScrollToTopButton />
         {/* Información de contacto */}
         <div>
           <h2 className="text-bg1 dark:text-txt1 font-bold w-full p-2">
@@ -141,7 +144,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
       {/* Texto de derechos de autor */}
       <div className="flex justify-center items-center p-3 bg-txt1 dark:bg-gris2">
         <p className="text-gray-500 text-sm">
@@ -153,3 +155,7 @@ const Footer = () => {
 };
 
 export { Footer };
+
+<div className="bg-blanco">
+  <IoIosArrowUp className="w-full h-full" />
+</div>;
