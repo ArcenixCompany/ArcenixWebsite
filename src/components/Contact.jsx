@@ -4,15 +4,15 @@ import logo from "../views/svg/alas_fenix.svg";
 const Contact = () => {
   return (
     <div className="flex justify-center items-center w-[90%] p-20 max-w-[1300px] min-h-screen">
-      <div className="border-2 border-blanco shadow-md shadow-blanco flex min-h-[700px] rounded-lg">
-        <div className="flex w-1/2 justify-center items-center">
-          <div className=" h-[70%] flex flex-col">
-            <div className="h-[25%] flex flex-col justify-center items-center">
+      <div className="border-2 border-blanco shadow-md shadow-blanco flex flex-col lg:flex-row min-h-[700px] rounded-lg">
+        <div className="lg:w-1/2 flex justify-center items-center">
+          <div className=" h-[70%] flex flex-col py-10">
+            <div className="lg:h-[25%] flex flex-col justify-center items-center">
               <div className="w-full flex flex-col items-center">
                 <h1 className="text-blanco font-bold text-center p-2 w-full text-xl">
                   ¡CONTACTATE CON NOSOTROS!
                 </h1>
-                <p className="text-blanco text-center p-5 text-xs w-[60%]">
+                <p className="text-blanco text-center p-5 text-xs w-[80%] lg:w-[60%] lg:mb-14">
                   Estamos aquí para ayudarte. Escribenos o llámanos para
                   resolver cualquier duda o inquietud que tengas sobre nuestros
                   servicios
@@ -39,7 +39,7 @@ const Contact = () => {
                   placeholder="Mensaje"
                   className="font-thin text-blanco p-1 px-4 w-full pb-32 bg-morado2 border border-blanco rounded-lg"
                 />
-                <div className="w-full">
+                <div className="w-100 lg:w-full">
                   <button className="bg-blanco text-morado px-16 py-2 font-bold text-xl rounded-lg">
                     Enviar
                   </button>
@@ -48,9 +48,9 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/2 bg-blanco rounded-tl-[200px] flex flex-col justify-center items-center">
+        <div className="lg:w-1/2 bg-blanco rounded-tl-[100px] lg:rounded-tl-[200px] flex flex-col justify-center items-center">
           <div className="flex flex-col justify-center items-start">
-            <h2 className="text-morado2 font-bold text-2xl w-[70%] text-start">
+            <h2 className="text-morado2 font-bold text-2xl w-[100%] text-center mt-10 lg:w-[70%] lg:mt-0 lg:text-start">
               HABLEMOS
             </h2>
             <div className="w-full flex space-x-3 justify-center items-center p-4">

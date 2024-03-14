@@ -25,32 +25,32 @@ const ArcenixDesarrollo = () => {
       <div>
         <NavbarDeps />
       </div>
-      <div className="min-h-screen d-block justify-center items-center">
+      <div className="min-h-screen flex flex-col justify-center items-center">
         <div
-          className="bg-cover bg-center flex w-full py-32"
+          className="bg-cover bg-center w-full flex flex-col-reverse lg:flex-row py-32"
           style={{ backgroundImage: `url(${bgHome})` }}
         >
-          <div className="w-[70%] flex flex-col px-40 py-12">
+          <div className="w-[100%] lg:w-[70%] flex flex-col px-10 lg:px-40 py-12">
             <h1
-              className="text-5xl dark:text-txt2 text-start mt-10 mb-6 tracking-tight font-bold uppercase"
+              className="text-5xl dark:text-txt2 text-center lg:text-start mt-10 mb-6 tracking-tight font-bold uppercase"
               style={{ fontFamily: "'Helvetica Neue', sans-serif" }}
             >
               Arcenix <span className="text-green-600">Desarrollo</span>
             </h1>
-            <p className="text-xl text-bg2 dark:text-txt2 tracking-tight text-justify pr-16">
+            <p className="text-xl text-bg2 dark:text-txt2 tracking-tight text-justify lg:pr-16">
               Ingenieros, programadores y apasionados por la tecnología,
               fusionando habilidades técnicas con una visión clara: hacer
               realidad tus ideas a través del desarrollo de software sólido y
               escalable.
             </p>
           </div>
-          <div className="w-[30%] p-10">
+          <div className="w-[100%] lg:w-[30%] px-10 lg:p-10">
             <img src={pc} className="w-full" />
           </div>
         </div>
 
         <div className="bg-darkAzul p-10 flex flex-col justify-center items-center">
-          <div className="w-[70%] min-h-[200px] p-5 my-5">
+          <div className="w-[100%] sm:w-[70%] min-h-[200px] p-5 my-5">
             <div className="flex">
               <div className="w-[99%] p-5">
                 <h2 className="text-blanco font-bold text-end px-2 pt-4">
@@ -69,7 +69,7 @@ const ArcenixDesarrollo = () => {
             </div>
           </div>
 
-          <div className="w-[70%] min-h-[200px] p-5 my-5">
+          <div className="w-[100%] sm:w-[70%] min-h-[200px] p-5 my-5">
             <div className="flex">
               <div className="w-[1%] min-h-[200px] bg-gradient-to-b from-orange-600 to-violet-950"></div>
               <div className="w-[99%] p-5">
@@ -88,9 +88,11 @@ const ArcenixDesarrollo = () => {
         </div>
 
         <div className="bg-blanco w-full bg-gradient-to-b from-morado2 to-black p-5 min-h-screen flex flex-col justify-center items-center">
-          <h2 className="text-blanco text-4xl text-center p-5 mb-3">Servicios</h2>
-          <div className="flex flex-wrap justify-center">
-            <div className="w-1/3 p-10 border-r-2 border-blanco">
+          <h2 className="text-blanco text-4xl text-center p-5 my-5">Servicios</h2>
+          
+          <div className="flex flex-col lg:flex-row justify-center">
+
+            <div className="lg:w-1/3 p-10 border-r-2 border-blanco">
               <MdOutlinePhonelink className="text-[70px] text-blanco" />
               <h3 className="text-blanco text-2xl py-3">
                 Desarrollo de Software a Medida
@@ -99,7 +101,7 @@ const ArcenixDesarrollo = () => {
                 Desde aplicaciones empresariales hasta soluciones web personalizadas, creamos software que se adapta a sus necesidades específicas.
               </p>
             </div>
-            <div className="w-1/3 p-10 border-r-2 border-blanco">
+            <div className="lg:w-1/3 p-10 border-r-2 border-blanco">
               <FaShoppingBasket className="text-[70px] text-blanco" />
               <h3 className="text-blanco text-2xl py-3">
                 Desarrollo de E-commerce
@@ -108,7 +110,7 @@ const ArcenixDesarrollo = () => {
                 Potencie su presencia en línea con plataformas de comercio electrónico robustas y seguras que garanticen una experiencia de compra sin problemas.
               </p>
             </div>
-            <div className="w-1/3 p-10">
+            <div className="lg:w-1/3 p-10 border-r-2 lg:border-r-0 border-blanco">
               <DiDatabase className="text-[70px] text-blanco" />
               <h3 className="text-blanco text-2xl py-3">
                 Desarrollo de Servidores Personalizados
@@ -117,8 +119,11 @@ const ArcenixDesarrollo = () => {
                 Diseñamos y desarrollamos servidores a medida para adaptarse perfectamente a las demandas específicas de su aplicación o plataforma.
               </p>
             </div>
+          </div>
 
-            <div className="w-1/3 p-10 pt-0 border-r-2 border-blanco">
+          <div className="flex flex-col lg:flex-row justify-center mb-5">
+            
+            <div className="lg:w-1/3 p-10 pt-0 border-r-2 border-blanco">
               <DiGitBranch className="text-[70px] text-blanco" />
               <h3 className="text-blanco text-2xl py-3">
                 Consultoría Tecnológica
@@ -127,7 +132,7 @@ const ArcenixDesarrollo = () => {
                 Nuestro equipo de expertos en tecnología ofrece asesoramiento estratégico para optimizar sus procesos y maximizar el rendimiento de su infraestructura tecnológica.
               </p>
             </div>
-            <div className="w-1/3 p-10 pt-0 border-r-2 border-blanco">
+            <div className="lg:w-1/3 p-10 pt-0 border-r-2 border-blanco">
               <MdDeveloperBoard className="text-[70px] text-blanco" />
               <h3 className="text-blanco text-2xl py-3">
                 Servicios de Hosting de Alto Rendimiento
@@ -136,7 +141,7 @@ const ArcenixDesarrollo = () => {
                 Servicios de hosting que garantizan un rendimiento inigualable, con un tiempo de actividad excepcional y una seguridad robusta.
               </p>
             </div>
-            <div className="w-1/3 p-10 pt-0 ">
+            <div className="lg:w-1/3 p-10 pt-0 border-r-2 lg:border-r-0 border-blanco">
               <FaMobileScreenButton className="text-[70px] text-blanco" />
               <h3 className="text-blanco text-2xl py-3">
                 Aplicaciones Móviles Avanzadas
@@ -147,21 +152,7 @@ const ArcenixDesarrollo = () => {
             </div>
           </div>
 
-          {/* Desarrollo de Software a Medida: 
-                Desde aplicaciones empresariales hasta soluciones web personalizadas, creamos software que se adapta a sus necesidades específicas.
-              Aplicaciones Móviles Avanzadas: 
-                Diseñamos y desarrollamos aplicaciones móviles intuitivas y potentes para iOS y Android.
-              Consultoría Tecnológica: 
-                Nuestro equipo de expertos en tecnología ofrece asesoramiento estratégico para optimizar sus procesos y maximizar el rendimiento de su infraestructura tecnológica.
-              Desarrollo de E-commerce: 
-                Potencie su presencia en línea con plataformas de comercio electrónico robustas y seguras que garanticen una experiencia de compra sin problemas.
-              Desarrollo de Servidores Personalizados: 
-                Diseñamos y desarrollamos servidores a medida para adaptarse perfectamente a las demandas específicas de su aplicación o plataforma.
-              Servicios de Hosting de Alto Rendimiento: 
-                Servicios de hosting que garantizan un rendimiento inigualable, con un tiempo de actividad excepcional y una seguridad robusta. */}
-
-
-          <div className="w-[75%] m-auto p-5">
+          <div className="w-[100%] sm:w-[75%] m-auto p-5">
             <h2 className="text-blanco text-3xl text-center p-3">
               ¿Por qué Elegirnos?
             </h2>
@@ -188,7 +179,7 @@ const ArcenixDesarrollo = () => {
               </p>
             </div>
           </div>
-          <div className="w-[75%] flex flex-col justify-center items-center p-5">
+          <div className="w-[100%] sm:w-[75%] flex flex-col justify-center items-center p-5">
             <h2 className="text-blanco text-4xl font-bold text-center p-5">
               Estamos listos para comenzar
             </h2>
@@ -200,7 +191,7 @@ const ArcenixDesarrollo = () => {
             </div>
           </div>
 
-          <section className="w-full p-2 bg-d2 flex flex-wrap gap-10 justify-center">
+          <section className="w-full p-2 mb-10 bg-d2 flex flex-wrap gap-10 justify-center">
             <div className="bg-morado2 h-fit group flex flex-col justify-center items-center text-center rounded-xl shadow-xl z-10 mt-4">
               <div className="relative overflow-hidden rounded-t-xl py-6">
                 <div className="rounded-full border-white border-2 p-1 mx-10">

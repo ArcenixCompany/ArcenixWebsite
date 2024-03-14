@@ -13,7 +13,7 @@ const DepHome = () => {
 
   return (
     <div>
-      <div className="flex flex-col lg:flex-row w-full h-screen items-center justify-center gap-10">
+      <div className="flex flex-col lg:flex-row w-full lg:h-screen items-center justify-center py-5 gap-10">
         <div className="card-inicio-dep">
           <div className="p-3">
             <img src={pluma} />
