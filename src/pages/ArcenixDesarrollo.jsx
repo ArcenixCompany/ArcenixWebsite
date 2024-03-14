@@ -1,12 +1,20 @@
 import React, { useEffect } from "react";
 import { NavbarDeps } from "../components/NavbarDeps";
-import bgHome from "../views/img/bg-home.png";
-import pc from "../views/svg/desktop-pc.svg";
 import { MdOutlinePhonelink } from "react-icons/md";
 import { MdDeveloperBoard } from "react-icons/md";
-import { TbApi } from "react-icons/tb";
+import { DiDatabase } from "react-icons/di";
 import { BsPatchCheck } from "react-icons/bs";
+import { DiGitBranch } from "react-icons/di";
+import { FaShoppingBasket } from "react-icons/fa";
+import { FaMobileScreenButton } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
+
+import bgHome from "../views/img/bg-home.png";
+import pc from "../views/svg/desktop-pc.svg";
+import lauZ from "../views/img/lautaro_zalazar.jpg";
+import danH from "../views/img/daniel_herrera.jpg";
+import matA from "../views/img/matias_aguirre.jpg";
+import valR from "../views/img/valentino_rivas.jpg";
 
 const ArcenixDesarrollo = () => {
   useEffect(() => {
@@ -80,39 +88,79 @@ const ArcenixDesarrollo = () => {
         </div>
 
         <div className="bg-blanco w-full bg-gradient-to-b from-morado2 to-black p-5 min-h-screen flex flex-col justify-center items-center">
-          <h2 className="text-blanco text-4xl text-center p-5">Servicios</h2>
-          <div className="flex justify-center">
-            <div className="p-10 border-r-2 border-blanco">
+          <h2 className="text-blanco text-4xl text-center p-5 mb-3">Servicios</h2>
+          <div className="flex flex-wrap justify-center">
+            <div className="w-1/3 p-10 border-r-2 border-blanco">
               <MdOutlinePhonelink className="text-[70px] text-blanco" />
-
               <h3 className="text-blanco text-2xl py-3">
-                Desarrollo Web y Móvil
+                Desarrollo de Software a Medida
               </h3>
               <p className="text-blanco opacity-50 text-xl">
-                Creación de plataformas interactivas y experiencias móviles de
-                vanguardia
+                Desde aplicaciones empresariales hasta soluciones web personalizadas, creamos software que se adapta a sus necesidades específicas.
               </p>
             </div>
-            <div className="p-10 border-r-2 border-blanco">
+            <div className="w-1/3 p-10 border-r-2 border-blanco">
+              <FaShoppingBasket className="text-[70px] text-blanco" />
+              <h3 className="text-blanco text-2xl py-3">
+                Desarrollo de E-commerce
+              </h3>
+              <p className="text-blanco opacity-50 text-xl">
+                Potencie su presencia en línea con plataformas de comercio electrónico robustas y seguras que garanticen una experiencia de compra sin problemas.
+              </p>
+            </div>
+            <div className="w-1/3 p-10">
+              <DiDatabase className="text-[70px] text-blanco" />
+              <h3 className="text-blanco text-2xl py-3">
+                Desarrollo de Servidores Personalizados
+              </h3>
+              <p className="text-blanco opacity-50 text-xl">
+                Diseñamos y desarrollamos servidores a medida para adaptarse perfectamente a las demandas específicas de su aplicación o plataforma.
+              </p>
+            </div>
+
+            <div className="w-1/3 p-10 pt-0 border-r-2 border-blanco">
+              <DiGitBranch className="text-[70px] text-blanco" />
+              <h3 className="text-blanco text-2xl py-3">
+                Consultoría Tecnológica
+              </h3>
+              <p className="text-blanco opacity-50 text-xl">
+                Nuestro equipo de expertos en tecnología ofrece asesoramiento estratégico para optimizar sus procesos y maximizar el rendimiento de su infraestructura tecnológica.
+              </p>
+            </div>
+            <div className="w-1/3 p-10 pt-0 border-r-2 border-blanco">
               <MdDeveloperBoard className="text-[70px] text-blanco" />
-
               <h3 className="text-blanco text-2xl py-3">
-                Arquitectura de Software
+                Servicios de Hosting de Alto Rendimiento
               </h3>
               <p className="text-blanco opacity-50 text-xl">
-                Diseño de sistemas escalables y flexibles para enfrentar
-                desafíos tecnológicos
+                Servicios de hosting que garantizan un rendimiento inigualable, con un tiempo de actividad excepcional y una seguridad robusta.
               </p>
             </div>
-            <div className="p-10">
-              <TbApi className="text-[70px] text-blanco" />
-              <h3 className="text-blanco text-2xl py-3">Integración de API</h3>
+            <div className="w-1/3 p-10 pt-0 ">
+              <FaMobileScreenButton className="text-[70px] text-blanco" />
+              <h3 className="text-blanco text-2xl py-3">
+                Aplicaciones Móviles Avanzadas
+              </h3>
               <p className="text-blanco opacity-50 text-xl">
-                Conectamos tus aplicaciones con el mundo, permitiendo una
-                experiencia completa
+                Diseñamos y desarrollamos aplicaciones móviles intuitivas y potentes para iOS y Android.
               </p>
             </div>
           </div>
+
+          {/* Desarrollo de Software a Medida: 
+                Desde aplicaciones empresariales hasta soluciones web personalizadas, creamos software que se adapta a sus necesidades específicas.
+              Aplicaciones Móviles Avanzadas: 
+                Diseñamos y desarrollamos aplicaciones móviles intuitivas y potentes para iOS y Android.
+              Consultoría Tecnológica: 
+                Nuestro equipo de expertos en tecnología ofrece asesoramiento estratégico para optimizar sus procesos y maximizar el rendimiento de su infraestructura tecnológica.
+              Desarrollo de E-commerce: 
+                Potencie su presencia en línea con plataformas de comercio electrónico robustas y seguras que garanticen una experiencia de compra sin problemas.
+              Desarrollo de Servidores Personalizados: 
+                Diseñamos y desarrollamos servidores a medida para adaptarse perfectamente a las demandas específicas de su aplicación o plataforma.
+              Servicios de Hosting de Alto Rendimiento: 
+                Servicios de hosting que garantizan un rendimiento inigualable, con un tiempo de actividad excepcional y una seguridad robusta. */}
+
+
           <div className="w-[75%] m-auto p-5">
             <h2 className="text-blanco text-3xl text-center p-3">
               ¿Por qué Elegirnos?
@@ -145,10 +193,8 @@ const ArcenixDesarrollo = () => {
               Estamos listos para comenzar
             </h2>
             <div className="py-10">
-              <NavLink
-                to="/contact"
-                className="bg-morado2 p-6 text-blanco text-2xl hover:bg-morado transition-all"
-              >
+              <NavLink to="/contact"
+                className="bg-morado2 p-6 text-blanco text-2xl hover:bg-morado transition-all">
                 Empecemos
               </NavLink>
             </div>
@@ -162,17 +208,17 @@ const ArcenixDesarrollo = () => {
                     <img
                       className="w-full"
                       src={
-                        "https://hips.hearstapps.com/ellees.h-cdn.co/assets/15/37/1024x1332/1024x1332-por-ti-rostros-activos-personas-luchadoras-12718597-1-esl-es-rostros-activos-personas-luchadoras-jpg.jpg?resize=980:*"
+                        `${lauZ}`
                       }
                       alt="foto"
                     />
                   </div>
                 </div>
                 <h2 className="text-xl text-blanco font-bold p-2 mt-4 uppercase">
-                  Luciana
+                  Lautaro Zalazar
                 </h2>
                 <p className="text-lg text-blanco font-thin tracking-tight leading-none uppercase opacity-40">
-                  DISEÑADOR<br></br>GRAFICO
+                  DESARROLLADOR<br></br>FRONTEND
                 </p>
               </div>
               <div className="bg-white w-full flex justify-center space-x-5 py-4 rounded-b-lg">
@@ -203,17 +249,16 @@ const ArcenixDesarrollo = () => {
                     <img
                       className="w-full"
                       src={
-                        "https://hips.hearstapps.com/ellees.h-cdn.co/assets/15/37/1024x1332/1024x1332-por-ti-rostros-activos-personas-luchadoras-12718597-1-esl-es-rostros-activos-personas-luchadoras-jpg.jpg?resize=980:*"
+                        `${valR}`
                       }
-                      alt="foto"
-                    />
+                      alt="foto" />
                   </div>
                 </div>
                 <h2 className="text-xl text-blanco font-bold p-2 mt-4 uppercase">
-                  Veronica
+                  Valentino Rivas
                 </h2>
                 <p className="text-lg text-blanco font-thin tracking-tight leading-none uppercase opacity-40">
-                  DISEÑADOR<br></br>GRAFICO
+                  DESARROLLADOR<br></br>BACKEND
                 </p>
               </div>
               <div className="bg-white w-full flex justify-center space-x-5 py-4 rounded-b-lg">
@@ -244,17 +289,58 @@ const ArcenixDesarrollo = () => {
                     <img
                       className="w-full"
                       src={
-                        "https://hips.hearstapps.com/ellees.h-cdn.co/assets/15/37/1024x1332/1024x1332-por-ti-rostros-activos-personas-luchadoras-12718597-1-esl-es-rostros-activos-personas-luchadoras-jpg.jpg?resize=980:*"
+                        `${danH}`
                       }
                       alt="foto"
                     />
                   </div>
                 </div>
                 <h2 className="text-xl text-blanco font-bold p-2 mt-4 uppercase">
-                  Martina
+                  Daniel Herrera
                 </h2>
                 <p className="text-lg text-blanco font-thin tracking-tight leading-none uppercase opacity-40 px-4 text-wrap">
-                  EDITOR<br></br>MULTIMEDIA
+                  DESARROLLADOR<br></br>FULLSTACK
+                </p>
+              </div>
+              <div className="bg-white w-full flex justify-center space-x-5 py-4 rounded-b-lg">
+                <div className="bg-morado2 rounded-full w-9 h-9 flex items-center justify-center">
+                  <a href="" target="_blank">
+                    <i className="bi bi-instagram text-white"></i>
+                  </a>
+                </div>
+
+                <div className="bg-morado2 rounded-full w-9 h-9 flex items-center justify-center">
+                  <a href="" target="_blank">
+                    <i className="bi bi-linkedin text-white"></i>
+                  </a>
+                </div>
+
+                <div className="bg-morado2 rounded-full w-9 h-9 flex items-center justify-center">
+                  <a href="">
+                    <i className="bi bi-envelope-fill text-white"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-morado2 h-fit group flex flex-col justify-center items-center text-center rounded-xl shadow-xl z-10 my-4">
+              <div className="relative overflow-hidden rounded-t-xl py-6">
+                <div className="rounded-full border-white border-2 p-1 mx-10">
+                  <div className="rounded-full w-[125px] h-[125px] overflow-hidden">
+                    <img
+                      className="w-full"
+                      src={
+                        `${matA}`
+                      }
+                      alt="foto"
+                    />
+                  </div>
+                </div>
+                <h2 className="text-xl text-blanco font-bold p-2 mt-4 uppercase">
+                  Matias Aguirre
+                </h2>
+                <p className="text-lg text-blanco font-thin tracking-tight leading-none uppercase opacity-40 px-4 text-wrap">
+                  DISEÑADOR<br></br>UX / UI
                 </p>
               </div>
               <div className="bg-white w-full flex justify-center space-x-5 py-4 rounded-b-lg">

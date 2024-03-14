@@ -117,10 +117,10 @@ const About = () => {
       </div>
       {/* Herramientas que utilizamos */}
       <div className="flex flex-col justify-center items-center w-full min-h-screen">
-        <h1 className="text-blanco text-center text-5xl pb-[150px]">
+        <h1 className="text-blanco text-center text-5xl pt-4 pb-2">
           Herramientas que utilizamos
         </h1>
-        <div className="flex w-[50%] space-x-10">
+        <div className="flex w-[50%] space-x-10 pb-8">
           <div className="w-1/2">
             <h2 className="text-blanco text-center text-2xl p-4">Diseño</h2>
             <div>
