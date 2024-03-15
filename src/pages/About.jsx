@@ -28,9 +28,9 @@ import JSIco from "../views/svg/vscode-icons_file-type-js-official.svg";
 import ViteIco from "../views/svg/vscode-icons_file-type-vite.svg";
 
 const About = () => {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="min-h-screen w-full">
       {/* Inicio */}
