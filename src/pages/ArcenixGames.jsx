@@ -1,39 +1,34 @@
 import React, { useEffect } from "react";
-import { NavbarDeps } from "../components/NavbarDeps";
 import { AiFillDatabase } from "react-icons/ai";
 import { IoIosSpeedometer } from "react-icons/io";
 import { BsFillShieldLockFill } from "react-icons/bs";
 import { BsPatchCheck } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
+import imgGta from "../views/img/gta5.jpeg";
+import imgMine from "../views/img/minecraft.jpeg";
 
 import bgHome from "../views/img/bg-home.png";
 import pc from "../views/svg/desktop-pc.svg";
-import eliM from "../views/img/eliel_mato.jpg";
-import nahM from "../views/img/nahuel_medina.jpg";
-
 
 const ArcenixGames = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
   return (
     <div>
-      <div>
-        <NavbarDeps />
-      </div>
       <div className="min-h-screen d-block justify-center items-center">
         <div
-          className="bg-cover bg-center flex w-full py-32"
+          className="bg-cover bg-center md:flex w-full py-32 px-10 md:px-0"
           style={{ backgroundImage: `url(${bgHome})` }}
         >
-          <div className="w-[70%] flex flex-col px-40 py-12">
+          <div className="w-full md:w-[70%] flex flex-col md:px-40 md:py-12">
             <h1
               className="text-5xl dark:text-txt2 text-start mt-10 mb-6 tracking-tight font-bold uppercase"
               style={{ fontFamily: "'Helvetica Neue', sans-serif" }}
             >
               Arcenix <span className="text-pink-600">Games</span>
             </h1>
-            <p className="text-xl text-bg2 dark:text-txt2 tracking-tight text-justify pr-16">
+            <p className="text-xl text-bg2 dark:text-txt2 tracking-tight text-justify md:pr-16">
               Bienvenido al núcleo innovador de la diversión digital, donde la
               excelencia técnica se encuentra con la pasión por los juegos.
               Nuestro equipo de desarrollo de servidores de videojuegos está
@@ -41,8 +36,31 @@ const ArcenixGames = () => {
               una experiencia inolvidable.
             </p>
           </div>
-          <div className="w-[30%] p-10">
+          <div className="w-full md:w-[30%] p-10">
             <img src={pc} className="w-full" />
+          </div>
+        </div>
+
+        <div>
+          <h2 className="text-blanco text-5xl p-5 text-center">
+            Nuestros Servidores
+          </h2>
+          <div className="md:flex justify-evenly">
+
+            <NavLink to="/" className=" flex justify-evenly items-center">
+              <div
+                style={{ backgroundImage: `url(${imgGta})` }}
+                className=" w-[300px] h-[400px] hover:w-[310px] hover:h-[410px] transition-all duration-300 rounded-md flex justify-center items-end shadow-xl bg-cover bg-center"
+              ></div>
+            </NavLink>
+
+            <NavLink to="/" className=" flex min-h-[600px] justify-evenly items-center">
+              <div
+                style={{ backgroundImage: `url(${imgMine})` }}
+                className=" w-[300px] h-[400px] hover:w-[310px] hover:h-[410px] transition-all duration-300 rounded-md flex justify-center items-end shadow-xl bg-cover bg-center"
+              ></div>
+            </NavLink>
+
           </div>
         </div>
 
@@ -157,91 +175,6 @@ const ArcenixGames = () => {
               </NavLink>
             </div>
           </div>
-
-          <section className="w-full p-2 bg-d2 flex flex-wrap gap-10 justify-center">
-            <div className="bg-morado2 h-fit group flex flex-col justify-center items-center text-center rounded-xl shadow-xl z-10 mt-4">
-              <div className="relative overflow-hidden rounded-t-xl py-6">
-                <div className="rounded-full border-white border-2 p-1 mx-10">
-                  <div className="rounded-full w-[125px] h-[125px] overflow-hidden">
-                    <img
-                      className="w-full"
-                      src={
-                        `${eliM}`
-                      }
-                      alt="foto"
-                    />
-                  </div>
-                </div>
-                <h2 className="text-xl text-blanco font-bold p-2 mt-4 uppercase">
-                  Eliel Mato
-                </h2>
-                <p className="text-lg text-blanco font-thin tracking-tight leading-none uppercase opacity-40">
-                  DESARROLLADOR<br></br>MINECRAFT
-                </p>
-              </div>
-              <div className="bg-white w-full flex justify-center space-x-5 py-4 rounded-b-lg">
-                <div className="bg-morado2 rounded-full w-9 h-9 flex items-center justify-center">
-                  <a href="" target="_blank">
-                    <i className="bi bi-instagram text-white"></i>
-                  </a>
-                </div>
-
-                <div className="bg-morado2 rounded-full w-9 h-9 flex items-center justify-center">
-                  <a href="" target="_blank">
-                    <i className="bi bi-linkedin text-white"></i>
-                  </a>
-                </div>
-
-                <div className="bg-morado2 rounded-full w-9 h-9 flex items-center justify-center">
-                  <a href="">
-                    <i className="bi bi-envelope-fill text-white"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-morado2 h-fit group flex flex-col justify-center items-center text-center rounded-xl shadow-xl z-10 mt-4">
-              <div className="relative overflow-hidden rounded-t-xl py-6">
-                <div className="rounded-full border-white border-2 p-1 mx-10">
-                  <div className="rounded-full w-[125px] h-[125px] overflow-hidden">
-                    <img
-                      className="w-full"
-                      src={
-                        `${nahM}`                      }
-                      alt="foto"
-                    />
-                  </div>
-                </div>
-                <h2 className="text-xl text-blanco font-bold p-2 mt-4 uppercase">
-                  Nahuel Medina
-                </h2>
-                <p className="text-lg text-blanco font-thin tracking-tight leading-none uppercase opacity-40">
-                  STAFF<br></br>ADMINISTRADOR
-                </p>
-              </div>
-              <div className="bg-white w-full flex justify-center space-x-5 py-4 rounded-b-lg">
-                <div className="bg-morado2 rounded-full w-9 h-9 flex items-center justify-center">
-                  <a href="" target="_blank">
-                    <i className="bi bi-instagram text-white"></i>
-                  </a>
-                </div>
-
-                <div className="bg-morado2 rounded-full w-9 h-9 flex items-center justify-center">
-                  <a href="" target="_blank">
-                    <i className="bi bi-linkedin text-white"></i>
-                  </a>
-                </div>
-
-                <div className="bg-morado2 rounded-full w-9 h-9 flex items-center justify-center">
-                  <a href="">
-                    <i className="bi bi-envelope-fill text-white"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-          </section>
-
         </div>
       </div>
     </div>

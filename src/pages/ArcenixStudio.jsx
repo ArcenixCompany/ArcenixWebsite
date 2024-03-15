@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { NavbarDeps } from "../components/NavbarDeps";
 import { GiPencilRuler } from "react-icons/gi";
 import { ImFilm } from "react-icons/im";
 import { GiSoundWaves } from "react-icons/gi";
@@ -17,9 +16,6 @@ const ArcenixStudio = () => {
   }, []);
   return (
     <div>
-      <div>
-        <NavbarDeps />
-      </div>
       <div className="min-h-screen flex flex-col justify-center items-center">
         <div
           className="bg-cover bg-center flex w-full py-32"

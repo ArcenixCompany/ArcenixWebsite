@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { NavbarDeps } from "../components/NavbarDeps";
 import { MdOutlinePhonelink } from "react-icons/md";
 import { MdDeveloperBoard } from "react-icons/md";
 import { DiDatabase } from "react-icons/di";
@@ -11,10 +10,12 @@ import { NavLink } from "react-router-dom";
 
 import bgHome from "../views/img/bg-home.png";
 import pc from "../views/svg/desktop-pc.svg";
-import lauZ from "../views/img/lautaro_zalazar.jpg";
+import lauZ from "../views/img/lautaro_zalazar.png";
 import danH from "../views/img/daniel_herrera.jpg";
 import matA from "../views/img/matias_aguirre.jpg";
 import valR from "../views/img/valentino_rivas.jpg";
+import eliM from "../views/img/eliel_mato.jpg";
+import nahM from "../views/img/nahuel_medina.jpg";
 
 const ArcenixDesarrollo = () => {
   useEffect(() => {
@@ -22,9 +23,6 @@ const ArcenixDesarrollo = () => {
   }, []);
   return (
     <div>
-      <div>
-        <NavbarDeps />
-      </div>
       <div className="min-h-screen d-block justify-center items-center">
         <div
           className="bg-cover bg-center flex w-full py-32"
@@ -88,7 +86,9 @@ const ArcenixDesarrollo = () => {
         </div>
 
         <div className="bg-blanco w-full bg-gradient-to-b from-morado2 to-black p-5 min-h-screen flex flex-col justify-center items-center">
-          <h2 className="text-blanco text-4xl text-center p-5 mb-3">Servicios</h2>
+          <h2 className="text-blanco text-4xl text-center p-5 mb-3">
+            Servicios
+          </h2>
           <div className="flex flex-wrap justify-center">
             <div className="w-1/3 p-10 border-r-2 border-blanco">
               <MdOutlinePhonelink className="text-[70px] text-blanco" />
@@ -96,7 +96,9 @@ const ArcenixDesarrollo = () => {
                 Desarrollo de Software a Medida
               </h3>
               <p className="text-blanco opacity-50 text-xl">
-                Desde aplicaciones empresariales hasta soluciones web personalizadas, creamos software que se adapta a sus necesidades específicas.
+                Desde aplicaciones empresariales hasta soluciones web
+                personalizadas, creamos software que se adapta a sus necesidades
+                específicas.
               </p>
             </div>
             <div className="w-1/3 p-10 border-r-2 border-blanco">
@@ -105,7 +107,9 @@ const ArcenixDesarrollo = () => {
                 Desarrollo de E-commerce
               </h3>
               <p className="text-blanco opacity-50 text-xl">
-                Potencie su presencia en línea con plataformas de comercio electrónico robustas y seguras que garanticen una experiencia de compra sin problemas.
+                Potencie su presencia en línea con plataformas de comercio
+                electrónico robustas y seguras que garanticen una experiencia de
+                compra sin problemas.
               </p>
             </div>
             <div className="w-1/3 p-10">
@@ -114,7 +118,9 @@ const ArcenixDesarrollo = () => {
                 Desarrollo de Servidores Personalizados
               </h3>
               <p className="text-blanco opacity-50 text-xl">
-                Diseñamos y desarrollamos servidores a medida para adaptarse perfectamente a las demandas específicas de su aplicación o plataforma.
+                Diseñamos y desarrollamos servidores a medida para adaptarse
+                perfectamente a las demandas específicas de su aplicación o
+                plataforma.
               </p>
             </div>
 
@@ -124,7 +130,9 @@ const ArcenixDesarrollo = () => {
                 Consultoría Tecnológica
               </h3>
               <p className="text-blanco opacity-50 text-xl">
-                Nuestro equipo de expertos en tecnología ofrece asesoramiento estratégico para optimizar sus procesos y maximizar el rendimiento de su infraestructura tecnológica.
+                Nuestro equipo de expertos en tecnología ofrece asesoramiento
+                estratégico para optimizar sus procesos y maximizar el
+                rendimiento de su infraestructura tecnológica.
               </p>
             </div>
             <div className="w-1/3 p-10 pt-0 border-r-2 border-blanco">
@@ -133,7 +141,8 @@ const ArcenixDesarrollo = () => {
                 Servicios de Hosting de Alto Rendimiento
               </h3>
               <p className="text-blanco opacity-50 text-xl">
-                Servicios de hosting que garantizan un rendimiento inigualable, con un tiempo de actividad excepcional y una seguridad robusta.
+                Servicios de hosting que garantizan un rendimiento inigualable,
+                con un tiempo de actividad excepcional y una seguridad robusta.
               </p>
             </div>
             <div className="w-1/3 p-10 pt-0 ">
@@ -142,7 +151,8 @@ const ArcenixDesarrollo = () => {
                 Aplicaciones Móviles Avanzadas
               </h3>
               <p className="text-blanco opacity-50 text-xl">
-                Diseñamos y desarrollamos aplicaciones móviles intuitivas y potentes para iOS y Android.
+                Diseñamos y desarrollamos aplicaciones móviles intuitivas y
+                potentes para iOS y Android.
               </p>
             </div>
           </div>
@@ -159,7 +169,6 @@ const ArcenixDesarrollo = () => {
                 Diseñamos y desarrollamos servidores a medida para adaptarse perfectamente a las demandas específicas de su aplicación o plataforma.
               Servicios de Hosting de Alto Rendimiento: 
                 Servicios de hosting que garantizan un rendimiento inigualable, con un tiempo de actividad excepcional y una seguridad robusta. */}
-
 
           <div className="w-[75%] m-auto p-5">
             <h2 className="text-blanco text-3xl text-center p-3">
@@ -193,11 +202,16 @@ const ArcenixDesarrollo = () => {
               Estamos listos para comenzar
             </h2>
             <div className="py-10">
-              <NavLink to="/contact"
-                className="bg-morado2 p-6 text-blanco text-2xl hover:bg-morado transition-all">
+              <NavLink
+                to="/contact"
+                className="bg-morado2 p-6 text-blanco text-2xl hover:bg-morado transition-all"
+              >
                 Empecemos
               </NavLink>
             </div>
+          </div>
+          <div>
+            <h2 className="text-morado text-5xl p-7 text-center w-full font-bold">NUESTRO EQUIPO DE TRABAJO</h2>
           </div>
 
           <section className="w-full p-2 bg-d2 flex flex-wrap gap-10 justify-center">
@@ -205,20 +219,14 @@ const ArcenixDesarrollo = () => {
               <div className="relative overflow-hidden rounded-t-xl py-6">
                 <div className="rounded-full border-white border-2 p-1 mx-10">
                   <div className="rounded-full w-[125px] h-[125px] overflow-hidden">
-                    <img
-                      className="w-full"
-                      src={
-                        `${lauZ}`
-                      }
-                      alt="foto"
-                    />
+                    <img className="w-full" src={`${lauZ}`} alt="foto" />
                   </div>
                 </div>
                 <h2 className="text-xl text-blanco font-bold p-2 mt-4 uppercase">
                   Lautaro Zalazar
                 </h2>
                 <p className="text-lg text-blanco font-thin tracking-tight leading-none uppercase opacity-40">
-                  DESARROLLADOR<br></br>FRONTEND
+                  DESARROLLADOR<br></br>FULLSTACK
                 </p>
               </div>
               <div className="bg-white w-full flex justify-center space-x-5 py-4 rounded-b-lg">
@@ -246,12 +254,7 @@ const ArcenixDesarrollo = () => {
               <div className="relative overflow-hidden rounded-t-xl py-6">
                 <div className="rounded-full border-white border-2 p-1 mx-10">
                   <div className="rounded-full w-[125px] h-[125px] overflow-hidden">
-                    <img
-                      className="w-full"
-                      src={
-                        `${valR}`
-                      }
-                      alt="foto" />
+                    <img className="w-full" src={`${valR}`} alt="foto" />
                   </div>
                 </div>
                 <h2 className="text-xl text-blanco font-bold p-2 mt-4 uppercase">
@@ -286,13 +289,7 @@ const ArcenixDesarrollo = () => {
               <div className="relative overflow-hidden rounded-t-xl py-6">
                 <div className="rounded-full border-white border-2 p-1 mx-10">
                   <div className="rounded-full w-[125px] h-[125px] overflow-hidden">
-                    <img
-                      className="w-full"
-                      src={
-                        `${danH}`
-                      }
-                      alt="foto"
-                    />
+                    <img className="w-full" src={`${danH}`} alt="foto" />
                   </div>
                 </div>
                 <h2 className="text-xl text-blanco font-bold p-2 mt-4 uppercase">
@@ -327,13 +324,7 @@ const ArcenixDesarrollo = () => {
               <div className="relative overflow-hidden rounded-t-xl py-6">
                 <div className="rounded-full border-white border-2 p-1 mx-10">
                   <div className="rounded-full w-[125px] h-[125px] overflow-hidden">
-                    <img
-                      className="w-full"
-                      src={
-                        `${matA}`
-                      }
-                      alt="foto"
-                    />
+                    <img className="w-full" src={`${matA}`} alt="foto" />
                   </div>
                 </div>
                 <h2 className="text-xl text-blanco font-bold p-2 mt-4 uppercase">
@@ -363,8 +354,76 @@ const ArcenixDesarrollo = () => {
                 </div>
               </div>
             </div>
-          </section>
+            <div className="bg-morado2 h-fit group flex flex-col justify-center items-center text-center rounded-xl shadow-xl z-10 mt-4">
+              <div className="relative overflow-hidden rounded-t-xl py-6">
+                <div className="rounded-full border-white border-2 p-1 mx-10">
+                  <div className="rounded-full w-[125px] h-[125px] overflow-hidden">
+                    <img className="w-full" src={`${eliM}`} alt="foto" />
+                  </div>
+                </div>
+                <h2 className="text-xl text-blanco font-bold p-2 mt-4 uppercase">
+                  Eliel Mato
+                </h2>
+                <p className="text-lg text-blanco font-thin tracking-tight leading-none uppercase opacity-40">
+                  DESARROLLADOR<br></br>MINECRAFT
+                </p>
+              </div>
+              <div className="bg-white w-full flex justify-center space-x-5 py-4 rounded-b-lg">
+                <div className="bg-morado2 rounded-full w-9 h-9 flex items-center justify-center">
+                  <a href="" target="_blank">
+                    <i className="bi bi-instagram text-white"></i>
+                  </a>
+                </div>
 
+                <div className="bg-morado2 rounded-full w-9 h-9 flex items-center justify-center">
+                  <a href="" target="_blank">
+                    <i className="bi bi-linkedin text-white"></i>
+                  </a>
+                </div>
+
+                <div className="bg-morado2 rounded-full w-9 h-9 flex items-center justify-center">
+                  <a href="">
+                    <i className="bi bi-envelope-fill text-white"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-morado2 h-fit group flex flex-col justify-center items-center text-center rounded-xl shadow-xl z-10 mt-4">
+              <div className="relative overflow-hidden rounded-t-xl py-6">
+                <div className="rounded-full border-white border-2 p-1 mx-10">
+                  <div className="rounded-full w-[125px] h-[125px] overflow-hidden">
+                    <img className="w-full" src={`${nahM}`} alt="foto" />
+                  </div>
+                </div>
+                <h2 className="text-xl text-blanco font-bold p-2 mt-4 uppercase">
+                  Nahuel Medina
+                </h2>
+                <p className="text-lg text-blanco font-thin tracking-tight leading-none uppercase opacity-40">
+                  STAFF<br></br>ADMINISTRADOR
+                </p>
+              </div>
+              <div className="bg-white w-full flex justify-center space-x-5 py-4 rounded-b-lg">
+                <div className="bg-morado2 rounded-full w-9 h-9 flex items-center justify-center">
+                  <a href="" target="_blank">
+                    <i className="bi bi-instagram text-white"></i>
+                  </a>
+                </div>
+
+                <div className="bg-morado2 rounded-full w-9 h-9 flex items-center justify-center">
+                  <a href="" target="_blank">
+                    <i className="bi bi-linkedin text-white"></i>
+                  </a>
+                </div>
+
+                <div className="bg-morado2 rounded-full w-9 h-9 flex items-center justify-center">
+                  <a href="">
+                    <i className="bi bi-envelope-fill text-white"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </div>

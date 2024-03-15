@@ -28,9 +28,9 @@ import JSIco from "../views/svg/vscode-icons_file-type-js-official.svg";
 import ViteIco from "../views/svg/vscode-icons_file-type-vite.svg";
 
 const About = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
   return (
     <div className="min-h-screen w-full">
       {/* Inicio */}
@@ -117,66 +117,70 @@ const About = () => {
       </div>
       {/* Herramientas que utilizamos */}
       <div className="flex flex-col justify-center items-center w-full min-h-screen">
-        <h1 className="text-blanco text-center text-5xl pt-4 pb-2">
-          Herramientas que utilizamos
+        <h1 className="text-blanco text-center text-5xl pt-4 pb-2 font-bold">
+          Herramientas con las que trabajamos
         </h1>
-        <div className="flex w-[50%] space-x-10 pb-8">
-          <div className="w-1/2">
-            <h2 className="text-blanco text-center text-2xl p-4">Diseño</h2>
+        <div className="flex-col w-[50%] pb-8">
+
+          <div>
+            <h2 className="text-blanco text-center text-4xl p-4">Herramientas de Diseño</h2>
             <div>
-              <ul className="flex justify-center items-center space-x-4 flex-wrap gap-5 p-10 bg-morado2 rounded-xl">
-                <li>
-                  <img src={PhotoshopIco} />
+              <ul className="flex justify-center items-center space-x-4 flex-wrap gap-5">
+                <li className="btnSkills">
+                  <img src={PhotoshopIco} className="w-full h-full" />
                 </li>
-                <li>
-                  <img src={IllustratorIco} />
+                <li className="btnSkills">
+                  <img src={IllustratorIco} className="w-full h-full " />
                 </li>
-                <li>
-                  <img src={FigmaIco} />
+                <li className="btnSkills">
+                  <img src={FigmaIco} className="w-full h-full " />
                 </li>
               </ul>
             </div>
           </div>
-          <div className="w-1/2 ">
-            <h2 className="text-blanco text-center text-2xl p-4">Desarrollo</h2>
+
+          <div>
+            <h2 className="text-blanco text-center text-4xl p-4">Herramientas de Desarrollo Web</h2>
             <div>
-              <ul className="flex justify-center items-center space-x-4 flex-wrap gap-5 p-10 bg-morado2 rounded-xl">
-                <li>
-                  <img src={CssIco} />
+              <ul className="flex justify-between items-center flex-wrap gap-5 p-10">
+                <li className="btnSkills">
+                  <img src={CssIco} className="w-full h-full"/>
                 </li>
-                <li>
-                  <img src={HtmlIco} />
+                <li className="btnSkills">
+                  <img src={HtmlIco} className="w-full h-full" />
                 </li>
-                <li>
-                  <img src={JSIco} />
+                <li className="btnSkills">
+                  <img src={JSIco} className="w-full h-full" />
                 </li>
-                <li>
-                  <img src={ReactIco} />
+                <li className="btnSkills">
+                  <img src={ReactIco} className="w-full h-full" />
                 </li>
-                <li>
-                  <img src={NodeJsIco} />
+                <li className="btnSkills">
+                  <img src={NodeJsIco} className="w-full h-full" />
                 </li>
-                <li>
-                  <img src={NextIco} />
+                <li className="btnSkills">
+                  <img src={NextIco} className="w-full h-full" />
                 </li>
-                <li>
-                  <img src={RubyIco} />
+                <li className="btnSkills">
+                  <img src={RubyIco} className="w-full h-full" />
                 </li>
-                <li>
-                  <img src={ViteIco} />
+                <li className="btnSkills">
+                  <img src={ViteIco} className="w-full h-full" />
                 </li>
-                <li>
-                  <img src={GitIco} />
+                <li className="btnSkills">
+                  <img src={GitIco} className="w-full h-full" />
                 </li>
-                <li>
-                  <img src={ExpressIco} />
+                <li className="btnSkills">
+                  <img src={ExpressIco} className="w-full h-full" />
                 </li>
-                <li>
-                  <img src={TailwindIco} />
+                <li className="btnSkills">
+                  <img src={TailwindIco} className="w-full h-full" />
                 </li>
               </ul>
             </div>
           </div>
+
+
         </div>
       </div>
     </div>

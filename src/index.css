@@ -45,3 +45,15 @@
   hover:bg-morado2
   transition-all
 }
+.btnSkills {
+  @apply
+  p-3 
+  rounded-lg 
+  transition-all 
+  duration-300 
+  cursor-pointer 
+  w-24 
+  h-24 
+  hover:w-20
+  hover:h-20
+}

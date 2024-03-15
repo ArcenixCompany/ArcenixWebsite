@@ -2,8 +2,10 @@ import { useState } from "react";
 import Arrow from "../views/svg/arrow-right-circle-fill.svg";
 import Logo from "../views/svg/LogoWhite.svg";
 import { NavLink, useLocation } from "react-router-dom";
-import { ToggleSwitch } from "./ToggleSwitch";
 import isoLogo from "../views/svg/arcenix_isotipo.svg";
+import { IoMdArrowDropdown } from "react-icons/io";
+import arcLogo from "../views/svg/arcenix_isotipo.svg";
+
 const SideBar = () => {
   const location = useLocation();
   const [open, setOpen] = useState(true);
@@ -11,22 +13,22 @@ const SideBar = () => {
     { title: "Inicio", src: "house", path: "/", gap: true },
     { title: "Sobre Nosotros", src: "people", path: "/about" },
     { title: "Contacto", src: "chat", path: "/contact" },
-    { title: "Departamentos", icon: true, path: "/deps/" },
+    // { title: "Departamentos", icon: true, path: "/deps/" },
   ];
   const SMedia = [
     {
-      title: "Instagram",
+      // title: "Instagram",
       src: "instagram",
       path: "https://www.instagram.com/arcenixgame/",
       gap: true,
     },
     {
-      title: "Linkedin",
+      // title: "Linkedin",
       src: "linkedin",
       path: "https://www.linkedin.com/in/arcenix-company-5808b12b4/",
     },
     {
-      title: "TikTok",
+      // title: "TikTok",
       src: "tiktok",
       path: "https://www.tiktok.com/@arcenixcompany",
     },
@@ -36,6 +38,11 @@ const SideBar = () => {
   };
   const toggleSidebar = () => {
     setOpen(!open);
+  };
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
   };
 
   return (
@@ -97,27 +104,84 @@ const SideBar = () => {
             </NavLink>
           ))}
 
-          {/* <div className="w-fit mt-3">
-            <ToggleSwitch />
-          </div> */}
+          <button
+            onClick={toggleMenu}
+            className="flex items-center justify-start pl-3 space-x-3 py-3 text-blanco hover:bg-morado2 w-full rounded-md mt-2"
+          >
+            <img src={arcLogo} alt="Logo" className="w-4 h-4" />
+            <p className={`${!open && "hidden"}`}>Departamentos</p>
+            <IoMdArrowDropdown
+              className={`${!open && "hidden"} ${isOpen && "rotate-180"} `}
+            />
+          </button>
 
-          {SMedia.map((a, b) => (
-            <li
-              key={b}
-              className={`text-bg1 dark:text-txt1 text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:text-rosa hover:bg-morado2 rounded-md ${
-                a.gap ? "mt-9" : "mt-2"
-              } ${!open && "justify-center"}`}
-            >
-              <a href={a.path} className="space-x-3" target="_blank">
-                <i className={`bi bi-${a.src}`}></i>
-                <span
-                  className={`${!open && "hidden"} origin-left duration-200`}
+          {isOpen && (
+            <div className=" text-blanco ">
+              <div
+                className="flex flex-col justify-center items-center"
+                role="menu"
+                aria-orientation="vertical"
+                aria-labelledby="options-menu"
+              >
+                <NavLink
+                  className="flex space-x-3 justify-start items-center w-full pl-3 py-2 hover:bg-morado2 rounded-md text-rosaClaro"
+                  to="/deps/arcStudio"
+                  role="menuitem"
+                  onClick={() => {
+                    setIsOpen(false);
+                    setOpen(false); // Cerrar el menú desplegable
+                  }}
                 >
-                  {a.title}
-                </span>
-              </a>
-            </li>
-          ))}
+                  <i className="bi bi-clipboard text-sm"></i>
+                  <p className={`${!open && "hidden"}`}>Arcenix Studio</p>
+                </NavLink>
+                <NavLink
+                  className="flex space-x-3 justify-start items-center w-full pl-3 py-2 hover:bg-morado2 rounded-md text-rosaClaro"
+                  to="/deps/arcDes"
+                  role="menuitem"
+                  onClick={() => {
+                    setIsOpen(false);
+                    setOpen(false); // Cerrar el menú desplegable
+                  }}
+                >
+                  <i className="bi bi-code-slash text-sm"></i>
+                  <p className={`${!open && "hidden"}`}>Arcenix Desarrollo</p>
+                </NavLink>
+                <NavLink
+                  className="flex space-x-3 justify-start items-center w-full pl-3 py-2 hover:bg-morado2 rounded-md text-rosaClaro"
+                  to="/deps/arcGames"
+                  role="menuitem"
+                  onClick={() => {
+                    setIsOpen(false);
+                    setOpen(false); // Cerrar el menú desplegable
+                  }}
+                >
+                  <i className="bi bi-controller text-sm"></i>
+                  <p className={`${!open && "hidden"}`}>Arcenix Games</p>
+                </NavLink>
+              </div>
+            </div>
+          )}
+
+          <div className={`flex w-full justify-around pt-5 ${!open && "flex-col"} transition-all`}>
+            {SMedia.map((a, b) => (
+              <li
+                key={b}
+                className={`text-bg1 dark:text-txt1 text-base flex items-center gap-x-4 cursor-pointer p-2 hover:text-rosa hover:bg-morado2 rounded-md  ${
+                  !open && "justify-center"
+                }`}
+              >
+                <a href={a.path} className="space-x-3" target="_blank">
+                  <i className={`bi bi-${a.src}`}></i>
+                  {/* <span
+                    className={`${!open && "hidden"} origin-left duration-200`}
+                  >
+                    {a.title}
+                  </span> */}
+                </a>
+              </li>
+            ))}
+          </div>
         </ul>
       </div>
     </div>
