@@ -35,17 +35,17 @@ const About = () => {
     <div className="min-h-screen w-full">
       {/* Inicio */}
       <div
-        className="bg-cover bg-center flex w-full p-10 py-40"
+        className="bg-cover bg-center flex w-full p-10 py-10 sm:py-40"
         style={{ backgroundImage: `url(${bgHome})` }}
       >
         <div className="flex flex-col justify-center items-center w-full">
-          <h1 className="text-blanco text-5xl p-5 py-16 ">Sobre Nosotros</h1>
-          <p className="text-blanco opacity-80 text-2xl p-5 text-center w-[70%]">
+          <h1 className="text-blanco text-5xl p-5 lg:py-16 sm:p-5 text-center">Sobre Nosotros</h1>
+          <p className="text-blanco opacity-80 text-2xl p-2 sm:p-5 text-center w-[90%] sm:w-[70%]">
             Somos una empresa de desarrollo de software en argentina con
             relevancia en la escena mundial, constituida por profesionales y
             amantes de los videojuegos.
           </p>
-          <p className="text-blanco opacity-80 text-2xl p-5 text-center w-[70%]">
+          <p className="text-blanco opacity-80 text-2xl p-2 sm:p-5 text-center w-[90%] sm:w-[70%]">
             Ofrecemos una amplia gama de servicios personalizados y soluciones
             tecnológicas para satisfacer la demanda del mundo digital.
           </p>
@@ -53,7 +53,7 @@ const About = () => {
       </div>
       {/* Nuestros Origenes */}
       <div
-        className="bg-darkAzul bg-no-repeat bg-left-top  py-[200px]"
+        className="bg-darkAzul bg-no-repeat bg-left-top py-[50px] sm:py-[200px]"
         style={{
           backgroundImage: `url(${Elipse1}),url(${Elipse2}),url(${Elipse3})`,
           backgroundPosition: "left bottom, left center, right top",
@@ -117,6 +117,7 @@ const About = () => {
       </div>
       {/* Herramientas que utilizamos */}
       <div className="flex flex-col justify-center items-center w-full min-h-screen">
+<<<<<<< HEAD
         <h1 className="text-blanco text-center text-5xl pt-4 pb-2 font-bold">
           Herramientas con las que trabajamos
         </h1>
@@ -124,6 +125,14 @@ const About = () => {
 
           <div>
             <h2 className="text-blanco text-center text-4xl p-4">Herramientas de Diseño</h2>
+=======
+        <h1 className="text-blanco text-center text-5xl p-4">
+          Herramientas que utilizamos
+        </h1>
+        <div className="block sm:flex lg:w-[50%] sm:w-[80%] sm:space-x-10 pb-8">
+          <div className="w-full sm:w-1/2 px-4 sm:px-0">
+            <h2 className="text-blanco text-center text-2xl p-4">Diseño</h2>
+>>>>>>> 8cdd5dd919b4a35e893ec322c64f90738b893995
             <div>
               <ul className="flex justify-center items-center space-x-4 flex-wrap gap-5">
                 <li className="btnSkills">
@@ -138,9 +147,14 @@ const About = () => {
               </ul>
             </div>
           </div>
+<<<<<<< HEAD
 
           <div>
             <h2 className="text-blanco text-center text-4xl p-4">Herramientas de Desarrollo Web</h2>
+=======
+          <div className="w-full sm:w-1/2 px-4 sm:px-0">
+            <h2 className="text-blanco text-center text-2xl p-4">Desarrollo</h2>
+>>>>>>> 8cdd5dd919b4a35e893ec322c64f90738b893995
             <div>
               <ul className="flex justify-between items-center flex-wrap gap-5 p-10">
                 <li className="btnSkills">

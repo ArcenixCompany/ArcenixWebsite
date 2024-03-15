@@ -38,32 +38,32 @@ const Inicio = () => {
         className="bg-cover bg-center flex w-full py-32"
         style={{ backgroundImage: `url(${bgHome})` }}
       >
-        <div className="w-full flex justify-center items-center">
-          <div className="w-[50%]  flex flex-col justify-between items-end">
-            <div className="w-[70%] flex flex-col justify-end items-">
+        <div className="w-full flex flex-col lg:flex-row justify-center items-center">
+          <div className="w-[100%] lg:w-[50%] flex flex-col justify-between items-end">
+            <div className="w-[85%] lg:w-[70%] flex flex-col justify-end">
               <h1
-                className="text-5xl dark:text-txt2 text-start px-8 py-4 tracking-tight font-bold uppercase"
+                className="text-5xl dark:text-txt2 text-start ps-0 lg:px-8 py-4 tracking-tight font-bold uppercase"
                 style={{ fontFamily: "'Helvetica Neue', sans-serif" }}
               >
                 Arcenix <span className="text-blanco">Company</span>
               </h1>
-              <p className="text-blanco px-8 py-2 m-1">
+              <p className="text-blanco ps-0 pe-8 lg:px-8 py-2 m-1">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
                 doloremque ipsam id at, explicabo, reiciendis, atque inventore
                 iusto culpa quisquam asperiores repudiandae distinctio porro
                 aliquam dolorem earum suscipit adipisci animi.
               </p>
-              <h3 className="text-blanco font-bold px-8 py-2 m-1">
+              <h3 className="text-blanco font-bold ps-0 lg:px-8 py-2 m-1">
                 Servicios de diseño | desarrollo web | Gaming
               </h3>
-              <div className=" px-8 py-2 m-1 space-x-3">
-                <button className="boton">Quiero saber más</button>
-                <button className="boton">Contactanos</button>
+              <div className="ps-0 lg:px-8 py-2 m-1 space-x-3">
+                <button className="boton m-1">Quiero saber más</button>
+                <button className="boton m-1">Contactanos</button>
               </div>
             </div>
           </div>
 
-          <div className="w-[50%] h-full  flex flex-col justify-center items-center">
+          <div className="w-[100%] sm:w-[50%] h-full flex flex-col justify-center items-center pt-10">
             <div className="w-full h-full flex flex-col justify-end items-center">
               <div className="flex flex-col">
                 <h3 className="text-blanco font-bold text-xl">
@@ -101,7 +101,7 @@ const Inicio = () => {
             ¿QUIENES SOMOS?
           </h2>
           <div className="flex justify-center">
-            <p className=" text-blanco text-xl text-center p-5 w-[70%]">
+            <p className=" text-blanco text-xl text-center p-5 mb-5 w-[90%] sm:w-[70%]">
               Somos una empresa de desarrollo de software en argentina con
               relevancia en la escena mundial, constituida por profesionales y
               amantes de los videojuegos. Ofrecemos una amplia gama de servicios
@@ -110,7 +110,7 @@ const Inicio = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col flex-wrap gap-10 lg:flex-row w-full items-center justify-around p-10 ">
+        <div className="flex flex-col flex-wrap gap-10 lg:flex-row w-full items-center justify-around sm:p-10 ">
           <div className="card-inicio-dep">
             <div className="p-3">
               <img src={pluma} />
@@ -211,7 +211,7 @@ const Inicio = () => {
       </div>
 
       <div
-        className="bg-cover bg-center flex flex-col justify-center items-start w-full py-52 px-28"
+        className="bg-cover bg-center flex flex-col justify-center items-start w-full py-52 px-10 sm:px-24"
         style={{ backgroundImage: `url(${bgmen})` }}
       >
         <h2 className="text-blanco text-3xl p-4 font-bold">
