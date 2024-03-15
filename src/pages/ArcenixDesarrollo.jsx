@@ -23,14 +23,7 @@ const ArcenixDesarrollo = () => {
   }, []);
   return (
     <div>
-<<<<<<< HEAD
-      <div className="min-h-screen d-block justify-center items-center">
-=======
-      <div>
-        <NavbarDeps />
-      </div>
       <div className="min-h-screen flex flex-col justify-center items-center">
->>>>>>> 8cdd5dd919b4a35e893ec322c64f90738b893995
         <div
           className="bg-cover bg-center w-full flex flex-col-reverse lg:flex-row py-32"
           style={{ backgroundImage: `url(${bgHome})` }}
@@ -93,19 +86,11 @@ const ArcenixDesarrollo = () => {
         </div>
 
         <div className="bg-blanco w-full bg-gradient-to-b from-morado2 to-black p-5 min-h-screen flex flex-col justify-center items-center">
-<<<<<<< HEAD
           <h2 className="text-blanco text-4xl text-center p-5 mb-3">
             Servicios
           </h2>
           <div className="flex flex-wrap justify-center">
             <div className="w-1/3 p-10 border-r-2 border-blanco">
-=======
-          <h2 className="text-blanco text-4xl text-center p-5 my-5">Servicios</h2>
-          
-          <div className="flex flex-col lg:flex-row justify-center">
-
-            <div className="lg:w-1/3 p-10 border-r-2 border-blanco">
->>>>>>> 8cdd5dd919b4a35e893ec322c64f90738b893995
               <MdOutlinePhonelink className="text-[70px] text-blanco" />
               <h3 className="text-blanco text-2xl py-3">
                 Desarrollo de Software a Medida
@@ -175,7 +160,6 @@ const ArcenixDesarrollo = () => {
             </div>
           </div>
 
-<<<<<<< HEAD
           {/* Desarrollo de Software a Medida: 
                 Desde aplicaciones empresariales hasta soluciones web personalizadas, creamos software que se adapta a sus necesidades específicas.
               Aplicaciones Móviles Avanzadas: 
@@ -190,9 +174,6 @@ const ArcenixDesarrollo = () => {
                 Servicios de hosting que garantizan un rendimiento inigualable, con un tiempo de actividad excepcional y una seguridad robusta. */}
 
           <div className="w-[75%] m-auto p-5">
-=======
-          <div className="w-[100%] sm:w-[75%] m-auto p-5">
->>>>>>> 8cdd5dd919b4a35e893ec322c64f90738b893995
             <h2 className="text-blanco text-3xl text-center p-3">
               ¿Por qué Elegirnos?
             </h2>

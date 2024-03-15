@@ -11,40 +11,24 @@ import bgHome from "../views/img/bg-home.png";
 import pc from "../views/svg/desktop-pc.svg";
 
 const ArcenixGames = () => {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
-<<<<<<< HEAD
       <div className="min-h-screen d-block justify-center items-center">
         <div
           className="bg-cover bg-center md:flex w-full py-32 px-10 md:px-0"
           style={{ backgroundImage: `url(${bgHome})` }}
         >
           <div className="w-full md:w-[70%] flex flex-col md:px-40 md:py-12">
-=======
-      <div>
-        <NavbarDeps />
-      </div>
-      <div className="min-h-screen flex flex-col justify-center items-center">
-        <div
-          className="bg-cover bg-center w-full flex flex-col-reverse lg:flex-row py-32"
-          style={{ backgroundImage: `url(${bgHome})` }}
-        >
-          <div className="w-[100%] lg:w-[70%] flex flex-col px-10 lg:px-40 py-12">
->>>>>>> 8cdd5dd919b4a35e893ec322c64f90738b893995
             <h1
               className="text-5xl dark:text-txt2 text-center lg:text-start mt-10 mb-6 tracking-tight font-bold uppercase"
               style={{ fontFamily: "'Helvetica Neue', sans-serif" }}
             >
               Arcenix <span className="text-pink-600">Games</span>
             </h1>
-<<<<<<< HEAD
             <p className="text-xl text-bg2 dark:text-txt2 tracking-tight text-justify md:pr-16">
-=======
-            <p className="text-xl text-bg2 dark:text-txt2 tracking-tight text-justify lg:pr-16">
->>>>>>> 8cdd5dd919b4a35e893ec322c64f90738b893995
               Bienvenido al núcleo innovador de la diversión digital, donde la
               excelencia técnica se encuentra con la pasión por los juegos.
               Nuestro equipo de desarrollo de servidores de videojuegos está
@@ -52,11 +36,7 @@ const ArcenixGames = () => {
               una experiencia inolvidable.
             </p>
           </div>
-<<<<<<< HEAD
           <div className="w-full md:w-[30%] p-10">
-=======
-          <div className="w-[100%] lg:w-[30%] px-10 lg:p-10">
->>>>>>> 8cdd5dd919b4a35e893ec322c64f90738b893995
             <img src={pc} className="w-full" />
           </div>
         </div>
@@ -195,94 +175,7 @@ const ArcenixGames = () => {
               </NavLink>
             </div>
           </div>
-<<<<<<< HEAD
-=======
 
-          <section className="w-full p-2 mb-10 bg-d2 flex flex-wrap gap-10 justify-center">
-            <div className="bg-morado2 h-fit group flex flex-col justify-center items-center text-center rounded-xl shadow-xl z-10 mt-4">
-              <div className="relative overflow-hidden rounded-t-xl py-6">
-                <div className="rounded-full border-white border-2 p-1 mx-10">
-                  <div className="rounded-full w-[125px] h-[125px] overflow-hidden">
-                    <img
-                      className="w-full"
-                      src={
-                        `${eliM}`
-                      }
-                      alt="foto"
-                    />
-                  </div>
-                </div>
-                <h2 className="text-xl text-blanco font-bold p-2 mt-4 uppercase">
-                  Eliel Mato
-                </h2>
-                <p className="text-lg text-blanco font-thin tracking-tight leading-none uppercase opacity-40">
-                  DESARROLLADOR<br></br>MINECRAFT
-                </p>
-              </div>
-              <div className="bg-white w-full flex justify-center space-x-5 py-4 rounded-b-lg">
-                <div className="bg-morado2 rounded-full w-9 h-9 flex items-center justify-center">
-                  <a href="" target="_blank">
-                    <i className="bi bi-instagram text-white"></i>
-                  </a>
-                </div>
-
-                <div className="bg-morado2 rounded-full w-9 h-9 flex items-center justify-center">
-                  <a href="" target="_blank">
-                    <i className="bi bi-linkedin text-white"></i>
-                  </a>
-                </div>
-
-                <div className="bg-morado2 rounded-full w-9 h-9 flex items-center justify-center">
-                  <a href="">
-                    <i className="bi bi-envelope-fill text-white"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-morado2 h-fit group flex flex-col justify-center items-center text-center rounded-xl shadow-xl z-10 mt-4">
-              <div className="relative overflow-hidden rounded-t-xl py-6">
-                <div className="rounded-full border-white border-2 p-1 mx-10">
-                  <div className="rounded-full w-[125px] h-[125px] overflow-hidden">
-                    <img
-                      className="w-full"
-                      src={
-                        `${nahM}`                      }
-                      alt="foto"
-                    />
-                  </div>
-                </div>
-                <h2 className="text-xl text-blanco font-bold p-2 mt-4 uppercase">
-                  Nahuel Medina
-                </h2>
-                <p className="text-lg text-blanco font-thin tracking-tight leading-none uppercase opacity-40">
-                  STAFF<br></br>ADMINISTRADOR
-                </p>
-              </div>
-              <div className="bg-white w-full flex justify-center space-x-5 py-4 rounded-b-lg">
-                <div className="bg-morado2 rounded-full w-9 h-9 flex items-center justify-center">
-                  <a href="" target="_blank">
-                    <i className="bi bi-instagram text-white"></i>
-                  </a>
-                </div>
-
-                <div className="bg-morado2 rounded-full w-9 h-9 flex items-center justify-center">
-                  <a href="" target="_blank">
-                    <i className="bi bi-linkedin text-white"></i>
-                  </a>
-                </div>
-
-                <div className="bg-morado2 rounded-full w-9 h-9 flex items-center justify-center">
-                  <a href="">
-                    <i className="bi bi-envelope-fill text-white"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-          </section>
-
->>>>>>> 8cdd5dd919b4a35e893ec322c64f90738b893995
         </div>
       </div>
     </div>

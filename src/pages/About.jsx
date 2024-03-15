@@ -117,22 +117,12 @@ const About = () => {
       </div>
       {/* Herramientas que utilizamos */}
       <div className="flex flex-col justify-center items-center w-full min-h-screen">
-<<<<<<< HEAD
-        <h1 className="text-blanco text-center text-5xl pt-4 pb-2 font-bold">
-          Herramientas con las que trabajamos
-        </h1>
-        <div className="flex-col w-[50%] pb-8">
-
-          <div>
-            <h2 className="text-blanco text-center text-4xl p-4">Herramientas de Diseño</h2>
-=======
         <h1 className="text-blanco text-center text-5xl p-4">
           Herramientas que utilizamos
         </h1>
-        <div className="block sm:flex lg:w-[50%] sm:w-[80%] sm:space-x-10 pb-8">
+        <div className="flex flex-col justify-center items-center">
           <div className="w-full sm:w-1/2 px-4 sm:px-0">
-            <h2 className="text-blanco text-center text-2xl p-4">Diseño</h2>
->>>>>>> 8cdd5dd919b4a35e893ec322c64f90738b893995
+            <h2 className="text-blanco text-center text-2xl p-4">Herramientas de diseño</h2>
             <div>
               <ul className="flex justify-center items-center space-x-4 flex-wrap gap-5">
                 <li className="btnSkills">
@@ -147,14 +137,8 @@ const About = () => {
               </ul>
             </div>
           </div>
-<<<<<<< HEAD
-
-          <div>
-            <h2 className="text-blanco text-center text-4xl p-4">Herramientas de Desarrollo Web</h2>
-=======
           <div className="w-full sm:w-1/2 px-4 sm:px-0">
-            <h2 className="text-blanco text-center text-2xl p-4">Desarrollo</h2>
->>>>>>> 8cdd5dd919b4a35e893ec322c64f90738b893995
+            <h2 className="text-blanco text-center text-2xl p-4">Herramientas de desarrollo web</h2>
             <div>
               <ul className="flex justify-between items-center flex-wrap gap-5 p-10">
                 <li className="btnSkills">
