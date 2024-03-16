@@ -213,10 +213,10 @@ const ArcenixDesarrollo = () => {
               </NavLink>
             </div>
           </div>
+
           <div>
             <h2 className="text-blanco text-4xl p-5 text-center">Nuestro equipo de trabajo</h2>
           </div>
-
           <section className="w-full p-2 mb-10 bg-d2 flex flex-wrap gap-10 justify-center">
             <div className="bg-morado2 h-fit group flex flex-col justify-center items-center text-center rounded-xl shadow-xl z-10 mt-4">
               <div className="relative overflow-hidden rounded-t-xl py-6">
