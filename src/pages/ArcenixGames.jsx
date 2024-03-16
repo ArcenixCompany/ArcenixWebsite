@@ -42,25 +42,22 @@ const ArcenixGames = () => {
         </div>
 
         <div>
-          <h2 className="text-blanco text-5xl p-5 text-center">
+          <h2 className="text-blanco text-5xl px-5 mt-10 text-center">
             Nuestros Servidores
           </h2>
-          <div className="md:flex justify-evenly">
-
-            <NavLink to="/" className=" flex justify-evenly items-center">
+          <div className="md:flex justify-evenly p-12">
+            <NavLink to="/" className="overflow-hidden rounded-full flex justify-evenly items-center">
               <div
                 style={{ backgroundImage: `url(${imgGta})` }}
-                className=" w-[300px] h-[400px] hover:w-[310px] hover:h-[410px] transition-all duration-300 rounded-md flex justify-center items-end shadow-xl bg-cover bg-center"
+                className = "w-[300px] h-[300px] hover:scale-110 transition-all duration-300 rounded-full flex justify-center items-end shadow-xl bg-cover bg-center"
               ></div>
             </NavLink>
-
-            <NavLink to="/" className=" flex min-h-[600px] justify-evenly items-center">
+            <NavLink to="/" className="overflow-hidden rounded-full flex justify-evenly items-center">
               <div
                 style={{ backgroundImage: `url(${imgMine})` }}
-                className=" w-[300px] h-[400px] hover:w-[310px] hover:h-[410px] transition-all duration-300 rounded-md flex justify-center items-end shadow-xl bg-cover bg-center"
+                className = "w-[300px] h-[300px] hover:scale-110 transition-all duration-300 rounded-full flex justify-center items-end shadow-xl bg-cover bg-center"
               ></div>
             </NavLink>
-
           </div>
         </div>
 
@@ -169,8 +166,7 @@ const ArcenixGames = () => {
             <div className="py-10">
               <NavLink
                 to="/contact"
-                className="bg-morado2 p-6 text-blanco text-2xl hover:bg-morado transition-all"
-              >
+                className="bg-morado2 p-6 text-blanco text-2xl hover:bg-morado transition-all">
                 Empecemos
               </NavLink>
             </div>

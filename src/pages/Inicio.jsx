@@ -134,9 +134,14 @@ const Inicio = () => {
             </p>
             <NavLink
               to="/deps/arcStudio"
-              className="flex space-x-2 p-2 px-10 bg-morado w-fit text-blanco font-bold text-xl"
+              className="flex space-x-2 p-2 px-10 bg-morado w-fit text-blanco font-bold text-xl rounded-sm"
               onMouseEnter={() => setStuIsHovered(true)}
               onMouseLeave={() => setStuIsHovered(false)}
+              style={{
+                boxShadow: isStuHovered
+                  ? "0 0 13px rgba(99, 102, 241, 0.9)"
+                  : "none",
+              }}
             >
               <p>Saber más</p>
               <i className="bi bi-arrow-right"></i>
@@ -167,9 +172,14 @@ const Inicio = () => {
             </p>
             <NavLink
               to="/deps/arcDes"
-              className="flex space-x-2 p-2 px-10 bg-morado w-fit text-blanco font-bold text-xl"
+              className="flex space-x-2 p-2 px-10 bg-morado w-fit text-blanco font-bold text-xl rounded-sm"
               onMouseEnter={() => setDevIsHovered(true)}
               onMouseLeave={() => setDevIsHovered(false)}
+              style={{
+                boxShadow: isDevHovered
+                  ? "0 0 13px rgba(16, 185, 129, 0.9)"
+                  : "none",
+              }}
             >
               <p>Saber más</p>
               <i className="bi bi-arrow-right"></i>
@@ -199,9 +209,14 @@ const Inicio = () => {
             </p>
             <NavLink
               to="/deps/arcGames"
-              className="flex space-x-2 p-2 px-10 bg-morado w-fit text-blanco font-bold text-xl"
+              className="flex space-x-2 p-2 px-10 bg-morado w-fit text-blanco font-bold text-xl rounded-sm"
               onMouseEnter={() => setGamIsHovered(true)}
               onMouseLeave={() => setGamIsHovered(false)}
+              style={{
+                boxShadow: isGamHovered
+                  ? "0 0 13px rgba(219, 39, 119, 0.9)"
+                  : "none",
+              }}
             >
               <p>Saber más</p>
               <i className="bi bi-arrow-right"></i>

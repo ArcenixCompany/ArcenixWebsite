@@ -83,11 +83,11 @@ const SideBar = () => {
               to={menu.path}
               key={index}
               className={`text-bg1 dark:text-txt1 text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-d1 rounded-md 
-    ${menu.gap ? "mt-9" : "mt-2"} 
-    ${isActive(menu.path) ? "hover:bg-d1" : ""} ${
+              ${menu.gap ? "mt-9" : "mt-2"} 
+              ${isActive(menu.path) ? "hover:bg-d1" : ""} ${
                 isActive(menu.path) && "bg-d1"
               }
-    ${!open && "justify-center"}`}
+              ${!open && "justify-center"}`}
               onClick={open ? toggleSidebar : undefined}
             >
               {menu.title === "Departamentos" && (
@@ -124,7 +124,7 @@ const SideBar = () => {
                 aria-labelledby="options-menu"
               >
                 <NavLink
-                  className="flex space-x-3 justify-start items-center w-full pl-3 py-2 hover:bg-morado2 rounded-md text-rosaClaro"
+                  className="flex space-x-3 justify-start items-center w-full pl-3 py-2 hover:bg-indigo-500 hover:text-white rounded-md text-rosaClaro"
                   to="/deps/arcStudio"
                   role="menuitem"
                   onClick={() => {
@@ -136,7 +136,7 @@ const SideBar = () => {
                   <p className={`${!open && "hidden"}`}>Arcenix Studio</p>
                 </NavLink>
                 <NavLink
-                  className="flex space-x-3 justify-start items-center w-full pl-3 py-2 hover:bg-morado2 rounded-md text-rosaClaro"
+                  className="flex space-x-3 justify-start items-center w-full pl-3 py-2 hover:bg-emerald-600 hover:text-white rounded-md text-rosaClaro"
                   to="/deps/arcDes"
                   role="menuitem"
                   onClick={() => {
@@ -148,7 +148,7 @@ const SideBar = () => {
                   <p className={`${!open && "hidden"}`}>Arcenix Desarrollo</p>
                 </NavLink>
                 <NavLink
-                  className="flex space-x-3 justify-start items-center w-full pl-3 py-2 hover:bg-morado2 rounded-md text-rosaClaro"
+                  className="flex space-x-3 justify-start items-center w-full pl-3 py-2 hover:bg-pink-600 hover:text-white rounded-md text-rosaClaro"
                   to="/deps/arcGames"
                   role="menuitem"
                   onClick={() => {

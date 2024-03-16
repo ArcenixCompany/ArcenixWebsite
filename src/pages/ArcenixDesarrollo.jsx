@@ -214,7 +214,7 @@ const ArcenixDesarrollo = () => {
             </div>
           </div>
           <div>
-            <h2 className="text-morado text-5xl p-7 text-center w-full font-bold">NUESTRO EQUIPO DE TRABAJO</h2>
+            <h2 className="text-blanco text-4xl p-5 text-center">Nuestro equipo de trabajo</h2>
           </div>
 
           <section className="w-full p-2 mb-10 bg-d2 flex flex-wrap gap-10 justify-center">

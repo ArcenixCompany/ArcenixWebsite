@@ -34,7 +34,9 @@
     flex-col
     justify-evenly
   }
+
 }
+
 .boton {
   @apply 
   text-blanco
