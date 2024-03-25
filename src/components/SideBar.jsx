@@ -1,10 +1,10 @@
 import { useState } from "react";
-import Arrow from "../views/svg/arrow-right-circle-fill.svg";
-import Logo from "../views/svg/LogoWhite.svg";
 import { NavLink, useLocation } from "react-router-dom";
-import isoLogo from "../views/svg/arcenix_isotipo.svg";
 import { IoMdArrowDropdown } from "react-icons/io";
-import arcLogo from "../views/svg/arcenix_isotipo.svg";
+import Arrow from "../views/svg/arrow-right-circle-fill.svg";
+import Logo from "../views/img/logo25-3-24.png";
+import isoLogo from "../views/img/logo25-3-24.png";
+import arcLogo from "../views/img/logo25-3-24.png";
 
 const SideBar = () => {
   const location = useLocation();
