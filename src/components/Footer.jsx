@@ -1,4 +1,4 @@
-import logo from "../views/svg/LogoWhite.svg";
+import logo from "../views/img/logo25-3-24.png";
 import { NavLink } from "react-router-dom";
 import { IoIosArrowUp } from "react-icons/io";
 import { ScrollToTopButton } from "./ScrollToTopButton";
