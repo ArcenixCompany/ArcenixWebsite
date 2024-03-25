@@ -4,6 +4,7 @@ import { IoIosSpeedometer } from "react-icons/io";
 import { BsFillShieldLockFill } from "react-icons/bs";
 import { BsPatchCheck } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
+import { NavbarDeps } from "../components/NavbarDeps";
 import imgGta from "../views/img/gta5.jpeg";
 import imgMine from "../views/img/minecraft.jpeg";
 
@@ -16,7 +17,10 @@ const ArcenixGames = () => {
   }, []);
   return (
     <div>
-      <div className="min-h-screen d-block justify-center items-center">
+      <div>
+        <NavbarDeps />
+      </div>
+      <div className="min-h-screen d-block justify-center items-center bg-darkAzul">
         <div
           className="bg-cover bg-center md:flex w-full py-32 px-10 md:px-0"
           style={{ backgroundImage: `url(${bgHome})` }}
@@ -41,11 +45,11 @@ const ArcenixGames = () => {
           </div>
         </div>
 
-        <div>
-          <h2 className="text-blanco text-5xl px-5 mt-10 text-center">
+        <div className="bg-darkAzul">
+          <h2 className="text-blanco text-5xl px-5 mt-10 text-center bg-darkAzul">
             Nuestros Servidores
           </h2>
-          <div className="md:flex justify-evenly p-12">
+          <div className="md:flex justify-evenly p-12 bg-darkAzul">
             <NavLink to="/" className="overflow-hidden rounded-full flex justify-evenly items-center">
               <div
                 style={{ backgroundImage: `url(${imgGta})` }}

@@ -16,6 +16,7 @@ import matA from "../views/img/matias_aguirre.jpg";
 import valR from "../views/img/valentino_rivas.jpg";
 import eliM from "../views/img/eliel_mato.jpg";
 import nahM from "../views/img/nahuel_medina.jpg";
+import { NavbarDeps } from "../components/NavbarDeps";
 
 const ArcenixDesarrollo = () => {
   useEffect(() => {
@@ -23,6 +24,9 @@ const ArcenixDesarrollo = () => {
   }, []);
   return (
     <div>
+      <div>
+        <NavbarDeps />
+      </div>
       <div className="min-h-screen flex flex-col justify-center items-center">
         <div
           className="bg-cover bg-center w-full flex flex-col-reverse lg:flex-row py-32"
@@ -126,7 +130,6 @@ const ArcenixDesarrollo = () => {
           </div>
 
           <div className="flex flex-col lg:flex-row justify-center mb-5">
-            
             <div className="lg:w-1/3 p-10 pt-0 border-r-2 border-blanco">
               <DiGitBranch className="text-[70px] text-blanco" />
               <h3 className="text-blanco text-2xl py-3">
@@ -214,7 +217,9 @@ const ArcenixDesarrollo = () => {
             </div>
           </div>
           <div>
-            <h2 className="text-blanco text-4xl p-5 text-center">Nuestro equipo de trabajo</h2>
+            <h2 className="text-blanco text-4xl p-5 text-center">
+              Nuestro equipo de trabajo
+            </h2>
           </div>
 
           <section className="w-full p-2 mb-10 bg-d2 flex flex-wrap gap-10 justify-center">

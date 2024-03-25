@@ -4,6 +4,7 @@ import { ImFilm } from "react-icons/im";
 import { GiSoundWaves } from "react-icons/gi";
 import { BsPatchCheck } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
+import { NavbarDeps } from "../components/NavbarDeps";
 
 import bgHome from "../views/img/bg-home.png";
 import pc from "../views/svg/desktop-pc.svg";
@@ -16,6 +17,9 @@ const ArcenixStudio = () => {
   }, []);
   return (
     <div>
+      <div>
+        <NavbarDeps />
+      </div>
       <div className="min-h-screen flex flex-col justify-center items-center">
         <div
           className="bg-cover bg-center w-full flex flex-col-reverse lg:flex-row py-32"
@@ -78,7 +82,9 @@ const ArcenixStudio = () => {
         </div>
 
         <div className="bg-blanco w-full bg-gradient-to-b from-morado2 to-black p-5 min-h-screen flex flex-col justify-center items-center">
-          <h2 className="text-blanco text-4xl text-center p-5 my-5">Servicios</h2>
+          <h2 className="text-blanco text-4xl text-center p-5 my-5">
+            Servicios
+          </h2>
           <div className="flex flex-col lg:flex-row justify-center mb-5">
             <div className="lg:w-1/3 p-10 border-r-2 border-blanco">
               <GiPencilRuler className="text-[70px] text-blanco" />
@@ -111,7 +117,7 @@ const ArcenixStudio = () => {
               </p>
             </div>
           </div>
-          
+
           <div className="w-[100%] sm:w-[75%] m-auto p-5">
             <h2 className="text-blanco text-3xl text-center p-3">
               ¿Por qué Elegirnos?
@@ -153,20 +159,16 @@ const ArcenixStudio = () => {
           </div>
 
           <div>
-            <h2 className="text-blanco text-4xl p-5 text-center">Nuestro equipo de trabajo</h2>
+            <h2 className="text-blanco text-4xl p-5 text-center">
+              Nuestro equipo de trabajo
+            </h2>
           </div>
           <section className="w-full p-2 mb-10 bg-d2 flex flex-wrap gap-10 justify-center">
             <div className="bg-morado2 h-fit group flex flex-col justify-center items-center text-center rounded-xl shadow-xl z-10 mt-4">
               <div className="relative overflow-hidden rounded-t-xl py-6">
                 <div className="rounded-full border-white border-2 p-1 mx-10">
                   <div className="rounded-full w-[125px] h-[125px] overflow-hidden">
-                    <img
-                      className="w-full"
-                      src={
-                        `${aguA}`
-                      }
-                      alt="foto"
-                    />
+                    <img className="w-full" src={`${aguA}`} alt="foto" />
                   </div>
                 </div>
                 <h2 className="text-xl text-blanco font-bold p-2 mt-4 uppercase">
@@ -201,13 +203,7 @@ const ArcenixStudio = () => {
               <div className="relative overflow-hidden rounded-t-xl py-6">
                 <div className="rounded-full border-white border-2 p-1 mx-10">
                   <div className="rounded-full w-[125px] h-[125px] overflow-hidden">
-                    <img
-                      className="w-full"
-                      src={
-                        `${fraA}`
-                      }
-                      alt="foto"
-                    />
+                    <img className="w-full" src={`${fraA}`} alt="foto" />
                   </div>
                 </div>
                 <h2 className="text-xl text-blanco font-bold p-2 mt-4 uppercase">
@@ -237,9 +233,7 @@ const ArcenixStudio = () => {
                 </div>
               </div>
             </div>
-
           </section>
-          
         </div>
       </div>
     </div>

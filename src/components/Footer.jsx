@@ -7,47 +7,47 @@ const Footer = () => {
   const activeLink = "text-rosa hover:text-text2 w-fit";
   return (
     <>
-      <div className="flex flex-col sm:flex-row w-full justify-around items-start p-10 bg-txt1 dark:bg-gris2">
+      <div className="flex flex-col sm:flex-row w-full justify-around items-start p-10 bg-bg1">
         <ScrollToTopButton />
         {/* Información de contacto */}
         <div>
-          <h2 className="text-bg1 dark:text-txt1 font-bold w-full p-2">
+          <h2 className="text-blanco font-bold w-full p-2">
             Informacion de contacto
           </h2>
           <div className="flex justify-start items-center w-full p-2">
             <i className="bi bi-envelope-fill nbm text-xl"></i>
-            <p className="text-bg1 dark:text-txt2 font-medium ml-2">
+            <p className="text-blanco font-medium ml-2">
               <spam>arcenixcompany@gmail.com </spam>
             </p>
           </div>
           <div className="flex justify-start items-center w-full p-2">
             <i className="bi bi-telephone-fill nbm text-xl "></i>
-            <p className="text-bg1 dark:text-txt2 font-medium ml-2">
+            <p className="text-blanco font-medium ml-2">
               1154366545
             </p>
           </div>
           <div className="flex justify-start items-center w-full p-2">
             <i className="bi bi-clock-fill nbm text-xl"></i>
-            <p className="text-bg1 dark:text-txt2 font-medium ml-2">
+            <p className="text-blanco font-medium ml-2">
               Lunes a Viernes: 9 - 20hs
             </p>
           </div>
         </div>
         {/* Acerca de */}
         <div>
-          <h2 className="text-bg1 dark:text-txt1 font-bold p-2">Acerca de</h2>
+          <h2 className="text-blanco font-bold p-2">Acerca de</h2>
           <ul>
-            <li className="text-bg1 dark:text-txt2 dark:hover:text-rosa p-2 hover:text-rosa transition-all">
+            <li className="text-blanco dark:hover:text-rosa p-2 hover:text-rosa transition-all">
               <a href="#">Terminos y condiciones</a>
             </li>
-            <li className="text-bg1 dark:text-txt2 dark:hover:text-rosa p-2 hover:text-rosa transition-all">
+            <li className="text-blanco dark:hover:text-rosa p-2 hover:text-rosa transition-all">
               <a href="#">Politicas y privacidad</a>
             </li>
           </ul>
         </div>
         {/* Mapa del sitio */}
         <div>
-          <h2 className="text-bg1 dark:text-txt1 font-bold p-2">
+          <h2 className="text-blanco font-bold p-2">
             Mapa del sitio
           </h2>
           <div className="w-full">
@@ -57,7 +57,7 @@ const Footer = () => {
                 className={({ isActive }) =>
                   isActive
                     ? activeLink
-                    : "text-bg1 dark:text-txt2 hover:text-rosa dark:hover:text-rosa "
+                    : "text-blanco hover:text-rosa dark:hover:text-rosa "
                 }
               >
                 <div className="p-2">
@@ -70,7 +70,7 @@ const Footer = () => {
                 className={({ isActive }) =>
                   isActive
                     ? activeLink
-                    : "text-bg1 dark:text-txt2 hover:text-rosa dark:hover:text-rosa "
+                    : "text-blanco hover:text-rosa dark:hover:text-rosa "
                 }
               >
                 <div className="p-2">
@@ -83,7 +83,7 @@ const Footer = () => {
                 className={({ isActive }) =>
                   isActive
                     ? activeLink
-                    : " text-bg1 dark:text-txt2 hover:text-rosa dark:hover:text-rosa "
+                    : " text-blanco hover:text-rosa dark:hover:text-rosa "
                 }
               >
                 <div className="p-2">
@@ -96,7 +96,7 @@ const Footer = () => {
                 className={({ isActive }) =>
                   isActive
                     ? activeLink
-                    : "text-bg1 dark:text-txt2 hover:text-rosa dark:hover:text-rosa"
+                    : "text-blanco hover:text-rosa dark:hover:text-rosa"
                 }
               >
                 <div className="p-2">
@@ -145,7 +145,7 @@ const Footer = () => {
         </div>
       </div>
       {/* Texto de derechos de autor */}
-      <div className="flex justify-center items-center p-3 bg-txt1 dark:bg-gris2">
+      <div className="flex justify-center items-center p-3 bg-bg1">
         <p className="text-gray-500 text-sm">
           © 2024 Arcenix Company. Todos los derechos reservados.
         </p>

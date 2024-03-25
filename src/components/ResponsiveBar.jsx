@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import Logo from "../views/img/logoViolet.png";
+import Logo from "../views/img/logo25-3-24.png";
 import { ToggleSwitch } from "./ToggleSwitch";
 
 const ResponsiveBar = () => {
@@ -17,11 +17,6 @@ const ResponsiveBar = () => {
       path: "https://www.linkedin.com/in/arcenix-company-5808b12b4/",
     },
     {
-      title: "Twitter",
-      src: "twitter-x",
-      path: "https://twitter.com/ArcenixC",
-    },
-    {
       title: "TikTok",
       src: "tiktok",
       path: "https://www.tiktok.com/@arcenixcompany",
@@ -33,7 +28,7 @@ const ResponsiveBar = () => {
   };
 
   return (
-    <nav className="bg-txt1 dark:bg-bg1 py-4 fixed w-full z-50">
+    <nav className="bg-darkAzul py-4 fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex">
@@ -130,18 +125,15 @@ const ResponsiveBar = () => {
             className="text-bg1 dark:text-txt1 hover:bg-d1 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
             onClick={open ? toggleMenu : undefined}
           >
-            Fundadores
+            Contacto
           </NavLink>
           <NavLink
             to="/contact"
             className="text-bg1 dark:text-txt1 hover:bg-d1 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
             onClick={open ? toggleMenu : undefined}
           >
-            Contacto
+            Departamentos
           </NavLink>
-          <div className="pl-3">
-            <ToggleSwitch />
-          </div>
           <div className="flex w-full justify-evenly">
             {SMedia.map((a, b) => (
               <li
