@@ -20,7 +20,7 @@ function App() {
           <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet" />
         </head>
 
-        <div className="flex">
+        <div className="flex ">
           <div className="z-50 flex-none bg-gradient-to-br from-morado2 to-darkAzul fixed top-0 left-0 h-full hidden sm:block">
             <SideBar />
           </div>

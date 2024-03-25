@@ -5,13 +5,13 @@ const NavbarDeps = () => {
   const activeLink = "font-bold w-fit";
   return (
     <div>
-      <nav className="flex justify-evenly bg-txt1 dark:bg-bg1">
+      <nav className="flex justify-evenly bg-bg1">
         <NavLink
           to="/deps/arcStudio"
           className={({ isActive }) =>
             isActive
               ? activeLink + " bg-indigo-500"
-              : "text-bg1 dark:text-txt2 hover:text-bg2 w-fit"
+              : "text-blanco hover:text-bg2 w-fit"
           }
         >
           <div className="nbb hover:text-indigo-300 dark:hover:text-indigo-300">
@@ -26,7 +26,7 @@ const NavbarDeps = () => {
           className={({ isActive }) =>
             isActive
               ? activeLink + " bg-emerald-600"
-              : "text-bg1 dark:text-txt2 hover:text-bg2 w-fit"
+              : "text-blanco hover:text-bg2 w-fit"
           }
         >
           <div className="nbb hover:text-emerald-400 dark:hover:text-emerald-400">
@@ -41,7 +41,7 @@ const NavbarDeps = () => {
           className={({ isActive }) =>
             isActive
               ? activeLink + " bg-pink-600"
-              : "text-bg1 dark:text-txt2 hover:text-bg2 w-fit"
+              : "text-blanco hover:text-bg2 w-fit"
           }
         >
           <div className="nbb hover:text-pink-400 dark:hover:text-pink-400">

@@ -4,7 +4,7 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import Arrow from "../views/svg/arrow-right-circle-fill.svg";
 import Logo from "../views/img/logo25-3-24.png";
 import isoLogo from "../views/img/logo25-3-24.png";
-import arcLogo from "../views/img/logo25-3-24.png";
+import arcLogo from "../views/svg/arcenix_isotipo.svg";
 
 const SideBar = () => {
   const location = useLocation();
@@ -48,7 +48,7 @@ const SideBar = () => {
   return (
     <div className="flex shadow-custom border-r-2 border-gris">
       <div
-        className={`h-screen p-5 pt-8 bg-txt1 dark:bg-darkAzul relative duration-300 ${
+        className={`h-screen p-5 pt-8 bg-darkAzul relative duration-300 ${
           open ? "w-60" : "w-20"
         }`}
       >
@@ -59,7 +59,7 @@ const SideBar = () => {
           } w-[35px]`}
           onClick={() => setOpen(!open)}
         />
-        <div className="flex w-full gap-x-4 ml-8">
+        <div className="flex w-full gap-x-4 ml-9">
           <NavLink
             to="/"
             className={`flex space-x-4 items-center justify-center cursor-pointer duration-500 w-10 h-10 ${
@@ -68,7 +68,7 @@ const SideBar = () => {
           >
             <img src={Logo} />
             <h1
-              className={`text-bg1 dark:text-txt1 origin-left font-medium text-xl duration-300 ${
+              className={`text-blanco origin-left font-medium text-xl duration-300 ${
                 !open && "scale-0"
               }`}
             >
@@ -82,7 +82,7 @@ const SideBar = () => {
             <NavLink
               to={menu.path}
               key={index}
-              className={`text-bg1 dark:text-txt1 text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-d1 rounded-md 
+              className={`text-blanco text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-d1 rounded-md 
               ${menu.gap ? "mt-9" : "mt-2"} 
               ${isActive(menu.path) ? "hover:bg-d1" : ""} ${
                 isActive(menu.path) && "bg-d1"
@@ -167,7 +167,7 @@ const SideBar = () => {
             {SMedia.map((a, b) => (
               <li
                 key={b}
-                className={`text-bg1 dark:text-txt1 text-base flex items-center gap-x-4 cursor-pointer p-2 hover:text-rosa hover:bg-morado2 rounded-md  ${
+                className={`text-blanco text-base flex items-center gap-x-4 cursor-pointer p-2 hover:text-rosa hover:bg-morado2 rounded-md  ${
                   !open && "justify-center"
                 }`}
               >

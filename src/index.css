@@ -5,12 +5,12 @@
 @layer {
   /* nbb = estilos del "navbar button media" */
   .nbb {
-    @apply gap-2 text-center text-xs dark:text-blanco hover:font-bold hover:text-rosa dark:hover:text-rosa transition-all rounded-md w-[80px] my-3;
+    @apply gap-2 text-center text-xs text-blanco hover:font-bold hover:text-rosa dark:hover:text-rosa transition-all rounded-md w-[80px] my-3;
   }
 
   /* nbb = estilos del "navbar button" */
   .nbm {
-    @apply text-bg1 dark:text-txt2 dark:hover:text-rosa text-xl transition-all hover:shadow-2xl;
+    @apply text-blanco dark:hover:text-rosa text-xl transition-all hover:shadow-2xl;
   }
 
   .contenedorTeam {
