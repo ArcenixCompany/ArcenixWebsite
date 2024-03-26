@@ -7,16 +7,13 @@
   .nbb {
     @apply gap-2 text-center text-xs text-blanco hover:font-bold hover:text-rosa dark:hover:text-rosa transition-all rounded-md w-[80px] my-3;
   }
-
   /* nbb = estilos del "navbar button" */
   .nbm {
     @apply text-blanco dark:hover:text-rosa text-xl transition-all hover:shadow-2xl;
   }
-
   .contenedorTeam {
     @apply w-[230px] h-[326px] overflow-hidden;
   }
-
   .imagenes {
     @apply w-fit h-1/2 object-cover;
   }
@@ -34,9 +31,7 @@
     flex-col
     justify-evenly
   }
-
 }
-
 .boton {
   @apply 
   text-blanco
@@ -56,6 +51,8 @@
   cursor-pointer 
   w-24 
   h-24 
-  hover:w-20
-  hover:h-20
+  /* hover:w-20
+  hover:h-20 */
+  hover:bg-morado2
+  hover:p-5
 }

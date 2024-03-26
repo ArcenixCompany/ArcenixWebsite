@@ -27,7 +27,7 @@ const ArcenixGames = () => {
         >
           <div className="w-full md:w-[70%] flex flex-col md:px-40 md:py-12">
             <h1
-              className="text-5xl dark:text-txt2 text-center lg:text-start mt-10 mb-6 tracking-tight font-bold uppercase"
+              className="text-5xl text-blanco text-center lg:text-start mt-10 mb-6 tracking-tight font-bold uppercase"
               style={{ fontFamily: "'Helvetica Neue', sans-serif" }}
             >
               Arcenix <span className="text-pink-600">Games</span>
@@ -45,22 +45,27 @@ const ArcenixGames = () => {
           </div>
         </div>
 
-        <div className="bg-darkAzul">
-          <h2 className="text-blanco text-5xl px-5 mt-10 text-center bg-darkAzul">
-            Nuestros Servidores
+        <div className="bg-blanco bg-gradient-to-b from-morado to-morado2">
+          <h2 className="text-blanco text-5xl px-5 pt-10 text-center">
+            Servidores Activos
           </h2>
-          <div className="md:flex justify-evenly p-12 bg-darkAzul">
-            <NavLink to="/" className="overflow-hidden rounded-full flex justify-evenly items-center">
+          <div className="md:flex justify-evenly p-12">
+            <NavLink to="/" className="overflow-hidden rounded-full border-2 border-blanco flex justify-evenly items-center shadow-inner">
               <div
                 style={{ backgroundImage: `url(${imgGta})` }}
                 className = "w-[300px] h-[300px] hover:scale-110 transition-all duration-300 rounded-full flex justify-center items-end shadow-xl bg-cover bg-center"
-              ></div>
+              >
+                <div className="w-[300px] h-[300px] bg-blanco bg-opacity-50 flex justify-center items-center"><span className="[text-shadow:_0_1px_10px_rgb(0_0_0_/_100%)] text-blanco bold text-3xl">PROXIMAMENTE</span></div>
+              </div>
             </NavLink>
-            <NavLink to="/" className="overflow-hidden rounded-full flex justify-evenly items-center">
+            
+            <NavLink to="/" className="overflow-hidden rounded-full border-2 border-blanco flex justify-evenly items-center">
               <div
                 style={{ backgroundImage: `url(${imgMine})` }}
                 className = "w-[300px] h-[300px] hover:scale-110 transition-all duration-300 rounded-full flex justify-center items-end shadow-xl bg-cover bg-center"
-              ></div>
+              >
+                <div className="w-[300px] h-[300px] bg-blanco bg-opacity-50 flex justify-center items-center"><span className="[text-shadow:_0_1px_10px_rgb(0_0_0_/_100%)] text-blanco bold text-3xl">PROXIMAMENTE</span></div>
+              </div>
             </NavLink>
           </div>
         </div>
@@ -107,7 +112,6 @@ const ArcenixGames = () => {
           <div className="flex flex-col lg:flex-row justify-center mb-5">
             <div className="lg:w-1/3 p-10 border-r-2 border-blanco">
               <AiFillDatabase className="text-[70px] text-blanco" />
-
               <h3 className="text-blanco text-2xl py-3">
                 Desarrollo de Servidores Multijugador
               </h3>

@@ -27,7 +27,7 @@ const ArcenixStudio = () => {
         >
           <div className="w-[100%] lg:w-[70%] flex flex-col px-10 lg:px-40 py-12">
             <h1
-              className="text-5xl dark:text-txt2 text-center lg:text-start mt-10 mb-6 tracking-tight font-bold uppercase"
+              className="text-5xl text-blanco text-center lg:text-start mt-10 mb-6 tracking-tight font-bold uppercase"
               style={{ fontFamily: "'Helvetica Neue', sans-serif" }}
             >
               Arcenix <span className="text-indigo-500">Studio</span>
