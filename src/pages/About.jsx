@@ -39,7 +39,7 @@ const About = () => {
         style={{ backgroundImage: `url(${bgHome})` }}
       >
         <div className="flex flex-col justify-center items-center w-full">
-          <h1 className="text-blanco text-5xl p-5 lg:py-16 sm:p-5 text-center">Sobre Nosotros</h1>
+          <h1 className="text-blanco text-5xl p-5 lg:py-10 sm:p-5 text-center">Sobre Nosotros</h1>
           <p className="text-blanco opacity-80 text-2xl p-2 sm:p-5 text-center w-[90%] sm:w-[70%]">
             Somos una empresa de desarrollo de software en argentina con
             relevancia en la escena mundial, constituida por profesionales y
@@ -74,7 +74,7 @@ const About = () => {
             <p>
               Nuestro fundador y dueño de Arcenix Company Maximiliano Daniel
               Solis, junto con un grupo de personas, cansados de no tener
-              experiencias gratificantes en varios servidores y productos 
+              experiencias gratificantes en varios servidores y productos
               decidieron poner manos a la obra en la travesía de desarrollar,
               diseñar y crear productos a la medida de sus expectativas, fue ahí
               cuando se inició un servidor de Minecraft, el cual tenía una
@@ -117,7 +117,7 @@ const About = () => {
       </div>
       {/* Herramientas que utilizamos */}
       <div className="flex flex-col justify-center items-center w-full min-h-screen">
-        <h1 className="text-blanco text-center text-5xl p-4">
+        <h1 className="text-blanco text-center text-5xl p-4 py-16">
           Herramientas que utilizamos
         </h1>
         <div className="flex flex-col justify-center items-center">

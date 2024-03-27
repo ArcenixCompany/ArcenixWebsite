@@ -90,7 +90,7 @@ const Inicio = () => {
                         target="_blank"
                       >
                         <i
-                          className={`bi bi-${a.src} text-morado2 text-xl`}
+                          className={`bi bi-${a.src} text-morado2 hover:text-blanco transition-all text-xl`}
                         ></i>
                       </a>
                     </li>

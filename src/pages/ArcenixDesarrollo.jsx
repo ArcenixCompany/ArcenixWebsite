@@ -94,7 +94,7 @@ const ArcenixDesarrollo = () => {
             Servicios
           </h2>
           <div className="flex flex-wrap justify-center">
-            <div className="w-1/3 p-10 border-r-2 border-blanco">
+            <div className="lg:w-1/3 p-10 border-r-2 border-blanco">
               <MdOutlinePhonelink className="text-[70px] text-blanco" />
               <h3 className="text-blanco text-2xl py-3">
                 Desarrollo de Software a Medida

@@ -22,10 +22,10 @@ const ArcenixGames = () => {
       </div>
       <div className="min-h-screen d-block justify-center items-center bg-darkAzul">
         <div
-          className="bg-cover bg-center md:flex w-full py-32 px-10 md:px-0"
+          className="bg-cover bg-center w-full flex flex-col-reverse lg:flex-row py-32"
           style={{ backgroundImage: `url(${bgHome})` }}
         >
-          <div className="w-full md:w-[70%] flex flex-col md:px-40 md:py-12">
+          <div className="w-[100%] lg:w-[70%] flex flex-col px-10 lg:px-40 py-12">
             <h1
               className="text-5xl text-blanco text-center lg:text-start mt-10 mb-6 tracking-tight font-bold uppercase"
               style={{ fontFamily: "'Helvetica Neue', sans-serif" }}
@@ -40,7 +40,7 @@ const ArcenixGames = () => {
               una experiencia inolvidable.
             </p>
           </div>
-          <div className="w-full md:w-[30%] p-10">
+          <div className="w-[100%] lg:w-[30%] px-10 lg:p-10">
             <img src={pc} className="w-full" />
           </div>
         </div>
@@ -49,8 +49,8 @@ const ArcenixGames = () => {
           <h2 className="text-blanco text-5xl px-5 pt-10 text-center">
             Servidores Activos
           </h2>
-          <div className="md:flex justify-evenly p-12">
-            <NavLink to="/" className="overflow-hidden rounded-full border-2 border-blanco flex justify-evenly items-center shadow-inner">
+          <div className="md:flex justify-evenly p-12 gap-1">
+            <NavLink to="/" className="w-[300px] mx-auto overflow-hidden rounded-full border-2 border-blanco flex justify-evenly items-center shadow-inner">
               <div
                 style={{ backgroundImage: `url(${imgGta})` }}
                 className = "w-[300px] h-[300px] hover:scale-110 transition-all duration-300 rounded-full flex justify-center items-end shadow-xl bg-cover bg-center"
@@ -59,7 +59,7 @@ const ArcenixGames = () => {
               </div>
             </NavLink>
             
-            <NavLink to="/" className="overflow-hidden rounded-full border-2 border-blanco flex justify-evenly items-center">
+            <NavLink to="/" className="w-[300px] mx-auto overflow-hidden rounded-full border-2 border-blanco flex justify-evenly items-center">
               <div
                 style={{ backgroundImage: `url(${imgMine})` }}
                 className = "w-[300px] h-[300px] hover:scale-110 transition-all duration-300 rounded-full flex justify-center items-end shadow-xl bg-cover bg-center"

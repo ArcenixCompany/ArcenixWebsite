@@ -69,7 +69,7 @@ const ResponsiveBar = () => {
           <div className="-mr-2 flex items-center sm:hidden">
             <button
               onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-bg1 dark:text-txt1 hover:text-white hover:bg-d1 focus:outline-none focus:bg-d1 focus:text-white transition duration-150 ease-in-out"
+              className="inline-flex items-center justify-center p-2 rounded-md text-txt1 hover:text-white hover:bg-d1 focus:outline-none focus:bg-d1 focus:text-white transition duration-150 ease-in-out"
             >
               <svg
                 className={`${isOpen ? "hidden" : "block"} h-6 w-6`}
@@ -108,37 +108,41 @@ const ResponsiveBar = () => {
         <div className="px-2 pt-2 pb-3 space-y-1">
           <NavLink
             to="/"
-            className="text-bg1 dark:text-txt1 hover:bg-d1 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            className="text-txt1 hover:bg-d1 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
             onClick={open ? toggleMenu : undefined}
           >
+            <i className="bi bi-house mr-4"></i>
             Inicio
           </NavLink>
           <NavLink
             to="/about"
-            className="text-bg1 dark:text-txt1 hover:bg-d1 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            className="text-txt1 hover:bg-d1 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
             onClick={open ? toggleMenu : undefined}
           >
+            <i className="bi bi-people mr-4"></i>
             Nosotros
           </NavLink>
           <NavLink
-            to="/founders"
-            className="text-bg1 dark:text-txt1 hover:bg-d1 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            to="/contact"
+            className="text-txt1 hover:bg-d1 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
             onClick={open ? toggleMenu : undefined}
           >
+            <i className="bi bi-chat mr-4"></i>
             Contacto
           </NavLink>
           <NavLink
-            to="/contact"
-            className="text-bg1 dark:text-txt1 hover:bg-d1 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            to="/deps/arcDes"
+            className="text-txt1 hover:bg-d1 hover:text-white flex px-3 py-2 rounded-md text-base font-medium"
             onClick={open ? toggleMenu : undefined}
           >
+            <img src="/src/views/svg/arcenix_isotipo.svg" alt="Logo" className="w-4 h-4 mr-4 my-auto"></img>
             Departamentos
           </NavLink>
           <div className="flex w-full justify-evenly">
             {SMedia.map((a, b) => (
               <li
                 key={b}
-                className={`text-bg1 dark:text-txt1 text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-d1 rounded-md ${
+                className={`text-txt1 text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-d1 rounded-md ${
                   a.gap ? "mt-9" : "mt-2"
                 } ${!open && "justify-center"}`}
               >
