@@ -3,7 +3,7 @@ import logo from "../views/svg/alas_fenix.svg";
 
 const Contact = () => {
   return (
-    <div className="flex justify-center items-center w-[90%] p-20 max-w-[1300px] min-h-screen">
+    <div className="flex justify-center items-center w-[90%] py-7 max-w-[1300px] min-h-screen">
       <div className="border-2 border-blanco shadow-md shadow-blanco flex flex-col lg:flex-row min-h-[700px] rounded-lg">
         <div className="lg:w-1/2 flex justify-center items-center">
           <div className=" h-[70%] flex flex-col py-10">

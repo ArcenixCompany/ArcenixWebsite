@@ -121,7 +121,7 @@ const About = () => {
           Herramientas que utilizamos
         </h1>
         <div className="flex flex-col justify-center items-center">
-          <div className="w-full sm:w-1/2 px-4 sm:px-0">
+          <div className="w-full px-4">
             <h2 className="text-blanco text-center text-2xl p-4">Herramientas de diseño</h2>
             <div>
               <ul className="flex justify-center items-center space-x-4 flex-wrap gap-5">
@@ -137,7 +137,7 @@ const About = () => {
               </ul>
             </div>
           </div>
-          <div className="w-full sm:w-1/2 px-4 sm:px-0">
+          <div className="w-full px-4">
             <h2 className="text-blanco text-center text-2xl p-4">Herramientas de desarrollo web</h2>
             <div>
               <ul className="flex justify-between items-center flex-wrap gap-5 p-10">
