@@ -49,7 +49,7 @@ const ArcenixDesarrollo = () => {
               escalable.
             </p>
           </div>
-          <div className="w-[100%] lg:w-[30%] px-10 lg:p-10">
+          <div className="w-[100%] lg:w-[40%] px-10 lg:p-10">
             <img src={develop} className="w-full" />
           </div>
         </div>

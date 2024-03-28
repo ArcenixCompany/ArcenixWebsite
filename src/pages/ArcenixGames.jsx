@@ -5,6 +5,8 @@ import { BsFillShieldLockFill } from "react-icons/bs";
 import { BsPatchCheck } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
 import { NavbarDeps } from "../components/NavbarDeps";
+import { useState } from "react";
+
 import imgGta from "../views/img/gta5.jpeg";
 import imgMine from "../views/img/minecraft.jpeg";
 
@@ -14,6 +16,8 @@ import gaming from "../views/svg/undraw_gaming_re_cma2.svg";
 //import pc from "../views/svg/desktop-pc.svg";
 
 const ArcenixGames = () => {
+  const [isMineHovered, setMineHovered] = useState(false);
+  const [isGtaHovered, setGtaHovered] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -42,17 +46,25 @@ const ArcenixGames = () => {
               una experiencia inolvidable.
             </p>
           </div>
-          <div className="w-[100%] lg:w-[30%] px-10 lg:p-10">
+          <div className="w-[100%] lg:w-[40%] px-10 lg:p-10">
             <img src={gaming} className="w-full" />
           </div>
         </div>
 
-        <div className="bg-blanco bg-gradient-to-b from-morado to-morado2">
+        <div className="bg-blanco bg-gradient-to-b from-purple-600 to-morado2">
           <h2 className="text-blanco text-5xl px-5 pt-10 text-center">
             Servidores Activos
           </h2>
           <div className="md:flex justify-evenly p-12 gap-1">
-            <NavLink to="/" className="w-[300px] mx-auto overflow-hidden rounded-full border-2 border-blanco flex justify-evenly items-center shadow-inner">
+            <NavLink to="/" className="w-[300px] mx-auto overflow-hidden rounded-full border-2 border-blanco flex justify-evenly items-center shadow-inner transition-all"
+            onMouseEnter={() => setGtaHovered(true)}
+            onMouseLeave={() => setGtaHovered(false)}
+            style={{
+              boxShadow: isGtaHovered
+                ? "0 0 35px rgba(219, 39, 119, 0.7)"
+                : "none",
+            }}
+            >
               <div
                 style={{ backgroundImage: `url(${imgGta})` }}
                 className = "w-[300px] h-[300px] hover:scale-110 transition-all duration-300 rounded-full flex justify-center items-end shadow-xl bg-cover bg-center"
@@ -61,7 +73,15 @@ const ArcenixGames = () => {
               </div>
             </NavLink>
             
-            <NavLink to="/" className="w-[300px] mx-auto overflow-hidden rounded-full border-2 border-blanco flex justify-evenly items-center">
+            <NavLink to="/" className="w-[300px] mx-auto overflow-hidden rounded-full border-2 border-blanco flex justify-evenly items-center transition-all"
+            onMouseEnter={() => setMineHovered(true)}
+            onMouseLeave={() => setMineHovered(false)}
+            style={{
+              boxShadow: isMineHovered
+                ? "0 0 35px rgba(219, 39, 119, 0.7)"
+                : "none",
+            }}
+            >
               <div
                 style={{ backgroundImage: `url(${imgMine})` }}
                 className = "w-[300px] h-[300px] hover:scale-110 transition-all duration-300 rounded-full flex justify-center items-end shadow-xl bg-cover bg-center"
