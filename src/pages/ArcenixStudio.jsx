@@ -7,7 +7,10 @@ import { NavLink } from "react-router-dom";
 import { NavbarDeps } from "../components/NavbarDeps";
 
 import bgHome from "../views/img/bg-home.png";
-import pc from "../views/svg/desktop-pc.svg";
+
+import design from "../views/svg/undraw_designer_girl_re_h54c.svg";
+// import pc from "../views/svg/desktop-pc.svg";
+
 import aguA from "../views/img/agustin_abarca.jpg";
 import fraA from "../views/img/franco_alvarez.jpg";
 
@@ -40,7 +43,7 @@ const ArcenixStudio = () => {
             </p>
           </div>
           <div className="w-[100%] lg:w-[30%] px-10 lg:p-10">
-            <img src={pc} className="w-full" />
+            <img src={design} className="w-full" />
           </div>
         </div>
 

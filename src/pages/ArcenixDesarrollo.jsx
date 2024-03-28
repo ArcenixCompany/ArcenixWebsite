@@ -7,16 +7,19 @@ import { DiGitBranch } from "react-icons/di";
 import { FaShoppingBasket } from "react-icons/fa";
 import { FaMobileScreenButton } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
+import { NavbarDeps } from "../components/NavbarDeps";
 
 import bgHome from "../views/img/bg-home.png";
-import pc from "../views/svg/desktop-pc.svg";
+
+import develop from "../views/svg/undraw_programming_re_kg9v.svg";
+//import pc from "../views/svg/desktop-pc.svg";
+
 import lauZ from "../views/img/lautaro_zalazar.png";
 import danH from "../views/img/daniel_herrera.jpg";
 import matA from "../views/img/matias_aguirre.jpg";
 import valR from "../views/img/valentino_rivas.jpg";
 import eliM from "../views/img/eliel_mato.jpg";
 import nahM from "../views/img/nahuel_medina.jpg";
-import { NavbarDeps } from "../components/NavbarDeps";
 
 const ArcenixDesarrollo = () => {
   useEffect(() => {
@@ -47,7 +50,7 @@ const ArcenixDesarrollo = () => {
             </p>
           </div>
           <div className="w-[100%] lg:w-[30%] px-10 lg:p-10">
-            <img src={pc} className="w-full" />
+            <img src={develop} className="w-full" />
           </div>
         </div>
 

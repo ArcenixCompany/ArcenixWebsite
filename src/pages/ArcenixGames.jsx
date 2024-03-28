@@ -9,7 +9,9 @@ import imgGta from "../views/img/gta5.jpeg";
 import imgMine from "../views/img/minecraft.jpeg";
 
 import bgHome from "../views/img/bg-home.png";
-import pc from "../views/svg/desktop-pc.svg";
+
+import gaming from "../views/svg/undraw_gaming_re_cma2.svg";
+//import pc from "../views/svg/desktop-pc.svg";
 
 const ArcenixGames = () => {
   useEffect(() => {
@@ -41,7 +43,7 @@ const ArcenixGames = () => {
             </p>
           </div>
           <div className="w-[100%] lg:w-[30%] px-10 lg:p-10">
-            <img src={pc} className="w-full" />
+            <img src={gaming} className="w-full" />
           </div>
         </div>
 
