@@ -82,7 +82,7 @@ const Contact = () => {
                 </a>
 
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/arcenix-company/"
                   className="bg-morado2 p-1 rounded-full w-8 h-8 flex justify-center items-center"
                 >
                   <i className="bi bi-linkedin text-xm text-blanco"></i>
