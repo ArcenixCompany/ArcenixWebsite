@@ -14,12 +14,12 @@ const ResponsiveBar = () => {
     {
       title: "Linkedin",
       src: "linkedin",
-      path: "https://www.linkedin.com/in/arcenix-company-5808b12b4/",
+      path: "https://www.linkedin.com/company/arcenix-company/",
     },
     {
       title: "TikTok",
       src: "tiktok",
-      path: "https://www.tiktok.com/@arcenixcompany",
+      path: "https://www.tiktok.com/@arcenix_company",
     },
   ];
 
