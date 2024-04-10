@@ -45,7 +45,7 @@ const Inicio = () => {
                 className="text-5xl text-rosa text-start ps-0 lg:px-8 py-4 tracking-tight font-bold uppercase"
                 style={{ fontFamily: "'Helvetica Neue', sans-serif" }}
               >
-                Arcenix <span className="text-blanco">Company</span>
+                Arcénix <span className="text-blanco">Company</span>
               </h1>
               <p className="text-blanco ps-0 pe-8 lg:px-8 py-2 m-1">
                 ¿Estás buscando optimizar tus procesos con soluciones
@@ -233,7 +233,7 @@ const Inicio = () => {
         </div>
       </div>
 
-      <div className="mt-14">
+      {/* <div className="mt-14">
         <p className="text-blanco text-[35px] font-bold text-center uppercase">
           Patrocinador
         </p>
@@ -247,7 +247,7 @@ const Inicio = () => {
           alt="Logo 9z"
           style={{ filter: "drop-shadow(0 0 10px rgba(0, 0, 0, 0.7))" }}
         />
-      </div>
+      </div> */}
     </div>
   );
 };

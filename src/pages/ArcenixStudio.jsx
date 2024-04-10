@@ -161,7 +161,7 @@ const ArcenixStudio = () => {
             </div>
           </div>
 
-          <div>
+          {/* <div>
             <h2 className="text-blanco text-4xl p-5 text-center">
               Nuestro equipo de trabajo
             </h2>
@@ -236,7 +236,7 @@ const ArcenixStudio = () => {
                 </div>
               </div>
             </div>
-          </section>
+          </section> */}
         </div>
       </div>
     </div>
